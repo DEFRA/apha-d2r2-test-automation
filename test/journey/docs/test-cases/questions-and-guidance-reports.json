@@ -1,0 +1,168 @@
+{
+  "story_summary": "Manual cases for the questions-and-guidance-reports journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the questions and guidance reports page and sees the report buttons - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:6",
+      "test_cases": [
+        "Applicant opens the questions and guidance reports page and sees the report buttons"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the questions and guidance reports page from the home page - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:12",
+      "test_cases": [
+        "Applicant reaches the questions and guidance reports page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the questions and guidance reports page directly and confirms the report buttons remain visible - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:18",
+      "test_cases": [
+        "Applicant opens the questions and guidance reports page directly and confirms the report buttons remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the questions and guidance reports page directly and confirms the page remains stable after navigation - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:24",
+      "test_cases": [
+        "Applicant opens the questions and guidance reports page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-016",
+      "title": "Applicant opens the questions and guidance reports page and sees the report buttons",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the questions and guidance reports page and sees the report buttons - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Open the Edit questions and guidance page directly in the browser",
+          "expected": "The Edit questions and guidance page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The questions and guidance reports page is displayed"
+        },
+        {
+          "action": "Check the questions and guidance reports page content",
+          "expected": "The report buttons are visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-083",
+      "title": "Applicant reaches the questions and guidance reports page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the questions and guidance reports page from the home page - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Questions and Guidance Reports in the main menu",
+          "expected": "The Questions and Guidance Reports page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The questions and guidance reports page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-091",
+      "title": "Applicant opens the questions and guidance reports page directly and confirms the report buttons remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the questions and guidance reports page directly and confirms the report buttons remain visible - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the questions and guidance reports page",
+          "expected": "The questions and guidance reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The questions and guidance reports page is displayed"
+        },
+        {
+          "action": "Check the questions and guidance reports page content",
+          "expected": "The report buttons are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-119",
+      "title": "Applicant opens the questions and guidance reports page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the questions and guidance reports page directly and confirms the page remains stable after navigation - features/questions-and-guidance-reports/questions-and-guidance-reports.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the questions and guidance reports page",
+          "expected": "The questions and guidance reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The questions and guidance reports page is displayed"
+        },
+        {
+          "action": "Check the questions and guidance reports page content",
+          "expected": "The report buttons are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

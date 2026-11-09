@@ -1,0 +1,207 @@
+{
+  "story_summary": "Manual cases for the maintain-global-users journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the global users page and sees the management controls - features/global-users/maintain-global-users.feature:6",
+      "test_cases": [
+        "Applicant opens the global users page and sees the management controls"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the global users page from the home page - features/global-users/maintain-global-users.feature:12",
+      "test_cases": [
+        "Applicant reaches the global users page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the global users page directly - features/global-users/maintain-global-users.feature:18",
+      "test_cases": [
+        "Applicant opens the global users page directly"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the global users page directly and confirms the page remains visible - features/global-users/maintain-global-users.feature:23",
+      "test_cases": [
+        "Applicant opens the global users page directly and confirms the page remains visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the global users page directly and confirms the page remains stable after navigation - features/global-users/maintain-global-users.feature:28",
+      "test_cases": [
+        "Applicant opens the global users page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-035",
+      "title": "Applicant opens the global users page and sees the management controls",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the global users page and sees the management controls - features/global-users/maintain-global-users.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Global Users page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The global users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-081",
+      "title": "Applicant reaches the global users page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the global users page from the home page - features/global-users/maintain-global-users.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Global Users page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The global users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-103",
+      "title": "Applicant opens the global users page directly",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the global users page directly - features/global-users/maintain-global-users.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the global users page",
+          "expected": "The global users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The global users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-112",
+      "title": "Applicant opens the global users page directly and confirms the page remains visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the global users page directly and confirms the page remains visible - features/global-users/maintain-global-users.feature:23"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the global users page",
+          "expected": "The global users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The global users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-126",
+      "title": "Applicant opens the global users page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the global users page directly and confirms the page remains stable after navigation - features/global-users/maintain-global-users.feature:28"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the global users page",
+          "expected": "The global users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The global users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

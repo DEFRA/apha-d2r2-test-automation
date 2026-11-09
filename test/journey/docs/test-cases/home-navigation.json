@@ -1,0 +1,636 @@
+{
+  "story_summary": "Manual cases for the home-navigation journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the home page and sees primary links - features/home/home-navigation.feature:6",
+      "test_cases": [
+        "Applicant opens the home page and sees primary links"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the search page - features/home/home-navigation.feature:11",
+      "test_cases": [
+        "Applicant moves from the home page to the search page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the disease ranking report - features/home/home-navigation.feature:17",
+      "test_cases": [
+        "Applicant moves from the home page to the disease ranking report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the general reports page - features/home/home-navigation.feature:23",
+      "test_cases": [
+        "Applicant moves from the home page to the general reports page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the view species data page - features/home/home-navigation.feature:29",
+      "test_cases": [
+        "Applicant moves from the home page to the view species data page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the help page - features/home/home-navigation.feature:35",
+      "test_cases": [
+        "Applicant moves from the home page to the help page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the global users page - features/home/home-navigation.feature:41",
+      "test_cases": [
+        "Applicant moves from the home page to the global users page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the external users page - features/home/home-navigation.feature:47",
+      "test_cases": [
+        "Applicant moves from the home page to the external users page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the maintain reference data page - features/home/home-navigation.feature:53",
+      "test_cases": [
+        "Applicant moves from the home page to the maintain reference data page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the maintain prioritisation variables page - features/home/home-navigation.feature:59",
+      "test_cases": [
+        "Applicant moves from the home page to the maintain prioritisation variables page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant checks the home page does not offer the maintain species data link - features/home/home-navigation.feature:65",
+      "test_cases": [
+        "Applicant checks the home page does not offer the maintain species data link"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant checks the home page does not offer the questions and guidance reports link - features/home/home-navigation.feature:70",
+      "test_cases": [
+        "Applicant checks the home page does not offer the questions and guidance reports link"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the maintain cross-cutting issue scores page - features/home/home-navigation.feature:75",
+      "test_cases": [
+        "Applicant moves from the home page to the maintain cross-cutting issue scores page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the compare profile versions page - features/home/home-navigation.feature:81",
+      "test_cases": [
+        "Applicant moves from the home page to the compare profile versions page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves from the home page to the create disease ranking filter page - features/home/home-navigation.feature:87",
+      "test_cases": [
+        "Applicant moves from the home page to the create disease ranking filter page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the create profile page directly and confirms the form remains stable after navigation - features/home/home-navigation.feature:93",
+      "test_cases": [
+        "Applicant opens the create profile page directly and confirms the form remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-001",
+      "title": "Applicant opens the home page and sees primary links",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the home page and sees primary links - features/home/home-navigation.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Check the home page content",
+          "expected": "The popular links are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-002",
+      "title": "Applicant moves from the home page to the search page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the search page - features/home/home-navigation.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Search Disease Profiles in the main menu",
+          "expected": "The Search Disease Profiles page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The search page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-003",
+      "title": "Applicant moves from the home page to the disease ranking report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the disease ranking report - features/home/home-navigation.feature:17"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Disease Ranking Report in the main menu",
+          "expected": "The Disease Ranking Report page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The disease ranking page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-004",
+      "title": "Applicant moves from the home page to the general reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the general reports page - features/home/home-navigation.feature:23"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click General Reports in the main menu",
+          "expected": "The General Reports page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The general reports page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-005",
+      "title": "Applicant moves from the home page to the view species data page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the view species data page - features/home/home-navigation.feature:29"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click View Species Data in the main menu",
+          "expected": "The View Species Data page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The view species data page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-008",
+      "title": "Applicant moves from the home page to the help page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the help page - features/home/home-navigation.feature:35"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Help Using D2R2 in the main menu",
+          "expected": "The Help Using D2R2 page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-021",
+      "title": "Applicant moves from the home page to the global users page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the global users page - features/home/home-navigation.feature:41"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Global Users page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The global users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-022",
+      "title": "Applicant moves from the home page to the external users page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the external users page - features/home/home-navigation.feature:47"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click External Users in the main menu",
+          "expected": "The External Users page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The external users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-023",
+      "title": "Applicant moves from the home page to the maintain reference data page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the maintain reference data page - features/home/home-navigation.feature:53"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Maintain Reference Data in the main menu",
+          "expected": "The Maintain Reference Data page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The home navigation maintain reference data page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-024",
+      "title": "Applicant moves from the home page to the maintain prioritisation variables page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the maintain prioritisation variables page - features/home/home-navigation.feature:59"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Maintain Prioritisation Variables in the main menu",
+          "expected": "The Maintain Prioritisation Variables page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain prioritisation variables page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-026",
+      "title": "Applicant checks the home page does not offer the maintain species data link",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant checks the home page does not offer the maintain species data link - features/home/home-navigation.feature:65"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Check the main menu on the Home page",
+          "expected": "The maintain species data link is not displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-029",
+      "title": "Applicant checks the home page does not offer the questions and guidance reports link",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant checks the home page does not offer the questions and guidance reports link - features/home/home-navigation.feature:70"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Check the main menu on the Home page",
+          "expected": "The questions and guidance reports link is not displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-031",
+      "title": "Applicant moves from the home page to the maintain cross-cutting issue scores page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the maintain cross-cutting issue scores page - features/home/home-navigation.feature:75"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Maintain Cross-Cutting Issue Scores in the main menu",
+          "expected": "The Maintain Cross-Cutting Issue Scores page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain cross-cutting issue scores page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-009",
+      "title": "Applicant moves from the home page to the compare profile versions page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the compare profile versions page - features/home/home-navigation.feature:81"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Compare Profile Versions in the main menu",
+          "expected": "The Compare Profile Versions page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The compare profile versions page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-010",
+      "title": "Applicant moves from the home page to the create disease ranking filter page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves from the home page to the create disease ranking filter page - features/home/home-navigation.feature:87"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Create Disease Ranking Filter in the main menu",
+          "expected": "The Create Disease Ranking Filter page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create disease ranking filter page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-145",
+      "title": "Applicant opens the create profile page directly and confirms the form remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the create profile page directly and confirms the form remains stable after navigation - features/home/home-navigation.feature:93"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Create new profile page",
+          "expected": "The Create new profile page is displayed with an empty title and a Create profile button"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create profile page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

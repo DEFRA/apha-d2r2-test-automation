@@ -1,0 +1,246 @@
+{
+  "story_summary": "Manual cases for the error-handling journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant sees the session timeout page - features/error-handling/error-handling.feature:6",
+      "test_cases": [
+        "Applicant sees the session timeout page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sees the application error page - features/error-handling/error-handling.feature:11",
+      "test_cases": [
+        "Applicant sees the application error page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the session timeout page and confirms the dedicated error state is visible - features/error-handling/error-handling.feature:16",
+      "test_cases": [
+        "Applicant opens the session timeout page and confirms the dedicated error state is visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the application error page and confirms the error state is visible - features/error-handling/error-handling.feature:22",
+      "test_cases": [
+        "Applicant opens the application error page and confirms the error state is visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the session timeout page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:28",
+      "test_cases": [
+        "Applicant opens the session timeout page directly and confirms the error page remains stable after navigation"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the application error page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:34",
+      "test_cases": [
+        "Applicant opens the application error page directly and confirms the error page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-050",
+      "title": "Applicant sees the session timeout page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees the session timeout page - features/error-handling/error-handling.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the session timeout page directly in the browser",
+          "expected": "The page with the heading \"Your application session has expired\" is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The session timeout page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-051",
+      "title": "Applicant sees the application error page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees the application error page - features/error-handling/error-handling.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the application error page directly in the browser",
+          "expected": "The page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The application error page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-099",
+      "title": "Applicant opens the session timeout page and confirms the dedicated error state is visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the session timeout page and confirms the dedicated error state is visible - features/error-handling/error-handling.feature:16"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the session timeout page directly in the browser",
+          "expected": "The page with the heading \"Your application session has expired\" is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The session timeout page is displayed"
+        },
+        {
+          "action": "Check the page after it loads",
+          "expected": "The session timeout page stays displayed and does not redirect"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-100",
+      "title": "Applicant opens the application error page and confirms the error state is visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the application error page and confirms the error state is visible - features/error-handling/error-handling.feature:22"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the application error page directly in the browser",
+          "expected": "The page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The application error page is displayed"
+        },
+        {
+          "action": "Check the page after it loads",
+          "expected": "The application error page stays displayed and does not redirect"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-133",
+      "title": "Applicant opens the session timeout page directly and confirms the error page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the session timeout page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:28"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the session timeout page directly in the browser",
+          "expected": "The page with the heading \"Your application session has expired\" is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The session timeout page is displayed"
+        },
+        {
+          "action": "Check the page after it loads",
+          "expected": "The session timeout page stays displayed and does not redirect"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-134",
+      "title": "Applicant opens the application error page directly and confirms the error page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the application error page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:34"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the application error page directly in the browser",
+          "expected": "The page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The application error page is displayed"
+        },
+        {
+          "action": "Check the page after it loads",
+          "expected": "The application error page stays displayed and does not redirect"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

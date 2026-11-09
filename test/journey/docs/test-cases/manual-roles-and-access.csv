@@ -1,0 +1,131 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Verify an unauthenticated browser is sent to the sign-in page for Home,Step 1,Open a browser on a machine or profile that has no Windows or SSO session for the service,No D2R2 session cookie exists,Path x,,Design
+,,,Step 2,Open the D2R2 Home page address,The browser is redirected to the sign-in page (VLAServices Login) instead of the D2R2 Home page,,,
+,,,Step 3,Check the page content,"No D2R2 menu, search box or profile data is displayed",,,
+,,,Step 4,Check the address bar,The address is the sign-in page address and not the requested D2R2 page,,,
+,,,Step 5,Sign in with a valid D2R2 account,The D2R2 Home page is displayed,,,
+,Test Case,Verify an unauthenticated browser cannot open MaintainGlobalUsers directly,Step 1,Open a browser with no Windows or SSO session for the service,No D2R2 session cookie exists,Path x,,Design
+,,,Step 2,Open the address of MaintainGlobalUsers.aspx directly,The browser is redirected to the sign-in page,,,
+,,,Step 3,Check the page content,No MaintainGlobalUsers controls or data are displayed,,,
+,,,Step 4,Check the address bar,The address is the sign-in page address and not the requested D2R2 page,,,
+,,,Step 5,Sign in with a valid D2R2 account,"The MaintainGlobalUsers page is displayed only if the account has permission, otherwise the application error page is displayed",,,
+,Test Case,Verify an unauthenticated browser cannot open MaintainExternalUsers directly,Step 1,Open a browser with no Windows or SSO session for the service,No D2R2 session cookie exists,Path x,,Design
+,,,Step 2,Open the address of MaintainExternalUsers.aspx directly,The browser is redirected to the sign-in page,,,
+,,,Step 3,Check the page content,No MaintainExternalUsers controls or data are displayed,,,
+,,,Step 4,Check the address bar,The address is the sign-in page address and not the requested D2R2 page,,,
+,,,Step 5,Sign in with a valid D2R2 account,"The MaintainExternalUsers page is displayed only if the account has permission, otherwise the application error page is displayed",,,
+,Test Case,Verify an unauthenticated browser cannot open ReviewEmail directly,Step 1,Open a browser with no Windows or SSO session for the service,No D2R2 session cookie exists,Path x,,Design
+,,,Step 2,Open the address of ReviewEmail.aspx directly,The browser is redirected to the sign-in page,,,
+,,,Step 3,Check the page content,No ReviewEmail controls or data are displayed,,,
+,,,Step 4,Check the address bar,The address is the sign-in page address and not the requested D2R2 page,,,
+,,,Step 5,Sign in with a valid D2R2 account,"The ReviewEmail page is displayed only if the account has permission, otherwise the application error page is displayed",,,
+,Test Case,Verify an unauthenticated browser cannot open Search directly,Step 1,Open a browser with no Windows or SSO session for the service,No D2R2 session cookie exists,Path x,,Design
+,,,Step 2,Open the address of Search.aspx directly,The browser is redirected to the sign-in page,,,
+,,,Step 3,Check the page content,No Search controls or data are displayed,,,
+,,,Step 4,Check the address bar,The address is the sign-in page address and not the requested D2R2 page,,,
+,,,Step 5,Sign in with a valid D2R2 account,"The Search page is displayed only if the account has permission, otherwise the application error page is displayed",,,
+,Test Case,Verify an account without permission cannot open the Maintain global users page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of MaintainGlobalUsers.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Maintain global users controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Maintain external users page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of MaintainExternalUsers.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Maintain external users controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Maintain reference data page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of MaintainReferenceData.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Maintain reference data controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Maintain species data page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of MaintainSpeciesData.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Maintain species data controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Edit questions and guidance page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of EditUserGuidance.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Edit questions and guidance controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the reference table audit trail page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of ReferenceTableAuditTrail.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No reference table audit trail controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the species data audit trail page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of SpeciesDataAuditTrail.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No species data audit trail controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Review email page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of ReviewEmail.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Review email controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Compare profile versions page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of CompareProfileVersions.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Compare profile versions controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Disease ranking page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of DiseaseRanking.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Disease ranking controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Create bespoke report page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of CreateBespokeReport.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Create bespoke report controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Manage profile page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of ManageProfile.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Manage profile controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Maintain contributors page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of MaintainContributors.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Maintain contributors controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify an account without permission cannot open the Edit profile title page by address,Step 1,"Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with only the menu links the account may use,,,
+,,,Step 3,Open the address of EditProfileTitle.aspx directly in the browser,"The application error page with the heading ""An error has occurred"" is displayed",,,
+,,,Step 4,Check the page content,No Edit profile title controls or data are displayed,,,
+,,,Step 5,Click the D2R2 link at the top of the page,The Home page is displayed and the session is still signed in,,,
+,Test Case,Verify the menu hides links the account has no permission to use,Step 1,Log in to D2R2 as <D2R2 account for the role under test>,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed,,,
+,,,Step 3,Read the main menu links,The links shown are limited to those the account is allowed to use,,,
+,,,Step 4,Compare the menu with the role matrix <role matrix for this account>,Every link in the matrix for this role is displayed and no other link is displayed,,,
+,,,Step 5,Click each displayed link in turn,Each link opens its page without the application error page,,,
+,,,Step 6,Repeat the check with a Profile editor and a Policy profile user account,The menu differs between roles exactly as the role matrix states,,,
+,Test Case,Verify a global user cannot change their own role,Step 1,Log in to D2R2 as <D2R2 account with the global user administration role>,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Click Global Users in the main menu,The Maintain global users page is displayed,,,
+,,,Step 3,Click Edit for the row of the signed-in account,The edit form opens with the current role selected,,,
+,,,Step 4,Check the Role list,The Role list is disabled and cannot be changed,,,
+,,,Step 5,Click Cancel,The form closes and the role is unchanged,,,
+,Test Case,Verify the global user lookup rejects an SSO user,Step 1,Log in to D2R2 as <D2R2 account with the global user administration role>,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Click Global Users in the main menu,The Maintain global users page is displayed,,,
+,,,Step 3,Click the Add button,The add global user form is displayed,,,
+,,,Step 4,Enter the username of an SSO user in the format Domain\UserId in the Username field,The username is shown in the field,,,
+,,,Step 5,Click the Look up button,"The message ""SSO users cannot be given global access rights"" is displayed",,,
+,,,Step 6,Check the OK button,The OK button stays disabled and no user is added,,,
+,Test Case,Verify the global user lookup rejects a user who is not in the profiles system,Step 1,Log in to D2R2 as <D2R2 account with the global user administration role>,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Click Global Users in the main menu,The Maintain global users page is displayed,,,
+,,,Step 3,Click the Add button,The add global user form is displayed,,,
+,,,Step 4,Enter the username of a user who is not in the profiles system in the format Domain\UserId in the Username field,The username is shown in the field,,,
+,,,Step 5,Click the Look up button,"The message ""The user is not currently in the profiles system"" is displayed",,,
+,,,Step 6,Check the OK button,The OK button stays disabled and no user is added,,,
+,Test Case,Verify the global user lookup rejects a user who cannot be made a global user,Step 1,Log in to D2R2 as <D2R2 account with the global user administration role>,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Click Global Users in the main menu,The Maintain global users page is displayed,,,
+,,,Step 3,Click the Add button,The add global user form is displayed,,,
+,,,Step 4,Enter the username of a user who cannot be made a global user in the format Domain\UserId in the Username field,The username is shown in the field,,,
+,,,Step 5,Click the Look up button,"The message ""This user cannot be made a global user"" is displayed",,,
+,,,Step 6,Check the OK button,The OK button stays disabled and no user is added,,,
+,Test Case,Verify a contributor lookup rejects a user who cannot be made a contributor,Step 1,Log in to D2R2 as <D2R2 account with the Profile editor role>,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Search for <profile title> and click Manage on the first result,The Manage profile page is displayed,,,
+,,,Step 3,Click the Maintain contributors and reviewers link,The Maintain contributors page is displayed,,,
+,,,Step 4,Click Add a contributor,The add contributor form is displayed,,,
+,,,Step 5,Enter the username of <user who cannot be a contributor> and look the user up,"The message ""This user cannot be made a contributor"" is displayed",,,
+,,,Step 6,Check the contributor list,No contributor is added,,,

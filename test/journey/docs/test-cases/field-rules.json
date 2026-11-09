@@ -1,0 +1,176 @@
+{
+  "story_summary": "Manual cases for the field-rules journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant tries to save a new profile without a title - features/field-rules/field-rules.feature:6",
+      "test_cases": [
+        "Applicant tries to save a new profile without a title"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant looks up a global user without a username - features/field-rules/field-rules.feature:12",
+      "test_cases": [
+        "Applicant looks up a global user without a username"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant looks up a global user with a username in the wrong format - features/field-rules/field-rules.feature:18",
+      "test_cases": [
+        "Applicant looks up a global user with a username in the wrong format"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant cannot enter more than 50 characters in the global user username - features/field-rules/field-rules.feature:24",
+      "test_cases": [
+        "Applicant cannot enter more than 50 characters in the global user username"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-170",
+      "title": "Applicant tries to save a new profile without a title",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant tries to save a new profile without a title - features/field-rules/field-rules.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Create new profile page",
+          "expected": "The Create new profile page is displayed with an empty title and a Create profile button"
+        },
+        {
+          "action": "Leave the title empty and click Create profile",
+          "expected": "The profile is not created"
+        },
+        {
+          "action": "Check the validation message",
+          "expected": "The message \"You must enter a title\" is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-171",
+      "title": "Applicant looks up a global user without a username",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant looks up a global user without a username - features/field-rules/field-rules.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the global users page",
+          "expected": "The global users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add global user form is displayed"
+        },
+        {
+          "action": "Leave the Username field empty",
+          "expected": "The Username field is empty"
+        },
+        {
+          "action": "Click the Look up button",
+          "expected": "The lookup is requested"
+        },
+        {
+          "action": "Check the validation message",
+          "expected": "The message \"Please enter a username\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-172",
+      "title": "Applicant looks up a global user with a username in the wrong format",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant looks up a global user with a username in the wrong format - features/field-rules/field-rules.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the global users page",
+          "expected": "The global users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add global user form is displayed"
+        },
+        {
+          "action": "Enter \"not-a-domain-user\" in the Username field",
+          "expected": "\"not-a-domain-user\" is shown in the field"
+        },
+        {
+          "action": "Click the Look up button",
+          "expected": "The lookup is requested"
+        },
+        {
+          "action": "Check the validation message",
+          "expected": "The message \"Please enter a username in the following format: Domain\\UserId\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-173",
+      "title": "Applicant cannot enter more than 50 characters in the global user username",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant cannot enter more than 50 characters in the global user username - features/field-rules/field-rules.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the global users page",
+          "expected": "The global users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add global user form is displayed"
+        },
+        {
+          "action": "Type 51 characters in the Username field",
+          "expected": "The field accepts the text"
+        },
+        {
+          "action": "Check the characters in the Username field",
+          "expected": "The field holds 50 characters"
+        }
+      ]
+    }
+  ]
+}

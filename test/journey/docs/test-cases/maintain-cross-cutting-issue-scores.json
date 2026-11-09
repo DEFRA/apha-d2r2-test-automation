@@ -1,0 +1,207 @@
+{
+  "story_summary": "Manual cases for the maintain-cross-cutting-issue-scores journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the maintain cross-cutting issue scores page and sees the controls - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:6",
+      "test_cases": [
+        "Applicant opens the maintain cross-cutting issue scores page and sees the controls"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the maintain cross-cutting issue scores page from the home page - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:12",
+      "test_cases": [
+        "Applicant reaches the maintain cross-cutting issue scores page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain cross-cutting issue scores page directly and confirms the controls remain visible - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:18",
+      "test_cases": [
+        "Applicant opens the maintain cross-cutting issue scores page directly and confirms the controls remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the maintain cross-cutting issue scores page from the home page and confirms the controls are visible - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:24",
+      "test_cases": [
+        "Applicant reaches the maintain cross-cutting issue scores page from the home page and confirms the controls are visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain cross-cutting issue scores page directly and confirms the page remains stable after navigation - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:30",
+      "test_cases": [
+        "Applicant opens the maintain cross-cutting issue scores page directly and confirms the page remains stable after navigat"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-025",
+      "title": "Applicant opens the maintain cross-cutting issue scores page and sees the controls",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain cross-cutting issue scores page and sees the controls - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain cross-cutting issue scores page",
+          "expected": "The maintain cross-cutting issue scores page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain cross-cutting issue scores page is displayed"
+        },
+        {
+          "action": "Check the maintain cross-cutting issue scores page content",
+          "expected": "The controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-086",
+      "title": "Applicant reaches the maintain cross-cutting issue scores page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the maintain cross-cutting issue scores page from the home page - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Maintain Cross-Cutting Issue Scores in the main menu",
+          "expected": "The Maintain Cross-Cutting Issue Scores page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain cross-cutting issue scores page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-095",
+      "title": "Applicant opens the maintain cross-cutting issue scores page directly and confirms the controls remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain cross-cutting issue scores page directly and confirms the controls remain visible - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain cross-cutting issue scores page",
+          "expected": "The maintain cross-cutting issue scores page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain cross-cutting issue scores page is displayed"
+        },
+        {
+          "action": "Check the maintain cross-cutting issue scores page content",
+          "expected": "The controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-096",
+      "title": "Applicant reaches the maintain cross-cutting issue scores page from the home page and confirms the controls are visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the maintain cross-cutting issue scores page from the home page and confirms the controls are visible - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Maintain Cross-Cutting Issue Scores in the main menu",
+          "expected": "The Maintain Cross-Cutting Issue Scores page is displayed"
+        },
+        {
+          "action": "Check the maintain cross-cutting issue scores page content",
+          "expected": "The controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-122",
+      "title": "Applicant opens the maintain cross-cutting issue scores page directly and confirms the page remains stable after navigat",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain cross-cutting issue scores page directly and confirms the page remains stable after navigation - features/maintain-cross-cutting-issue-scores/maintain-cross-cutting-issue-scores.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain cross-cutting issue scores page",
+          "expected": "The maintain cross-cutting issue scores page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain cross-cutting issue scores page is displayed"
+        },
+        {
+          "action": "Check the maintain cross-cutting issue scores page content",
+          "expected": "The controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

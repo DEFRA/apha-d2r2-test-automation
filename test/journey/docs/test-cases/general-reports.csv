@@ -1,0 +1,21 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the general reports page and sees the report list,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the general reports page,The general reports page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The general reports page is displayed,,,
+,,,Step 4,Check the general reports page content,The report links are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant reaches the general reports page from the home page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click General Reports in the main menu,The General Reports page is displayed,,,
+,,,Step 4,Check the page that is displayed,The general reports page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the general reports page directly and confirms the report list remains visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the general reports page,The general reports page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The general reports page is displayed,,,
+,,,Step 4,Check the general reports page content,The report links are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the general reports page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the general reports page,The general reports page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The general reports page is displayed,,,
+,,,Step 4,Check the general reports page content,The report links are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

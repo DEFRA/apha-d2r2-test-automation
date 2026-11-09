@@ -1,0 +1,5 @@
+{
+  "_comment": "Known accessibility violations per profile, written by scripts/a11y-baseline.js --update. In legacy the suite fails only on violations that are absent here.",
+  "legacy": [],
+  "gds": []
+}

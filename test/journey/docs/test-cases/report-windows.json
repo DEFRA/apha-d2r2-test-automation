@@ -1,0 +1,449 @@
+{
+  "story_summary": "Manual cases for the report-windows journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the terrestrial disease ranking report - features/report-windows/report-windows.feature:6",
+      "test_cases": [
+        "Applicant opens the terrestrial disease ranking report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the aquatic disease ranking report - features/report-windows/report-windows.feature:12",
+      "test_cases": [
+        "Applicant opens the aquatic disease ranking report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the terrestrial disease ranking RFI report - features/report-windows/report-windows.feature:18",
+      "test_cases": [
+        "Applicant opens the terrestrial disease ranking RFI report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the aquatic disease ranking RFI report - features/report-windows/report-windows.feature:24",
+      "test_cases": [
+        "Applicant opens the aquatic disease ranking RFI report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant generates the full profile guidance report - features/report-windows/report-windows.feature:30",
+      "test_cases": [
+        "Applicant generates the full profile guidance report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant generates the summary profile guidance report - features/report-windows/report-windows.feature:36",
+      "test_cases": [
+        "Applicant generates the summary profile guidance report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant generates the SPR guidance report - features/report-windows/report-windows.feature:42",
+      "test_cases": [
+        "Applicant generates the SPR guidance report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant generates the Q and A sheet guidance report - features/report-windows/report-windows.feature:48",
+      "test_cases": [
+        "Applicant generates the Q and A sheet guidance report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens a static report from the general reports page - features/report-windows/report-windows.feature:54",
+      "test_cases": [
+        "Applicant opens a static report from the general reports page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant prints the category variables for a prioritisation category - features/report-windows/report-windows.feature:60",
+      "test_cases": [
+        "Applicant prints the category variables for a prioritisation category"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens a published profile report from the profile reports page - features/report-windows/report-windows.feature:66",
+      "test_cases": [
+        "Applicant opens a published profile report from the profile reports page"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-153",
+      "title": "Applicant opens the terrestrial disease ranking report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the terrestrial disease ranking report - features/report-windows/report-windows.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select \"Disease ranking report: Terrestrial diseases\" in the disease ranking report list",
+          "expected": "A new browser window opens for the report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowDiseaseRankingReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-154",
+      "title": "Applicant opens the aquatic disease ranking report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the aquatic disease ranking report - features/report-windows/report-windows.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select \"Disease ranking report: Aquatic diseases\" in the disease ranking report list",
+          "expected": "A new browser window opens for the report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowDiseaseRankingReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-155",
+      "title": "Applicant opens the terrestrial disease ranking RFI report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the terrestrial disease ranking RFI report - features/report-windows/report-windows.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select \"Disease ranking report: Terrestrial diseases\" in the RFI report list",
+          "expected": "A new browser window opens for the report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowDiseaseRankingRFIReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-156",
+      "title": "Applicant opens the aquatic disease ranking RFI report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the aquatic disease ranking RFI report - features/report-windows/report-windows.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select \"Disease ranking report: Aquatic diseases\" in the RFI report list",
+          "expected": "A new browser window opens for the report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowDiseaseRankingRFIReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-157",
+      "title": "Applicant generates the full profile guidance report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant generates the full profile guidance report - features/report-windows/report-windows.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the questions and guidance reports page",
+          "expected": "The questions and guidance reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Full profile guidance report button",
+          "expected": "A new browser window opens for the guidance report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowProfileGuidanceReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-158",
+      "title": "Applicant generates the summary profile guidance report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant generates the summary profile guidance report - features/report-windows/report-windows.feature:36"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the questions and guidance reports page",
+          "expected": "The questions and guidance reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Summary profile guidance report button",
+          "expected": "A new browser window opens for the guidance report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowProfileGuidanceReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-159",
+      "title": "Applicant generates the SPR guidance report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant generates the SPR guidance report - features/report-windows/report-windows.feature:42"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the questions and guidance reports page",
+          "expected": "The questions and guidance reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the SPR guidance report button",
+          "expected": "A new browser window opens for the guidance report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowProfileGuidanceReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-160",
+      "title": "Applicant generates the Q and A sheet guidance report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant generates the Q and A sheet guidance report - features/report-windows/report-windows.feature:48"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the questions and guidance reports page",
+          "expected": "The questions and guidance reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Q&A sheet guidance report button",
+          "expected": "A new browser window opens for the guidance report"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowProfileGuidanceReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-161",
+      "title": "Applicant opens a static report from the general reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens a static report from the general reports page - features/report-windows/report-windows.feature:54"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the general reports page",
+          "expected": "The general reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the title of the first report in the general reports list",
+          "expected": "The report opens in a new browser window"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowStaticReport report"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-162",
+      "title": "Applicant prints the category variables for a prioritisation category",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant prints the category variables for a prioritisation category - features/report-windows/report-windows.feature:60"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain profile prioritisation variables page",
+          "expected": "The maintain profile prioritisation variables page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select the first category in the prioritisation categories list",
+          "expected": "The variables for the category are listed"
+        },
+        {
+          "action": "Click the Print category variables button",
+          "expected": "A new browser window opens for the print version"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the PrintPrioritisationVariables report"
+        }
+      ]
+    },
+    {
+      "ref": "TC-163",
+      "title": "Applicant opens a published profile report from the profile reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens a published profile report from the profile reports page - features/report-windows/report-windows.feature:66"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the link to the profile reports (View reports) for the first result",
+          "expected": "The Profile reports page is displayed"
+        },
+        {
+          "action": "Click the title of the first report in the Profile reports list",
+          "expected": "The report opens in a new browser window"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowPublishedProfile report"
+        }
+      ]
+    }
+  ]
+}

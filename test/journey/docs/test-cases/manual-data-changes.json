@@ -1,0 +1,856 @@
+{
+  "story_summary": "Manual-only cases for create, update, delete flows and remaining form rules that change data.",
+  "assumptions": [
+    "Run on UAT. Values in angle brackets are replaced with real accounts or data before execution",
+    "Cases that change data use synthetic titles starting \"ADO-TEST\" and restore or delete their data at the end",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [
+    "Which accounts exist for each role, and what is the role-to-menu matrix?",
+    "Which UAT records may be created, changed and deleted by testers?"
+  ],
+  "coverage": [
+    {
+      "ac": "DERIVED: app/Profiles.Web/ProfileProperties.aspx.vb:20,113 (Create profile)",
+      "test_cases": [
+        "Verify a profile can be created with a title and appears in the search"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/EditProfileTitle.aspx.vb:46-51",
+      "test_cases": [
+        "Verify a profile title of 255 characters can be saved"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/EditProfileTitle.aspx.vb:46",
+      "test_cases": [
+        "Verify a profile title of 256 characters is rejected"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ProfileProperties.aspx.vb:31-36",
+      "test_cases": [
+        "Verify a new profile can be cloned from an existing version"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ProfileProperties.aspx.vb:31-36",
+      "test_cases": [
+        "Verify a new scenario can be cloned from an existing version"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ManageProfile.aspx.vb:198",
+      "test_cases": [
+        "Verify the profile status can be changed on the Manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ManageProfile.aspx:lnkDelete, ManageProfile.aspx.vb:114",
+      "test_cases": [
+        "Verify a draft version can be deleted after the confirmation prompt"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx:60-117, MaintainGlobalUsers.aspx.vb:151",
+      "test_cases": [
+        "Verify a global user can be added with all required details and then revoked"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx:81-92",
+      "test_cases": [
+        "Verify the global user full name is required and limited to 100 characters"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx:81-92",
+      "test_cases": [
+        "Verify the global user organisation is required and limited to 100 characters"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainExternalUsers.aspx:133,149 and .vb:283,382",
+      "test_cases": [
+        "Verify an external user change is saved only after OK and validates role and sections"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainReferenceData.aspx:103-119, .vb:242",
+      "test_cases": [
+        "Verify a reference value can be added with a new value and a reason"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainReferenceData.aspx:103-119",
+      "test_cases": [
+        "Verify a reference value change needs a new value and a reason"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainSpeciesData.aspx.vb:182-245",
+      "test_cases": [
+        "Verify species maintenance asks for a species before edit, inactivate or delete"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainSpeciesData.aspx.vb:100-118, SpeciesDataAuditTrail.aspx",
+      "test_cases": [
+        "Verify a species can be edited and the change appears in the species audit trail"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/EditProfileReviewComments.aspx.vb:178-226",
+      "test_cases": [
+        "Verify a review comment can be edited and deleted"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainPrioritisationVariables.aspx.vb:151,183",
+      "test_cases": [
+        "Verify prioritisation variables can be saved and the criterion text is limited to 255 characters"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainCrossCuttingIssueScores.aspx.vb:119-125",
+      "test_cases": [
+        "Verify cross-cutting issue scores report when there is nothing to save and when they are saved"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/StaticReports.aspx.vb:134,182-191",
+      "test_cases": [
+        "Verify a static report can be uploaded and its version deleted"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/StaticReports.aspx.vb:187-191",
+      "test_cases": [
+        "Verify a static report upload fails with a message for an unsupported file"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "MT-026",
+      "title": "Verify a profile can be created with a title and appears in the search",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ProfileProperties.aspx.vb:20,113 (Create profile)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Create Profile in the main menu",
+          "expected": "The Create new profile page is displayed"
+        },
+        {
+          "action": "Enter \"ADO-TEST <unique test title with date>\" in the profile title",
+          "expected": "The title is shown in the title box"
+        },
+        {
+          "action": "Click the Create profile button",
+          "expected": "The profile is created and a confirmation or the Manage profile page is displayed"
+        },
+        {
+          "action": "Open Search disease profiles, search for the new title and click Search profiles",
+          "expected": "The new profile is listed in the results"
+        },
+        {
+          "action": "Delete the profile version created for this test (Manage profile, Delete)",
+          "expected": "The test data is removed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-027",
+      "title": "Verify a profile title of 255 characters can be saved",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/EditProfileTitle.aspx.vb:46-51"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Search for <test profile> and click Edit Title on the first result",
+          "expected": "The Edit profile title page is displayed"
+        },
+        {
+          "action": "Enter a title of exactly 255 characters",
+          "expected": "The title shows 255 characters"
+        },
+        {
+          "action": "Click Save",
+          "expected": "The message \"The profile title was successfully updated\" is displayed"
+        },
+        {
+          "action": "Restore the original title and click Save",
+          "expected": "The message \"The profile title was successfully updated\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-028",
+      "title": "Verify a profile title of 256 characters is rejected",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/EditProfileTitle.aspx.vb:46"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Search for <test profile> and click Edit Title on the first result",
+          "expected": "The Edit profile title page is displayed"
+        },
+        {
+          "action": "Enter a title of exactly 256 characters",
+          "expected": "The title shows the entered characters"
+        },
+        {
+          "action": "Click Save",
+          "expected": "The message \"Profile save failed: Title cannot exceed 255 characters\" is displayed"
+        },
+        {
+          "action": "Search for <test profile> again",
+          "expected": "The profile still shows its original title"
+        }
+      ]
+    },
+    {
+      "ref": "MT-029",
+      "title": "Verify a new profile can be cloned from an existing version",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ProfileProperties.aspx.vb:31-36"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Search for <test profile> and click Manage on the first result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Clone new profile link",
+          "expected": "The properties page shows \"The new profile will be cloned from:\" followed by the source version"
+        },
+        {
+          "action": "Enter \"ADO-TEST <unique test title with date>\" as the title",
+          "expected": "The title is shown in the title box"
+        },
+        {
+          "action": "Click the Create profile button",
+          "expected": "The new profile is created"
+        },
+        {
+          "action": "Delete the version created for this test",
+          "expected": "The test data is removed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-030",
+      "title": "Verify a new scenario can be cloned from an existing version",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ProfileProperties.aspx.vb:31-36"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Search for <test profile> and click Manage on the first result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Clone new scenario link",
+          "expected": "The properties page shows \"The new scenario will be cloned from:\" followed by the source version"
+        },
+        {
+          "action": "Enter \"ADO-TEST <unique test title with date>\" as the title",
+          "expected": "The title is shown in the title box"
+        },
+        {
+          "action": "Click the Create profile button",
+          "expected": "The new scenario is created"
+        },
+        {
+          "action": "Delete the version created for this test",
+          "expected": "The test data is removed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-031",
+      "title": "Verify the profile status can be changed on the Manage profile page",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ManageProfile.aspx.vb:198"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Search for <test profile> and click Manage on the first result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Select a different value in the profile status list",
+          "expected": "The new status is selected"
+        },
+        {
+          "action": "Save the change",
+          "expected": "The message \"Successfully updated the profile status.\" is displayed"
+        },
+        {
+          "action": "Select the original status and save",
+          "expected": "The message \"Successfully updated the profile status.\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-032",
+      "title": "Verify a draft version can be deleted after the confirmation prompt",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ManageProfile.aspx:lnkDelete, ManageProfile.aspx.vb:114"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Manage profile page for <test profile> that has a draft version",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Delete link",
+          "expected": "A confirmation prompt asking whether to delete the version is displayed"
+        },
+        {
+          "action": "Click Cancel on the prompt",
+          "expected": "The version is not deleted"
+        },
+        {
+          "action": "Click the Delete link again and confirm",
+          "expected": "The draft version is removed and the page no longer lists it"
+        }
+      ]
+    },
+    {
+      "ref": "MT-033",
+      "title": "Verify a global user can be added with all required details and then revoked",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx:60-117, MaintainGlobalUsers.aspx.vb:151"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click Add, enter <test username Domain\\UserId> and click Look up",
+          "expected": "The full name, organisation and role fields are enabled"
+        },
+        {
+          "action": "Enter a full name, an organisation and select Profile editor in the Role list",
+          "expected": "The values are shown"
+        },
+        {
+          "action": "Click OK",
+          "expected": "The user appears in the global users list"
+        },
+        {
+          "action": "Click Delete for the new user and confirm",
+          "expected": "The message \"The user's global role was successfully revoked\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-034",
+      "title": "Verify the global user full name is required and limited to 100 characters",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx:81-92"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click Add, enter <test username Domain\\UserId> and click Look up",
+          "expected": "The full name field is enabled"
+        },
+        {
+          "action": "Leave the full name empty, fill the other fields and click OK",
+          "expected": "The message \"Please enter a full name\" is displayed and the user is not added"
+        },
+        {
+          "action": "Enter 101 characters in the full name field",
+          "expected": "The field holds 100 characters"
+        },
+        {
+          "action": "Click Cancel",
+          "expected": "The form closes and no user is added"
+        }
+      ]
+    },
+    {
+      "ref": "MT-035",
+      "title": "Verify the global user organisation is required and limited to 100 characters",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx:81-92"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click Add, enter <test username Domain\\UserId> and click Look up",
+          "expected": "The organisation field is enabled"
+        },
+        {
+          "action": "Leave the organisation empty, fill the other fields and click OK",
+          "expected": "The message \"Please enter an organisation\" is displayed and the user is not added"
+        },
+        {
+          "action": "Enter 101 characters in the organisation field",
+          "expected": "The field holds 100 characters"
+        },
+        {
+          "action": "Click Cancel",
+          "expected": "The form closes and no user is added"
+        }
+      ]
+    },
+    {
+      "ref": "MT-036",
+      "title": "Verify an external user change is saved only after OK and validates role and sections",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainExternalUsers.aspx:133,149 and .vb:283,382"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the external user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click External Users in the main menu",
+          "expected": "The Maintain external users page is displayed"
+        },
+        {
+          "action": "Click Edit for <test external user>",
+          "expected": "The profiles for that user are listed"
+        },
+        {
+          "action": "Click Add for a profile and click OK without choosing a role",
+          "expected": "The message \"Please select a valid role.\" is displayed"
+        },
+        {
+          "action": "Choose a role, untick every section and click OK",
+          "expected": "The message \"At least one section must be ticked.\" is displayed"
+        },
+        {
+          "action": "Tick at least one section and click OK, then save the user",
+          "expected": "The message \"The changes to the external user were saved successfully.\" is displayed"
+        },
+        {
+          "action": "Make a change and leave without clicking OK",
+          "expected": "The message \"You have pending changes. To save these changes, click the OK button.\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-037",
+      "title": "Verify a reference value can be added with a new value and a reason",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainReferenceData.aspx:103-119, .vb:242"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the reference data administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Maintain Reference Data in the main menu",
+          "expected": "The Maintain reference data page is displayed"
+        },
+        {
+          "action": "Select the <reference table> and click Add reference value",
+          "expected": "The new value and reason fields are enabled"
+        },
+        {
+          "action": "Enter \"ADO-TEST <unique value>\" in the new value field and a reason in the reason field",
+          "expected": "The values are shown"
+        },
+        {
+          "action": "Click Save",
+          "expected": "The message \"Reference value change successfully saved\" is displayed"
+        },
+        {
+          "action": "Click View audit trail",
+          "expected": "The audit trail lists the change with the reason entered"
+        }
+      ]
+    },
+    {
+      "ref": "MT-038",
+      "title": "Verify a reference value change needs a new value and a reason",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainReferenceData.aspx:103-119"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the reference data administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Maintain Reference Data in the main menu",
+          "expected": "The Maintain reference data page is displayed"
+        },
+        {
+          "action": "Select the <reference table> and click Add reference value",
+          "expected": "The new value and reason fields are enabled"
+        },
+        {
+          "action": "Leave both fields empty and click Save",
+          "expected": "The messages \"You need to provide a new value\" and \"You need to provide a reason for this change\" are displayed"
+        },
+        {
+          "action": "Enter 256 characters in the new value field",
+          "expected": "The field holds 255 characters"
+        },
+        {
+          "action": "Click Cancel",
+          "expected": "No reference value is added"
+        }
+      ]
+    },
+    {
+      "ref": "MT-039",
+      "title": "Verify species maintenance asks for a species before edit, inactivate or delete",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainSpeciesData.aspx.vb:182-245"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the species data administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Maintain Species Data in the main menu",
+          "expected": "The Maintain species data page is displayed"
+        },
+        {
+          "action": "Click Edit without selecting a species",
+          "expected": "The message \"Please select a species to edit\" is displayed"
+        },
+        {
+          "action": "Click Inactivate without selecting a species",
+          "expected": "The message \"Please select a species to inactivate\" is displayed"
+        },
+        {
+          "action": "Click Delete without selecting a species",
+          "expected": "The message \"Please select a species to delete\" is displayed"
+        },
+        {
+          "action": "Check the species list",
+          "expected": "No species is changed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-040",
+      "title": "Verify a species can be edited and the change appears in the species audit trail",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainSpeciesData.aspx.vb:100-118, SpeciesDataAuditTrail.aspx"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the species data administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Maintain Species Data in the main menu",
+          "expected": "The Maintain species data page is displayed"
+        },
+        {
+          "action": "Select <test species> and click Edit",
+          "expected": "The edit form opens with the current name"
+        },
+        {
+          "action": "Change the name to \"ADO-TEST <unique name>\" and click Save",
+          "expected": "The change is saved"
+        },
+        {
+          "action": "Click View audit trail",
+          "expected": "The species audit trail lists the change"
+        },
+        {
+          "action": "Restore the original name and click Save",
+          "expected": "The original name is shown"
+        }
+      ]
+    },
+    {
+      "ref": "MT-041",
+      "title": "Verify a review comment can be edited and deleted",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/EditProfileReviewComments.aspx.vb:178-226"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Browse profile page for a draft version and click the Review comments tab",
+          "expected": "The review comments are listed"
+        },
+        {
+          "action": "Click Edit for <test review comment>",
+          "expected": "The panel heading \"Edit review comment\" is displayed"
+        },
+        {
+          "action": "Change the comment text and click Save",
+          "expected": "The message \"Review comment save succeeded\" is displayed"
+        },
+        {
+          "action": "Click Delete for the same comment and confirm",
+          "expected": "The message \"Review comment deletion succeeded\" is displayed"
+        },
+        {
+          "action": "Check the review comments list",
+          "expected": "The comment is no longer listed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-042",
+      "title": "Verify prioritisation variables can be saved and the criterion text is limited to 255 characters",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainPrioritisationVariables.aspx.vb:151,183"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the prioritisation administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Maintain Prioritisation Variables in the main menu",
+          "expected": "The Maintain profile prioritisation variables page is displayed"
+        },
+        {
+          "action": "Select <category> in the prioritisation categories list",
+          "expected": "The variables for the category are listed"
+        },
+        {
+          "action": "Enter 256 characters in a criterion text",
+          "expected": "The validation message \"The criterion text must be no longer than 255 characters\" is displayed"
+        },
+        {
+          "action": "Enter a valid criterion text of 255 characters and click Update",
+          "expected": "The message \"Your changes were successfully saved\" is displayed"
+        },
+        {
+          "action": "Restore the original criterion text and click Update",
+          "expected": "The message \"Your changes were successfully saved\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-043",
+      "title": "Verify cross-cutting issue scores report when there is nothing to save and when they are saved",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainCrossCuttingIssueScores.aspx.vb:119-125"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the prioritisation administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Maintain Cross-Cutting Issue Scores in the main menu",
+          "expected": "The Maintain cross-cutting issue scores page is displayed"
+        },
+        {
+          "action": "Click Update without changing any score",
+          "expected": "The message \"There are no changes to save\" is displayed"
+        },
+        {
+          "action": "Change one score and click Update",
+          "expected": "The message \"Your changes were successfully saved\" is displayed"
+        },
+        {
+          "action": "Restore the original score and click Update",
+          "expected": "The message \"Your changes were successfully saved\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-044",
+      "title": "Verify a static report can be uploaded and its version deleted",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/StaticReports.aspx.vb:134,182-191"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the static report administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click General Reports in the main menu",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Click Browse for the upload and choose <synthetic test report file>",
+          "expected": "The file name is shown"
+        },
+        {
+          "action": "Enter a title if requested and click Add",
+          "expected": "The message \"The report was uploaded successfully\" is displayed"
+        },
+        {
+          "action": "Click the title of the new report",
+          "expected": "The report opens in a new browser window"
+        },
+        {
+          "action": "Click Delete for the new version",
+          "expected": "The message \"The report version was successfully deleted\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-045",
+      "title": "Verify a static report upload fails with a message for an unsupported file",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/StaticReports.aspx.vb:187-191"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the static report administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click General Reports in the main menu",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Choose <unsupported file type> in the upload field",
+          "expected": "The file name is shown"
+        },
+        {
+          "action": "Click Add",
+          "expected": "A message starting \"Failed to upload the report\" is displayed"
+        },
+        {
+          "action": "Check the reports list",
+          "expected": "No new report is listed"
+        }
+      ]
+    }
+  ]
+}

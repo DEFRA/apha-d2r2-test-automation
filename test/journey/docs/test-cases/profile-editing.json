@@ -1,0 +1,420 @@
+{
+  "story_summary": "Manual cases for the profile-editing journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the references tab from the browse profile page - features/profile-editing/profile-editing.feature:6",
+      "test_cases": [
+        "Applicant opens the references tab from the browse profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the further information tab from the browse profile page - features/profile-editing/profile-editing.feature:14",
+      "test_cases": [
+        "Applicant opens the further information tab from the browse profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the all revision dates tab from the browse profile page - features/profile-editing/profile-editing.feature:22",
+      "test_cases": [
+        "Applicant opens the all revision dates tab from the browse profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the contributions tab from the browse profile page - features/profile-editing/profile-editing.feature:30",
+      "test_cases": [
+        "Applicant opens the contributions tab from the browse profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile references page from the section links - features/profile-editing/profile-editing.feature:38",
+      "test_cases": [
+        "Applicant opens the profile references page from the section links"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the summary profile report from the section links - features/profile-editing/profile-editing.feature:46",
+      "test_cases": [
+        "Applicant opens the summary profile report from the section links"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the summary prioritisation report from the section links - features/profile-editing/profile-editing.feature:54",
+      "test_cases": [
+        "Applicant opens the summary prioritisation report from the section links"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the full profile print version from the section links - features/profile-editing/profile-editing.feature:62",
+      "test_cases": [
+        "Applicant opens the full profile print version from the section links"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-151",
+      "title": "Applicant opens the references tab from the browse profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the references tab from the browse profile page - features/profile-editing/profile-editing.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the References tab",
+          "expected": "The References tab content is displayed for the profile section"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit page for the \"References\" tab is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-144",
+      "title": "Applicant opens the further information tab from the browse profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the further information tab from the browse profile page - features/profile-editing/profile-editing.feature:14"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the Further information tab",
+          "expected": "The Further information tab content is displayed for the profile section"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit page for the \"Further information\" tab is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-152",
+      "title": "Applicant opens the all revision dates tab from the browse profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the all revision dates tab from the browse profile page - features/profile-editing/profile-editing.feature:22"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the All Revision dates tab",
+          "expected": "The All Revision dates tab content is displayed for the profile section"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit page for the \"All Revision dates\" tab is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-146",
+      "title": "Applicant opens the contributions tab from the browse profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the contributions tab from the browse profile page - features/profile-editing/profile-editing.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the Contributions tab",
+          "expected": "The Contributions tab content is displayed for the profile section"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit page for the \"Contributions\" tab is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-147",
+      "title": "Applicant opens the profile references page from the section links",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile references page from the section links - features/profile-editing/profile-editing.feature:38"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the Profile references link in the profile section links",
+          "expected": "The Profile references page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile references page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-148",
+      "title": "Applicant opens the summary profile report from the section links",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the summary profile report from the section links - features/profile-editing/profile-editing.feature:46"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the Summary profile report link in the profile section links",
+          "expected": "The Summary profile report page is displayed"
+        },
+        {
+          "action": "Check the report page that opened",
+          "expected": "The report page is displayed and no \"An error has occurred\" heading is shown"
+        }
+      ]
+    },
+    {
+      "ref": "TC-149",
+      "title": "Applicant opens the summary prioritisation report from the section links",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the summary prioritisation report from the section links - features/profile-editing/profile-editing.feature:54"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the Summary prioritisation report link in the profile section links",
+          "expected": "The Summary prioritisation report page is displayed"
+        },
+        {
+          "action": "Check the report page that opened",
+          "expected": "The report page is displayed and no \"An error has occurred\" heading is shown"
+        }
+      ]
+    },
+    {
+      "ref": "TC-150",
+      "title": "Applicant opens the full profile print version from the section links",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the full profile print version from the section links - features/profile-editing/profile-editing.feature:62"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the Print full profile link",
+          "expected": "A new browser window opens for the print version"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the full profile print version"
+        }
+      ]
+    }
+  ]
+}

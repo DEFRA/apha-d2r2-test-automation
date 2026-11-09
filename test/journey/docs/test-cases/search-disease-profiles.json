@@ -1,0 +1,910 @@
+{
+  "story_summary": "Manual cases for the search-disease-profiles journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the search page and sees the disease profile filters - features/search/search-disease-profiles.feature:6",
+      "test_cases": [
+        "Applicant opens the search page and sees the disease profile filters"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches for a disease profile by title - features/search/search-disease-profiles.feature:11",
+      "test_cases": [
+        "Applicant searches for a disease profile by title"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the search page by clicking from home and searches for a disease profile - features/search/search-disease-profiles.feature:17",
+      "test_cases": [
+        "Applicant reaches the search page by clicking from home and searches for a disease profile"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the search page directly and confirms the disease profile filters remain visible - features/search/search-disease-profiles.feature:25",
+      "test_cases": [
+        "Applicant opens the search page directly and confirms the disease profile filters remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the search page directly and confirms the page remains stable after navigation - features/search/search-disease-profiles.feature:30",
+      "test_cases": [
+        "Applicant opens the search page directly and confirms the page remains stable after navigation"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches for a disease profile and opens the manage page - features/search/search-disease-profiles.feature:35",
+      "test_cases": [
+        "Applicant searches for a disease profile and opens the manage page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain contributors page from a profile manage page - features/search/search-disease-profiles.feature:43",
+      "test_cases": [
+        "Applicant opens the maintain contributors page from a profile manage page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile properties page from a profile manage page - features/search/search-disease-profiles.feature:53",
+      "test_cases": [
+        "Applicant opens the profile properties page from a profile manage page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the contributions report from a profile manage page - features/search/search-disease-profiles.feature:63",
+      "test_cases": [
+        "Applicant opens the contributions report from a profile manage page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the edit profile title page from the search results - features/search/search-disease-profiles.feature:73",
+      "test_cases": [
+        "Applicant opens the edit profile title page from the search results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant tries to save a profile title without entering any text - features/search/search-disease-profiles.feature:81",
+      "test_cases": [
+        "Applicant tries to save a profile title without entering any text"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the browse profile page from the search results - features/search/search-disease-profiles.feature:90",
+      "test_cases": [
+        "Applicant opens the browse profile page from the search results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the review comments page from the browse profile page - features/search/search-disease-profiles.feature:98",
+      "test_cases": [
+        "Applicant opens the review comments page from the browse profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant tries to add a review comment without the required details - features/search/search-disease-profiles.feature:107",
+      "test_cases": [
+        "Applicant tries to add a review comment without the required details"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant adds a valid review comment to a profile section - features/search/search-disease-profiles.feature:119",
+      "test_cases": [
+        "Applicant adds a valid review comment to a profile section"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant tries to add a contributor without the required details - features/search/search-disease-profiles.feature:129",
+      "test_cases": [
+        "Applicant tries to add a contributor without the required details"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant clones a profile from the search results - features/search/search-disease-profiles.feature:141",
+      "test_cases": [
+        "Applicant clones a profile from the search results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant clones a scenario from the search results - features/search/search-disease-profiles.feature:149",
+      "test_cases": [
+        "Applicant clones a scenario from the search results"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-006",
+      "title": "Applicant opens the search page and sees the disease profile filters",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the search page and sees the disease profile filters - features/search/search-disease-profiles.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Check the search page content",
+          "expected": "The disease profile filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-007",
+      "title": "Applicant searches for a disease profile by title",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches for a disease profile by title - features/search/search-disease-profiles.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-030",
+      "title": "Applicant reaches the search page by clicking from home and searches for a disease profile",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the search page by clicking from home and searches for a disease profile - features/search/search-disease-profiles.feature:17"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Search Disease Profiles in the main menu",
+          "expected": "The Search Disease Profiles page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The search page is displayed"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-116",
+      "title": "Applicant opens the search page directly and confirms the disease profile filters remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the search page directly and confirms the disease profile filters remain visible - features/search/search-disease-profiles.feature:25"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Check the search page content",
+          "expected": "The disease profile filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-129",
+      "title": "Applicant opens the search page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the search page directly and confirms the page remains stable after navigation - features/search/search-disease-profiles.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Check the search page content",
+          "expected": "The disease profile filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-038",
+      "title": "Applicant searches for a disease profile and opens the manage page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches for a disease profile and opens the manage page - features/search/search-disease-profiles.feature:35"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-039",
+      "title": "Applicant opens the maintain contributors page from a profile manage page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain contributors page from a profile manage page - features/search/search-disease-profiles.feature:43"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Maintain contributors and reviewers link on the Manage profile page",
+          "expected": "The maintain contributors page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain contributors page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-040",
+      "title": "Applicant opens the profile properties page from a profile manage page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile properties page from a profile manage page - features/search/search-disease-profiles.feature:53"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Edit properties link on the Manage profile page",
+          "expected": "The profile properties page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-041",
+      "title": "Applicant opens the contributions report from a profile manage page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the contributions report from a profile manage page - features/search/search-disease-profiles.feature:63"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Contributions link on the Manage profile page",
+          "expected": "The contributions report is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The contributions report is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-042",
+      "title": "Applicant opens the edit profile title page from the search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the edit profile title page from the search results - features/search/search-disease-profiles.feature:73"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Edit Title link",
+          "expected": "The Edit profile title page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit profile title page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-073",
+      "title": "Applicant tries to save a profile title without entering any text",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant tries to save a profile title without entering any text - features/search/search-disease-profiles.feature:81"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Edit Title link",
+          "expected": "The Edit profile title page is displayed"
+        },
+        {
+          "action": "Clear the profile title and click Save",
+          "expected": "The title is not saved"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The title validation message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-067",
+      "title": "Applicant opens the browse profile page from the search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the browse profile page from the search results - features/search/search-disease-profiles.feature:90"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Browse profile link on the first search result",
+          "expected": "The profile questions page for that version is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The browse profile page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-069",
+      "title": "Applicant opens the review comments page from the browse profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the review comments page from the browse profile page - features/search/search-disease-profiles.feature:98"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Browse profile link on the first search result",
+          "expected": "The profile questions page for that version is displayed"
+        },
+        {
+          "action": "Click the Review comments tab",
+          "expected": "The review comments tab is displayed with the Add a review comment option"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The review comments page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-070",
+      "title": "Applicant tries to add a review comment without the required details",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant tries to add a review comment without the required details - features/search/search-disease-profiles.feature:107"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Browse profile link on the first search result",
+          "expected": "The profile questions page for that version is displayed"
+        },
+        {
+          "action": "Click the Review comments tab",
+          "expected": "The review comments tab is displayed with the Add a review comment option"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add review comment form opens with Subject, Reference and Comment fields"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The add review comment form is displayed"
+        },
+        {
+          "action": "Leave Subject, Reference and Comment empty and click Save",
+          "expected": "The form is not saved"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The review comment validation message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-071",
+      "title": "Applicant adds a valid review comment to a profile section",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant adds a valid review comment to a profile section - features/search/search-disease-profiles.feature:119"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Browse profile link on the first search result",
+          "expected": "The profile questions page for that version is displayed"
+        },
+        {
+          "action": "Click the Review comments tab",
+          "expected": "The review comments tab is displayed with the Add a review comment option"
+        },
+        {
+          "action": "Enter \"TC-071 subject\" in the Subject field",
+          "expected": "\"TC-071 subject\" is shown in the Subject field"
+        },
+        {
+          "action": "Enter \"TC-071 reference\" in the Reference field",
+          "expected": "\"TC-071 reference\" is shown in the Reference field"
+        },
+        {
+          "action": "Enter \"TC-071 test comment\" in the Comment field",
+          "expected": "\"TC-071 test comment\" is shown in the Comment field"
+        },
+        {
+          "action": "Click Save",
+          "expected": "The form closes and the comment is saved"
+        },
+        {
+          "action": "Check the review comments list",
+          "expected": "The new comment is listed with the entered subject"
+        }
+      ]
+    },
+    {
+      "ref": "TC-072",
+      "title": "Applicant tries to add a contributor without the required details",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant tries to add a contributor without the required details - features/search/search-disease-profiles.feature:129"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Maintain contributors and reviewers link on the Manage profile page",
+          "expected": "The maintain contributors page is displayed"
+        },
+        {
+          "action": "Click the Add a contributor option",
+          "expected": "The add contributor form is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The add contributor form is displayed"
+        },
+        {
+          "action": "Leave the required contributor fields empty and click Save",
+          "expected": "The contributor is not saved"
+        },
+        {
+          "action": "Check the validation message",
+          "expected": "A validation message for the contributor is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-065",
+      "title": "Applicant clones a profile from the search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant clones a profile from the search results - features/search/search-disease-profiles.feature:141"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Clone profile link (Clone new profile on the Manage page)",
+          "expected": "The Profile properties page is displayed for the new copy"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-066",
+      "title": "Applicant clones a scenario from the search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant clones a scenario from the search results - features/search/search-disease-profiles.feature:149"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Clone scenario link (Clone new scenario on the Manage page)",
+          "expected": "The Profile properties page is displayed for the new copy"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    }
+  ]
+}

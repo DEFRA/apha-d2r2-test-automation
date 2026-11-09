@@ -1,0 +1,207 @@
+{
+  "story_summary": "Manual cases for the review-timings journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the review timings page and sees the filters - features/review-timings/review-timings.feature:6",
+      "test_cases": [
+        "Applicant opens the review timings page and sees the filters"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the review timings page from the home page - features/review-timings/review-timings.feature:12",
+      "test_cases": [
+        "Applicant reaches the review timings page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the review timings page from the home page and confirms the filters are visible - features/review-timings/review-timings.feature:18",
+      "test_cases": [
+        "Applicant reaches the review timings page from the home page and confirms the filters are visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the review timings page directly and confirms the filters remain visible - features/review-timings/review-timings.feature:24",
+      "test_cases": [
+        "Applicant opens the review timings page directly and confirms the filters remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the review timings page directly and confirms the page remains stable after navigation - features/review-timings/review-timings.feature:30",
+      "test_cases": [
+        "Applicant opens the review timings page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-028",
+      "title": "Applicant opens the review timings page and sees the filters",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the review timings page and sees the filters - features/review-timings/review-timings.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the review timings page",
+          "expected": "The review timings page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The review timings page is displayed"
+        },
+        {
+          "action": "Check the review timings page content",
+          "expected": "The filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-082",
+      "title": "Applicant reaches the review timings page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the review timings page from the home page - features/review-timings/review-timings.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Review Timings in the main menu",
+          "expected": "The Review Timings page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The review timings page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-092",
+      "title": "Applicant reaches the review timings page from the home page and confirms the filters are visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the review timings page from the home page and confirms the filters are visible - features/review-timings/review-timings.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Review Timings in the main menu",
+          "expected": "The Review Timings page is displayed"
+        },
+        {
+          "action": "Check the review timings page content",
+          "expected": "The filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-107",
+      "title": "Applicant opens the review timings page directly and confirms the filters remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the review timings page directly and confirms the filters remain visible - features/review-timings/review-timings.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the review timings page",
+          "expected": "The review timings page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The review timings page is displayed"
+        },
+        {
+          "action": "Check the review timings page content",
+          "expected": "The filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-128",
+      "title": "Applicant opens the review timings page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the review timings page directly and confirms the page remains stable after navigation - features/review-timings/review-timings.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the review timings page",
+          "expected": "The review timings page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The review timings page is displayed"
+        },
+        {
+          "action": "Check the review timings page content",
+          "expected": "The filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

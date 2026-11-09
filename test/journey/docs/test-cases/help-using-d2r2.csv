@@ -1,0 +1,21 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the Help Using D2R2 page and sees the manuals,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the help using D2R2 page,The help using D2R2 page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The help using D2R2 page is displayed,,,
+,,,Step 4,Check the help using D2R2 page content,The manuals are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant reaches the Help Using D2R2 page by clicking from home and sees the manuals,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Help Using D2R2 in the main menu,The Help Using D2R2 page is displayed,,,
+,,,Step 4,Check the page that is displayed,The help page is displayed,,,
+,,,Step 5,Check the help using D2R2 page content,The manuals are visible,,,
+,Test Case,Applicant opens the Help Using D2R2 page directly and confirms the manuals remain visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the help using D2R2 page,The help using D2R2 page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The help using D2R2 page is displayed,,,
+,,,Step 4,Check the help using D2R2 page content,The manuals are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the Help Using D2R2 page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the help using D2R2 page,The help using D2R2 page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The help using D2R2 page is displayed,,,
+,,,Step 4,Check the help using D2R2 page content,The manuals are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

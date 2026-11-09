@@ -1,0 +1,129 @@
+{
+  "story_summary": "Manual cases for the create-disease-ranking-filter journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the disease ranking filter page and sees the filter controls - features/disease-ranking/create-disease-ranking-filter.feature:6",
+      "test_cases": [
+        "Applicant opens the disease ranking filter page and sees the filter controls"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the disease ranking filter page directly and confirms the filter controls remain visible - features/disease-ranking/create-disease-ranking-filter.feature:12",
+      "test_cases": [
+        "Applicant opens the disease ranking filter page directly and confirms the filter controls remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the disease ranking filter page directly and confirms the page remains stable after navigation - features/disease-ranking/create-disease-ranking-filter.feature:18",
+      "test_cases": [
+        "Applicant opens the disease ranking filter page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-018",
+      "title": "Applicant opens the disease ranking filter page and sees the filter controls",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the disease ranking filter page and sees the filter controls - features/disease-ranking/create-disease-ranking-filter.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the create disease ranking filter page",
+          "expected": "The create disease ranking filter page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create disease ranking filter page is displayed"
+        },
+        {
+          "action": "Check the create disease ranking filter page content",
+          "expected": "The filter controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-106",
+      "title": "Applicant opens the disease ranking filter page directly and confirms the filter controls remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the disease ranking filter page directly and confirms the filter controls remain visible - features/disease-ranking/create-disease-ranking-filter.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the create disease ranking filter page",
+          "expected": "The create disease ranking filter page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create disease ranking filter page is displayed"
+        },
+        {
+          "action": "Check the create disease ranking filter page content",
+          "expected": "The filter controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-132",
+      "title": "Applicant opens the disease ranking filter page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the disease ranking filter page directly and confirms the page remains stable after navigation - features/disease-ranking/create-disease-ranking-filter.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the create disease ranking filter page",
+          "expected": "The create disease ranking filter page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create disease ranking filter page is displayed"
+        },
+        {
+          "action": "Check the create disease ranking filter page content",
+          "expected": "The filter controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

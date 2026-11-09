@@ -1,0 +1,168 @@
+{
+  "story_summary": "Manual cases for the view-species-data journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the view species data page and sees the species lookup - features/view-species-data/view-species-data.feature:6",
+      "test_cases": [
+        "Applicant opens the view species data page and sees the species lookup"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the view species data page from the home page - features/view-species-data/view-species-data.feature:12",
+      "test_cases": [
+        "Applicant reaches the view species data page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the view species data page directly and confirms the species lookup remains visible - features/view-species-data/view-species-data.feature:18",
+      "test_cases": [
+        "Applicant opens the view species data page directly and confirms the species lookup remains visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the view species data page directly and confirms the page remains stable after navigation - features/view-species-data/view-species-data.feature:24",
+      "test_cases": [
+        "Applicant opens the view species data page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-089",
+      "title": "Applicant opens the view species data page and sees the species lookup",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the view species data page and sees the species lookup - features/view-species-data/view-species-data.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The view species data page is displayed"
+        },
+        {
+          "action": "Check the view species data page content",
+          "expected": "The species filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-090",
+      "title": "Applicant reaches the view species data page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the view species data page from the home page - features/view-species-data/view-species-data.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click View Species Data in the main menu",
+          "expected": "The View Species Data page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The view species data page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-109",
+      "title": "Applicant opens the view species data page directly and confirms the species lookup remains visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the view species data page directly and confirms the species lookup remains visible - features/view-species-data/view-species-data.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The view species data page is displayed"
+        },
+        {
+          "action": "Check the view species data page content",
+          "expected": "The species filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-130",
+      "title": "Applicant opens the view species data page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the view species data page directly and confirms the page remains stable after navigation - features/view-species-data/view-species-data.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The view species data page is displayed"
+        },
+        {
+          "action": "Check the view species data page content",
+          "expected": "The species filters are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "story_summary": "Manual cases for the disease-ranking journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the disease ranking page and sees the report selectors - features/disease-ranking/disease-ranking.feature:6",
+      "test_cases": [
+        "Applicant opens the disease ranking page and sees the report selectors"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses a disease ranking report option - features/disease-ranking/disease-ranking.feature:11",
+      "test_cases": [
+        "Applicant chooses a disease ranking report option"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the disease ranking page by clicking from home and chooses a report option - features/disease-ranking/disease-ranking.feature:17",
+      "test_cases": [
+        "Applicant reaches the disease ranking page by clicking from home and chooses a report option"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the disease ranking page directly and confirms the page remains stable after navigation - features/disease-ranking/disease-ranking.feature:25",
+      "test_cases": [
+        "Applicant opens the disease ranking page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-011",
+      "title": "Applicant opens the disease ranking page and sees the report selectors",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the disease ranking page and sees the report selectors - features/disease-ranking/disease-ranking.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the disease ranking page content",
+          "expected": "The report selectors are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-012",
+      "title": "Applicant chooses a disease ranking report option",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses a disease ranking report option - features/disease-ranking/disease-ranking.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select \"Disease ranking report: Terrestrial diseases\" in the disease ranking report list",
+          "expected": "The option \"Disease ranking report: Terrestrial diseases\" is shown as selected"
+        },
+        {
+          "action": "Check the report selector",
+          "expected": "\"Disease ranking report: Terrestrial diseases\" remains selected"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-033",
+      "title": "Applicant reaches the disease ranking page by clicking from home and chooses a report option",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the disease ranking page by clicking from home and chooses a report option - features/disease-ranking/disease-ranking.feature:17"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Disease Ranking Report in the main menu",
+          "expected": "The Disease Ranking Report page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The disease ranking page is displayed"
+        },
+        {
+          "action": "Select \"Disease ranking report: Terrestrial diseases\" in the disease ranking report list",
+          "expected": "The option \"Disease ranking report: Terrestrial diseases\" is shown as selected"
+        },
+        {
+          "action": "Check the report selector",
+          "expected": "\"Disease ranking report: Terrestrial diseases\" remains selected"
+        }
+      ]
+    },
+    {
+      "ref": "TC-131",
+      "title": "Applicant opens the disease ranking page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the disease ranking page directly and confirms the page remains stable after navigation - features/disease-ranking/disease-ranking.feature:25"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the disease ranking page",
+          "expected": "The disease ranking page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the disease ranking page content",
+          "expected": "The report selectors are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

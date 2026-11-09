@@ -1,0 +1,681 @@
+{
+  "story_summary": "Manual cases for the profile-management journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the manage profile page and sees the management actions - features/profile-management/profile-management.feature:6",
+      "test_cases": [
+        "Applicant opens the manage profile page and sees the management actions"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the manage profile page directly and confirms the management actions remain visible - features/profile-management/profile-management.feature:13",
+      "test_cases": [
+        "Applicant opens the manage profile page directly and confirms the management actions remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the manage profile page directly and confirms the management route remains stable after navigation - features/profile-management/profile-management.feature:18",
+      "test_cases": [
+        "Applicant opens the manage profile page directly and confirms the management route remains stable after navigation"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain contributors page from the manage profile page - features/profile-management/profile-management.feature:23",
+      "test_cases": [
+        "Applicant opens the maintain contributors page from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile properties page from the manage profile page - features/profile-management/profile-management.feature:31",
+      "test_cases": [
+        "Applicant opens the profile properties page from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the contributions report from the manage profile page - features/profile-management/profile-management.feature:39",
+      "test_cases": [
+        "Applicant opens the contributions report from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant clones a new profile from the manage profile page - features/profile-management/profile-management.feature:47",
+      "test_cases": [
+        "Applicant clones a new profile from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant clones a new scenario from the manage profile page - features/profile-management/profile-management.feature:55",
+      "test_cases": [
+        "Applicant clones a new scenario from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile reports page from the search result - features/profile-management/profile-management.feature:63",
+      "test_cases": [
+        "Applicant opens the profile reports page from the search result"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the bespoke report builder from the profile reports page - features/profile-management/profile-management.feature:70",
+      "test_cases": [
+        "Applicant opens the bespoke report builder from the profile reports page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant browses the profile from the profile reports page - features/profile-management/profile-management.feature:78",
+      "test_cases": [
+        "Applicant browses the profile from the profile reports page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile reports page from the manage profile page - features/profile-management/profile-management.feature:86",
+      "test_cases": [
+        "Applicant opens the profile reports page from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the bespoke report builder from the manage profile page - features/profile-management/profile-management.feature:94",
+      "test_cases": [
+        "Applicant opens the bespoke report builder from the manage profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile reports page directly and confirms the route remains stable - features/profile-management/profile-management.feature:103",
+      "test_cases": [
+        "Applicant opens the profile reports page directly and confirms the route remains stable"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the bespoke report builder directly and confirms the route remains stable - features/profile-management/profile-management.feature:108",
+      "test_cases": [
+        "Applicant opens the bespoke report builder directly and confirms the route remains stable"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-043",
+      "title": "Applicant opens the manage profile page and sees the management actions",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the manage profile page and sees the management actions - features/profile-management/profile-management.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-117",
+      "title": "Applicant opens the manage profile page directly and confirms the management actions remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the manage profile page directly and confirms the management actions remain visible - features/profile-management/profile-management.feature:13"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the manage profile page",
+          "expected": "The manage profile page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-137",
+      "title": "Applicant opens the manage profile page directly and confirms the management route remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the manage profile page directly and confirms the management route remains stable after navigation - features/profile-management/profile-management.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the manage profile page",
+          "expected": "The manage profile page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-044",
+      "title": "Applicant opens the maintain contributors page from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain contributors page from the manage profile page - features/profile-management/profile-management.feature:23"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Maintain contributors and reviewers link on the Manage profile page",
+          "expected": "The maintain contributors page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain contributors page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-045",
+      "title": "Applicant opens the profile properties page from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile properties page from the manage profile page - features/profile-management/profile-management.feature:31"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Edit properties link on the Manage profile page",
+          "expected": "The profile properties page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-046",
+      "title": "Applicant opens the contributions report from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the contributions report from the manage profile page - features/profile-management/profile-management.feature:39"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Contributions link on the Manage profile page",
+          "expected": "The contributions report is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The contributions report is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-057",
+      "title": "Applicant clones a new profile from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant clones a new profile from the manage profile page - features/profile-management/profile-management.feature:47"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Clone profile link (Clone new profile on the Manage page)",
+          "expected": "The Profile properties page is displayed for the new copy"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-058",
+      "title": "Applicant clones a new scenario from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant clones a new scenario from the manage profile page - features/profile-management/profile-management.feature:55"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Clone scenario link (Clone new scenario on the Manage page)",
+          "expected": "The Profile properties page is displayed for the new copy"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-059",
+      "title": "Applicant opens the profile reports page from the search result",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile reports page from the search result - features/profile-management/profile-management.feature:63"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the link to the profile reports (View reports) for the first result",
+          "expected": "The Profile reports page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile reports page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-060",
+      "title": "Applicant opens the bespoke report builder from the profile reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the bespoke report builder from the profile reports page - features/profile-management/profile-management.feature:70"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the link to the profile reports (View reports) for the first result",
+          "expected": "The Profile reports page is displayed"
+        },
+        {
+          "action": "Click the Create bespoke report button",
+          "expected": "The Create bespoke report page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create bespoke report page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-068",
+      "title": "Applicant browses the profile from the profile reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant browses the profile from the profile reports page - features/profile-management/profile-management.feature:78"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the link to the profile reports (View reports) for the first result",
+          "expected": "The Profile reports page is displayed"
+        },
+        {
+          "action": "Click the Browse profile link on the Profile reports page",
+          "expected": "The profile questions page for that version is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The browse profile page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-062",
+      "title": "Applicant opens the profile reports page from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile reports page from the manage profile page - features/profile-management/profile-management.feature:86"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the link to the profile reports (View reports) for the first result",
+          "expected": "The Profile reports page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile reports page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-063",
+      "title": "Applicant opens the bespoke report builder from the manage profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the bespoke report builder from the manage profile page - features/profile-management/profile-management.feature:94"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the link to the profile reports (View reports) for the first result",
+          "expected": "The Profile reports page is displayed"
+        },
+        {
+          "action": "Click the Create bespoke report button",
+          "expected": "The Create bespoke report page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create bespoke report page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-141",
+      "title": "Applicant opens the profile reports page directly and confirms the route remains stable",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile reports page directly and confirms the route remains stable - features/profile-management/profile-management.feature:103"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the profile reports page",
+          "expected": "The profile reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile reports page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-142",
+      "title": "Applicant opens the bespoke report builder directly and confirms the route remains stable",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the bespoke report builder directly and confirms the route remains stable - features/profile-management/profile-management.feature:108"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the create bespoke report page",
+          "expected": "The create bespoke report page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The create bespoke report page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

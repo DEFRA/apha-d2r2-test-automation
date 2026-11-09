@@ -1,0 +1,168 @@
+{
+  "story_summary": "Manual cases for the compare-profile-versions journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the compare profile versions page and sees the comparison controls - features/compare-profile-versions/compare-profile-versions.feature:6",
+      "test_cases": [
+        "Applicant opens the compare profile versions page and sees the comparison controls"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the compare profile versions page from the home page - features/compare-profile-versions/compare-profile-versions.feature:11",
+      "test_cases": [
+        "Applicant reaches the compare profile versions page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the compare profile versions page directly and confirms the comparison controls remain visible - features/compare-profile-versions/compare-profile-versions.feature:17",
+      "test_cases": [
+        "Applicant opens the compare profile versions page directly and confirms the comparison controls remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the compare profile versions page directly and confirms the page remains stable after navigation - features/compare-profile-versions/compare-profile-versions.feature:22",
+      "test_cases": [
+        "Applicant opens the compare profile versions page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-013",
+      "title": "Applicant opens the compare profile versions page and sees the comparison controls",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the compare profile versions page and sees the comparison controls - features/compare-profile-versions/compare-profile-versions.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the compare profile versions page",
+          "expected": "The compare profile versions page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the compare profile versions page content",
+          "expected": "The comparison controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-097",
+      "title": "Applicant reaches the compare profile versions page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the compare profile versions page from the home page - features/compare-profile-versions/compare-profile-versions.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Compare Profile Versions in the main menu",
+          "expected": "The Compare Profile Versions page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The compare profile versions page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-098",
+      "title": "Applicant opens the compare profile versions page directly and confirms the comparison controls remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the compare profile versions page directly and confirms the comparison controls remain visible - features/compare-profile-versions/compare-profile-versions.feature:17"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the compare profile versions page",
+          "expected": "The compare profile versions page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the compare profile versions page content",
+          "expected": "The comparison controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-120",
+      "title": "Applicant opens the compare profile versions page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the compare profile versions page directly and confirms the page remains stable after navigation - features/compare-profile-versions/compare-profile-versions.feature:22"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the compare profile versions page",
+          "expected": "The compare profile versions page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the compare profile versions page content",
+          "expected": "The comparison controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

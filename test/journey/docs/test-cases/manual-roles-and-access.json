@@ -1,0 +1,1011 @@
+{
+  "story_summary": "Manual-only cases for unauthenticated access, role permissions and role-restricted pages.",
+  "assumptions": [
+    "Run on UAT. Values in angle brackets are replaced with real accounts or data before execution",
+    "Cases that change data use synthetic titles starting \"ADO-TEST\" and restore or delete their data at the end",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [
+    "Which accounts exist for each role, and what is the role-to-menu matrix?",
+    "Which UAT records may be created, changed and deleted by testers?"
+  ],
+  "coverage": [
+    {
+      "ac": "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\"), forms loginUrl ../VLAServices/Login.aspx",
+      "test_cases": [
+        "Verify an unauthenticated browser is sent to the sign-in page for Home"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")",
+      "test_cases": [
+        "Verify an unauthenticated browser cannot open MaintainGlobalUsers directly"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")",
+      "test_cases": [
+        "Verify an unauthenticated browser cannot open MaintainExternalUsers directly"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")",
+      "test_cases": [
+        "Verify an unauthenticated browser cannot open ReviewEmail directly"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")",
+      "test_cases": [
+        "Verify an unauthenticated browser cannot open Search directly"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:272 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Maintain global users page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainExternalUsers.aspx.vb:71 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Maintain external users page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainReferenceData.aspx.vb:75 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Maintain reference data page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainSpeciesData.aspx.vb:32 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Maintain species data page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/EditUserGuidance.aspx.vb:141 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Edit questions and guidance page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ReferenceTableAuditTrail.aspx.vb:43 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the reference table audit trail page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/SpeciesDataAuditTrail.aspx.vb:45 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the species data audit trail page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ReviewEmail.aspx.vb:16 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Review email page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/CompareProfileVersions.aspx.vb:34 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Compare profile versions page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/DiseaseRanking.aspx.vb:13 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Disease ranking page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/CreateBespokeReport.aspx.vb:337 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Create bespoke report page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/ManageProfile.aspx.vb:19 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Manage profile page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainContributors.aspx.vb:314 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Maintain contributors page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/EditProfileTitle.aspx.vb:23 (SecurityException)",
+      "test_cases": [
+        "Verify an account without permission cannot open the Edit profile title page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/NavigationLinks.ascx.vb:8-20 (Can* checks)",
+      "test_cases": [
+        "Verify the menu hides links the account has no permission to use"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:85-86",
+      "test_cases": [
+        "Verify a global user cannot change their own role"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:66-75",
+      "test_cases": [
+        "Verify the global user lookup rejects an SSO user"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:66-75",
+      "test_cases": [
+        "Verify the global user lookup rejects a user who is not in the profiles system"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:66-75",
+      "test_cases": [
+        "Verify the global user lookup rejects a user who cannot be made a global user"
+      ]
+    },
+    {
+      "ac": "DERIVED: app/Profiles.Web/MaintainContributors.aspx.vb:83-84",
+      "test_cases": [
+        "Verify a contributor lookup rejects a user who cannot be made a contributor"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "MT-001",
+      "title": "Verify an unauthenticated browser is sent to the sign-in page for Home",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\"), forms loginUrl ../VLAServices/Login.aspx"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Open a browser on a machine or profile that has no Windows or SSO session for the service",
+          "expected": "No D2R2 session cookie exists"
+        },
+        {
+          "action": "Open the D2R2 Home page address",
+          "expected": "The browser is redirected to the sign-in page (VLAServices Login) instead of the D2R2 Home page"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No D2R2 menu, search box or profile data is displayed"
+        },
+        {
+          "action": "Check the address bar",
+          "expected": "The address is the sign-in page address and not the requested D2R2 page"
+        },
+        {
+          "action": "Sign in with a valid D2R2 account",
+          "expected": "The D2R2 Home page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-002",
+      "title": "Verify an unauthenticated browser cannot open MaintainGlobalUsers directly",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Open a browser with no Windows or SSO session for the service",
+          "expected": "No D2R2 session cookie exists"
+        },
+        {
+          "action": "Open the address of MaintainGlobalUsers.aspx directly",
+          "expected": "The browser is redirected to the sign-in page"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No MaintainGlobalUsers controls or data are displayed"
+        },
+        {
+          "action": "Check the address bar",
+          "expected": "The address is the sign-in page address and not the requested D2R2 page"
+        },
+        {
+          "action": "Sign in with a valid D2R2 account",
+          "expected": "The MaintainGlobalUsers page is displayed only if the account has permission, otherwise the application error page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-003",
+      "title": "Verify an unauthenticated browser cannot open MaintainExternalUsers directly",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Open a browser with no Windows or SSO session for the service",
+          "expected": "No D2R2 session cookie exists"
+        },
+        {
+          "action": "Open the address of MaintainExternalUsers.aspx directly",
+          "expected": "The browser is redirected to the sign-in page"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No MaintainExternalUsers controls or data are displayed"
+        },
+        {
+          "action": "Check the address bar",
+          "expected": "The address is the sign-in page address and not the requested D2R2 page"
+        },
+        {
+          "action": "Sign in with a valid D2R2 account",
+          "expected": "The MaintainExternalUsers page is displayed only if the account has permission, otherwise the application error page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-004",
+      "title": "Verify an unauthenticated browser cannot open ReviewEmail directly",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Open a browser with no Windows or SSO session for the service",
+          "expected": "No D2R2 session cookie exists"
+        },
+        {
+          "action": "Open the address of ReviewEmail.aspx directly",
+          "expected": "The browser is redirected to the sign-in page"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No ReviewEmail controls or data are displayed"
+        },
+        {
+          "action": "Check the address bar",
+          "expected": "The address is the sign-in page address and not the requested D2R2 page"
+        },
+        {
+          "action": "Sign in with a valid D2R2 account",
+          "expected": "The ReviewEmail page is displayed only if the account has permission, otherwise the application error page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-005",
+      "title": "Verify an unauthenticated browser cannot open Search directly",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/Web.config authorization (deny users=\"?\")"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Open a browser with no Windows or SSO session for the service",
+          "expected": "No D2R2 session cookie exists"
+        },
+        {
+          "action": "Open the address of Search.aspx directly",
+          "expected": "The browser is redirected to the sign-in page"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Search controls or data are displayed"
+        },
+        {
+          "action": "Check the address bar",
+          "expected": "The address is the sign-in page address and not the requested D2R2 page"
+        },
+        {
+          "action": "Sign in with a valid D2R2 account",
+          "expected": "The Search page is displayed only if the account has permission, otherwise the application error page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "MT-006",
+      "title": "Verify an account without permission cannot open the Maintain global users page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:272 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of MaintainGlobalUsers.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Maintain global users controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-007",
+      "title": "Verify an account without permission cannot open the Maintain external users page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainExternalUsers.aspx.vb:71 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of MaintainExternalUsers.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Maintain external users controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-008",
+      "title": "Verify an account without permission cannot open the Maintain reference data page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainReferenceData.aspx.vb:75 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of MaintainReferenceData.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Maintain reference data controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-009",
+      "title": "Verify an account without permission cannot open the Maintain species data page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainSpeciesData.aspx.vb:32 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of MaintainSpeciesData.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Maintain species data controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-010",
+      "title": "Verify an account without permission cannot open the Edit questions and guidance page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/EditUserGuidance.aspx.vb:141 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of EditUserGuidance.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Edit questions and guidance controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-011",
+      "title": "Verify an account without permission cannot open the reference table audit trail page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ReferenceTableAuditTrail.aspx.vb:43 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of ReferenceTableAuditTrail.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No reference table audit trail controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-012",
+      "title": "Verify an account without permission cannot open the species data audit trail page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/SpeciesDataAuditTrail.aspx.vb:45 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of SpeciesDataAuditTrail.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No species data audit trail controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-013",
+      "title": "Verify an account without permission cannot open the Review email page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ReviewEmail.aspx.vb:16 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of ReviewEmail.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Review email controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-014",
+      "title": "Verify an account without permission cannot open the Compare profile versions page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/CompareProfileVersions.aspx.vb:34 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of CompareProfileVersions.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Compare profile versions controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-015",
+      "title": "Verify an account without permission cannot open the Disease ranking page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/DiseaseRanking.aspx.vb:13 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of DiseaseRanking.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Disease ranking controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-016",
+      "title": "Verify an account without permission cannot open the Create bespoke report page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/CreateBespokeReport.aspx.vb:337 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of CreateBespokeReport.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Create bespoke report controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-017",
+      "title": "Verify an account without permission cannot open the Manage profile page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/ManageProfile.aspx.vb:19 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of ManageProfile.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Manage profile controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-018",
+      "title": "Verify an account without permission cannot open the Maintain contributors page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainContributors.aspx.vb:314 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of MaintainContributors.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Maintain contributors controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-019",
+      "title": "Verify an account without permission cannot open the Edit profile title page by address",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/EditProfileTitle.aspx.vb:23 (SecurityException)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account that does not hold the permission for this page, for example a Policy profile user>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with only the menu links the account may use"
+        },
+        {
+          "action": "Open the address of EditProfileTitle.aspx directly in the browser",
+          "expected": "The application error page with the heading \"An error has occurred\" is displayed"
+        },
+        {
+          "action": "Check the page content",
+          "expected": "No Edit profile title controls or data are displayed"
+        },
+        {
+          "action": "Click the D2R2 link at the top of the page",
+          "expected": "The Home page is displayed and the session is still signed in"
+        }
+      ]
+    },
+    {
+      "ref": "MT-020",
+      "title": "Verify the menu hides links the account has no permission to use",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/NavigationLinks.ascx.vb:8-20 (Can* checks)"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account for the role under test>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed"
+        },
+        {
+          "action": "Read the main menu links",
+          "expected": "The links shown are limited to those the account is allowed to use"
+        },
+        {
+          "action": "Compare the menu with the role matrix <role matrix for this account>",
+          "expected": "Every link in the matrix for this role is displayed and no other link is displayed"
+        },
+        {
+          "action": "Click each displayed link in turn",
+          "expected": "Each link opens its page without the application error page"
+        },
+        {
+          "action": "Repeat the check with a Profile editor and a Policy profile user account",
+          "expected": "The menu differs between roles exactly as the role matrix states"
+        }
+      ]
+    },
+    {
+      "ref": "MT-021",
+      "title": "Verify a global user cannot change their own role",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:85-86"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click Edit for the row of the signed-in account",
+          "expected": "The edit form opens with the current role selected"
+        },
+        {
+          "action": "Check the Role list",
+          "expected": "The Role list is disabled and cannot be changed"
+        },
+        {
+          "action": "Click Cancel",
+          "expected": "The form closes and the role is unchanged"
+        }
+      ]
+    },
+    {
+      "ref": "MT-022",
+      "title": "Verify the global user lookup rejects an SSO user",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:66-75"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add global user form is displayed"
+        },
+        {
+          "action": "Enter the username of an SSO user in the format Domain\\UserId in the Username field",
+          "expected": "The username is shown in the field"
+        },
+        {
+          "action": "Click the Look up button",
+          "expected": "The message \"SSO users cannot be given global access rights\" is displayed"
+        },
+        {
+          "action": "Check the OK button",
+          "expected": "The OK button stays disabled and no user is added"
+        }
+      ]
+    },
+    {
+      "ref": "MT-023",
+      "title": "Verify the global user lookup rejects a user who is not in the profiles system",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:66-75"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add global user form is displayed"
+        },
+        {
+          "action": "Enter the username of a user who is not in the profiles system in the format Domain\\UserId in the Username field",
+          "expected": "The username is shown in the field"
+        },
+        {
+          "action": "Click the Look up button",
+          "expected": "The message \"The user is not currently in the profiles system\" is displayed"
+        },
+        {
+          "action": "Check the OK button",
+          "expected": "The OK button stays disabled and no user is added"
+        }
+      ]
+    },
+    {
+      "ref": "MT-024",
+      "title": "Verify the global user lookup rejects a user who cannot be made a global user",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainGlobalUsers.aspx.vb:66-75"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the global user administration role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Click Global Users in the main menu",
+          "expected": "The Maintain global users page is displayed"
+        },
+        {
+          "action": "Click the Add button",
+          "expected": "The add global user form is displayed"
+        },
+        {
+          "action": "Enter the username of a user who cannot be made a global user in the format Domain\\UserId in the Username field",
+          "expected": "The username is shown in the field"
+        },
+        {
+          "action": "Click the Look up button",
+          "expected": "The message \"This user cannot be made a global user\" is displayed"
+        },
+        {
+          "action": "Check the OK button",
+          "expected": "The OK button stays disabled and no user is added"
+        }
+      ]
+    },
+    {
+      "ref": "MT-025",
+      "title": "Verify a contributor lookup rejects a user who cannot be made a contributor",
+      "layer": "manual",
+      "acs": [
+        "DERIVED: app/Profiles.Web/MaintainContributors.aspx.vb:83-84"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as <D2R2 account with the Profile editor role>",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Search for <profile title> and click Manage on the first result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Click the Maintain contributors and reviewers link",
+          "expected": "The Maintain contributors page is displayed"
+        },
+        {
+          "action": "Click Add a contributor",
+          "expected": "The add contributor form is displayed"
+        },
+        {
+          "action": "Enter the username of <user who cannot be a contributor> and look the user up",
+          "expected": "The message \"This user cannot be made a contributor\" is displayed"
+        },
+        {
+          "action": "Check the contributor list",
+          "expected": "No contributor is added"
+        }
+      ]
+    }
+  ]
+}

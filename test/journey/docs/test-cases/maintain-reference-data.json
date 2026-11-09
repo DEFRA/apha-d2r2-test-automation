@@ -1,0 +1,250 @@
+{
+  "story_summary": "Manual cases for the maintain-reference-data journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the maintain reference data page and sees the reference table controls - features/maintain-reference-data/maintain-reference-data.feature:6",
+      "test_cases": [
+        "Applicant opens the maintain reference data page and sees the reference table controls"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant selects a reference table from the maintain reference data page - features/maintain-reference-data/maintain-reference-data.feature:12",
+      "test_cases": [
+        "Applicant selects a reference table from the maintain reference data page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the reference table audit trail from the maintain reference data page - features/maintain-reference-data/maintain-reference-data.feature:18",
+      "test_cases": [
+        "Applicant opens the reference table audit trail from the maintain reference data page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the maintain reference data page by clicking from home and selects a reference table - features/maintain-reference-data/maintain-reference-data.feature:25",
+      "test_cases": [
+        "Applicant reaches the maintain reference data page by clicking from home and selects a reference table"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain reference data page directly and confirms the reference table controls remain visible - features/maintain-reference-data/maintain-reference-data.feature:33",
+      "test_cases": [
+        "Applicant opens the maintain reference data page directly and confirms the reference table controls remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain reference data page directly and confirms the page remains stable after navigation - features/maintain-reference-data/maintain-reference-data.feature:39",
+      "test_cases": [
+        "Applicant opens the maintain reference data page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-019",
+      "title": "Applicant opens the maintain reference data page and sees the reference table controls",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain reference data page and sees the reference table controls - features/maintain-reference-data/maintain-reference-data.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain reference data page",
+          "expected": "The maintain reference data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain reference data page is displayed"
+        },
+        {
+          "action": "Check the maintain reference data page content",
+          "expected": "The reference table controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-027",
+      "title": "Applicant selects a reference table from the maintain reference data page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant selects a reference table from the maintain reference data page - features/maintain-reference-data/maintain-reference-data.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain reference data page",
+          "expected": "The maintain reference data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Surveillance outcome in the reference table list",
+          "expected": "The Surveillance outcome reference values are listed"
+        },
+        {
+          "action": "Check the maintain reference data page content",
+          "expected": "The selected reference table are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-055",
+      "title": "Applicant opens the reference table audit trail from the maintain reference data page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the reference table audit trail from the maintain reference data page - features/maintain-reference-data/maintain-reference-data.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain reference data page",
+          "expected": "The maintain reference data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Surveillance outcome in the reference table list",
+          "expected": "The Surveillance outcome reference values are listed"
+        },
+        {
+          "action": "Click the View audit trail button",
+          "expected": "The audit trail page for the selected table is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The reference table audit trail page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-032",
+      "title": "Applicant reaches the maintain reference data page by clicking from home and selects a reference table",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the maintain reference data page by clicking from home and selects a reference table - features/maintain-reference-data/maintain-reference-data.feature:25"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Maintain Reference Data in the main menu",
+          "expected": "The Maintain Reference Data page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The home navigation maintain reference data page is displayed"
+        },
+        {
+          "action": "Select Surveillance outcome in the reference table list",
+          "expected": "The Surveillance outcome reference values are listed"
+        },
+        {
+          "action": "Check the maintain reference data page content",
+          "expected": "The selected reference table are visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-110",
+      "title": "Applicant opens the maintain reference data page directly and confirms the reference table controls remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain reference data page directly and confirms the reference table controls remain visible - features/maintain-reference-data/maintain-reference-data.feature:33"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain reference data page",
+          "expected": "The maintain reference data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain reference data page is displayed"
+        },
+        {
+          "action": "Check the maintain reference data page content",
+          "expected": "The reference table controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-123",
+      "title": "Applicant opens the maintain reference data page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain reference data page directly and confirms the page remains stable after navigation - features/maintain-reference-data/maintain-reference-data.feature:39"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain reference data page",
+          "expected": "The maintain reference data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain reference data page is displayed"
+        },
+        {
+          "action": "Check the maintain reference data page content",
+          "expected": "The reference table controls are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

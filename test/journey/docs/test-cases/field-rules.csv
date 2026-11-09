@@ -1,0 +1,23 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant tries to save a new profile without a title,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Create new profile page,The Create new profile page is displayed with an empty title and a Create profile button,,,
+,,,Step 3,Leave the title empty and click Create profile,The profile is not created,,,
+,,,Step 4,Check the validation message,"The message ""You must enter a title"" is displayed",,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant looks up a global user without a username,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the global users page,The global users page is displayed with its heading and controls,,,
+,,,Step 3,Click the Add button,The add global user form is displayed,,,
+,,,Step 4,Leave the Username field empty,The Username field is empty,,,
+,,,Step 5,Click the Look up button,The lookup is requested,,,
+,,,Step 6,Check the validation message,"The message ""Please enter a username"" is displayed",,,
+,Test Case,Applicant looks up a global user with a username in the wrong format,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the global users page,The global users page is displayed with its heading and controls,,,
+,,,Step 3,Click the Add button,The add global user form is displayed,,,
+,,,Step 4,"Enter ""not-a-domain-user"" in the Username field","""not-a-domain-user"" is shown in the field",,,
+,,,Step 5,Click the Look up button,The lookup is requested,,,
+,,,Step 6,Check the validation message,"The message ""Please enter a username in the following format: Domain\UserId"" is displayed",,,
+,Test Case,Applicant cannot enter more than 50 characters in the global user username,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the global users page,The global users page is displayed with its heading and controls,,,
+,,,Step 3,Click the Add button,The add global user form is displayed,,,
+,,,Step 4,Type 51 characters in the Username field,The field accepts the text,,,
+,,,Step 5,Check the characters in the Username field,The field holds 50 characters,,,

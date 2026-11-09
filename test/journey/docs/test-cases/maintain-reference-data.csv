@@ -1,0 +1,32 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the maintain reference data page and sees the reference table controls,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain reference data page,The maintain reference data page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The maintain reference data page is displayed,,,
+,,,Step 4,Check the maintain reference data page content,The reference table controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant selects a reference table from the maintain reference data page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain reference data page,The maintain reference data page is displayed with its heading and controls,,,
+,,,Step 3,Select Surveillance outcome in the reference table list,The Surveillance outcome reference values are listed,,,
+,,,Step 4,Check the maintain reference data page content,The selected reference table are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the reference table audit trail from the maintain reference data page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain reference data page,The maintain reference data page is displayed with its heading and controls,,,
+,,,Step 3,Select Surveillance outcome in the reference table list,The Surveillance outcome reference values are listed,,,
+,,,Step 4,Click the View audit trail button,The audit trail page for the selected table is displayed,,,
+,,,Step 5,Check the page that is displayed,The reference table audit trail page is displayed,,,
+,Test Case,Applicant reaches the maintain reference data page by clicking from home and selects a reference table,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Maintain Reference Data in the main menu,The Maintain Reference Data page is displayed,,,
+,,,Step 4,Check the page that is displayed,The home navigation maintain reference data page is displayed,,,
+,,,Step 5,Select Surveillance outcome in the reference table list,The Surveillance outcome reference values are listed,,,
+,,,Step 6,Check the maintain reference data page content,The selected reference table are visible,,,
+,Test Case,Applicant opens the maintain reference data page directly and confirms the reference table controls remain visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain reference data page,The maintain reference data page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The maintain reference data page is displayed,,,
+,,,Step 4,Check the maintain reference data page content,The reference table controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the maintain reference data page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain reference data page,The maintain reference data page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The maintain reference data page is displayed,,,
+,,,Step 4,Check the maintain reference data page content,The reference table controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

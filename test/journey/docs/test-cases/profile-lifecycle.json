@@ -1,0 +1,435 @@
+{
+  "story_summary": "Manual cases for the profile-lifecycle journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant reaches the profile properties screen from a live search result - features/profile-lifecycle/profile-lifecycle.feature:6",
+      "test_cases": [
+        "Applicant reaches the profile properties screen from a live search result"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the edit title screen from a live search result - features/profile-lifecycle/profile-lifecycle.feature:16",
+      "test_cases": [
+        "Applicant reaches the edit title screen from a live search result"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant continues from a live search result to the contributors maintenance screen - features/profile-lifecycle/profile-lifecycle.feature:24",
+      "test_cases": [
+        "Applicant continues from a live search result to the contributors maintenance screen"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the profile properties screen from the search results and confirms the route - features/profile-lifecycle/profile-lifecycle.feature:34",
+      "test_cases": [
+        "Applicant reaches the profile properties screen from the search results and confirms the route"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the manage profile page directly and confirms the lifecycle route remains available - features/profile-lifecycle/profile-lifecycle.feature:44",
+      "test_cases": [
+        "Applicant opens the manage profile page directly and confirms the lifecycle route remains available"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the manage profile page directly and confirms the lifecycle route remains stable after navigation - features/profile-lifecycle/profile-lifecycle.feature:49",
+      "test_cases": [
+        "Applicant opens the manage profile page directly and confirms the lifecycle route remains stable after navigation"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the edit title screen from the manage page and confirms the title form loads - features/profile-lifecycle/profile-lifecycle.feature:54",
+      "test_cases": [
+        "Applicant reaches the edit title screen from the manage page and confirms the title form loads"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the profile properties page directly and confirms the route remains stable - features/profile-lifecycle/profile-lifecycle.feature:64",
+      "test_cases": [
+        "Applicant opens the profile properties page directly and confirms the route remains stable"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the edit profile title page directly and confirms the route remains stable - features/profile-lifecycle/profile-lifecycle.feature:69",
+      "test_cases": [
+        "Applicant opens the edit profile title page directly and confirms the route remains stable"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-047",
+      "title": "Applicant reaches the profile properties screen from a live search result",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the profile properties screen from a live search result - features/profile-lifecycle/profile-lifecycle.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Edit properties link on the Manage profile page",
+          "expected": "The profile properties page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-048",
+      "title": "Applicant reaches the edit title screen from a live search result",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the edit title screen from a live search result - features/profile-lifecycle/profile-lifecycle.feature:16"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Edit Title link",
+          "expected": "The Edit profile title page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit profile title page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-049",
+      "title": "Applicant continues from a live search result to the contributors maintenance screen",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant continues from a live search result to the contributors maintenance screen - features/profile-lifecycle/profile-lifecycle.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Maintain contributors and reviewers link on the Manage profile page",
+          "expected": "The maintain contributors page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The maintain contributors page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-101",
+      "title": "Applicant reaches the profile properties screen from the search results and confirms the route",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the profile properties screen from the search results and confirms the route - features/profile-lifecycle/profile-lifecycle.feature:34"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Edit properties link on the Manage profile page",
+          "expected": "The profile properties page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-118",
+      "title": "Applicant opens the manage profile page directly and confirms the lifecycle route remains available",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the manage profile page directly and confirms the lifecycle route remains available - features/profile-lifecycle/profile-lifecycle.feature:44"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the manage profile page",
+          "expected": "The manage profile page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-138",
+      "title": "Applicant opens the manage profile page directly and confirms the lifecycle route remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the manage profile page directly and confirms the lifecycle route remains stable after navigation - features/profile-lifecycle/profile-lifecycle.feature:49"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the manage profile page",
+          "expected": "The manage profile page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-102",
+      "title": "Applicant reaches the edit title screen from the manage page and confirms the title form loads",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the edit title screen from the manage page and confirms the title form loads - features/profile-lifecycle/profile-lifecycle.feature:54"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Check the search results list",
+          "expected": "A result named \"African Horse Sickness (AHS)\" is listed"
+        },
+        {
+          "action": "Click the Manage link on the first search result",
+          "expected": "The Manage profile page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The manage profile page is displayed"
+        },
+        {
+          "action": "Click the Edit Title link",
+          "expected": "The Edit profile title page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit profile title page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-139",
+      "title": "Applicant opens the profile properties page directly and confirms the route remains stable",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the profile properties page directly and confirms the route remains stable - features/profile-lifecycle/profile-lifecycle.feature:64"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the profile properties page",
+          "expected": "The profile properties page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The profile properties page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-140",
+      "title": "Applicant opens the edit profile title page directly and confirms the route remains stable",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the edit profile title page directly and confirms the route remains stable - features/profile-lifecycle/profile-lifecycle.feature:69"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the edit profile title page",
+          "expected": "The edit profile title page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit profile title page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the review email page and sees the test-only notice without sending emails,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the review email page,The review email page is displayed with its heading and controls,,,
+,,,Step 3,Read the text on the Review email page,"The text ""This page is for testing purposes only"" is displayed",,,
+,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,,,Step 5,Check the page heading,The page heading is visible,,,
+,Test Case,Applicant opens the question help window from the browse profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
+,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
+,,,Step 5,Tick Display draft versions and click Search profiles,Draft versions are included in the search results,,,
+,,,Step 6,Click Browse profile on a draft version that shows the Contributions tab,"The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions",,,
+,,,Step 7,Click the first help icon next to a question,A help window opens,,,
+,,,Step 8,Check for a new browser window,A help window opens for the question,,,
+,Test Case,Applicant opens the question help page without a question and sees the application error,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Profile question help page without a ProfileQuestionId in the address,"The ""An error has occurred"" page is displayed",,,
+,,,Step 3,Check the page that is displayed,The application error page is displayed,,,
+,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,,,Step 5,Check the page heading,The page heading is visible,,,
+,Test Case,Applicant compares versions without selecting any,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the compare profile versions page,The compare profile versions page is displayed with its heading and controls,,,
+,,,Step 3,Click the Compare button,The comparison is requested,,,
+,,,Step 4,Check the message on the Compare profile versions page,"The message ""Please select 2 disease profile versions to compare"" is displayed",,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant compares versions after selecting only one,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the compare profile versions page,The compare profile versions page is displayed with its heading and controls,,,
+,,,Step 3,Click Open all to expand the profile version tree,All profile versions are listed with a tick box each,,,
+,,,Step 4,Tick the first 1 profile version,1 version is ticked,,,
+,,,Step 5,Click the Compare button,The comparison is requested,,,
+,,,Step 6,Check the message on the Compare profile versions page,"The message ""Please select 2 disease profile versions to compare"" is displayed",,,
+,Test Case,Applicant compares two profile versions,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the compare profile versions page,The compare profile versions page is displayed with its heading and controls,,,
+,,,Step 3,Click Open all to expand the profile version tree,All profile versions are listed with a tick box each,,,
+,,,Step 4,Tick the first 2 profile versions,2 versions are ticked,,,
+,,,Step 5,Click the Compare button,The comparison is requested,,,
+,,,Step 6,Check for a new browser window,A new browser window opens for the ShowProfileVersionComparisonReport report,,,

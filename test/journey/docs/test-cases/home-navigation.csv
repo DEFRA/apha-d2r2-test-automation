@@ -1,0 +1,81 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the home page and sees primary links,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Check the home page content,The popular links are visible,,,
+,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,,,Step 5,Check the page heading,The page heading is visible,,,
+,Test Case,Applicant moves from the home page to the search page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Search Disease Profiles in the main menu,The Search Disease Profiles page is displayed,,,
+,,,Step 4,Check the page that is displayed,The search page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the disease ranking report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Disease Ranking Report in the main menu,The Disease Ranking Report page is displayed,,,
+,,,Step 4,Check the page that is displayed,The disease ranking page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the general reports page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click General Reports in the main menu,The General Reports page is displayed,,,
+,,,Step 4,Check the page that is displayed,The general reports page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the view species data page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click View Species Data in the main menu,The View Species Data page is displayed,,,
+,,,Step 4,Check the page that is displayed,The view species data page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the help page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Help Using D2R2 in the main menu,The Help Using D2R2 page is displayed,,,
+,,,Step 4,Check the page that is displayed,The help page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the global users page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Global Users in the main menu,The Global Users page is displayed,,,
+,,,Step 4,Check the page that is displayed,The global users page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the external users page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click External Users in the main menu,The External Users page is displayed,,,
+,,,Step 4,Check the page that is displayed,The external users page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the maintain reference data page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Maintain Reference Data in the main menu,The Maintain Reference Data page is displayed,,,
+,,,Step 4,Check the page that is displayed,The home navigation maintain reference data page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the maintain prioritisation variables page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Maintain Prioritisation Variables in the main menu,The Maintain Prioritisation Variables page is displayed,,,
+,,,Step 4,Check the page that is displayed,The maintain prioritisation variables page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant checks the home page does not offer the maintain species data link,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Check the main menu on the Home page,The maintain species data link is not displayed,,,
+,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,,,Step 5,Check the page heading,The page heading is visible,,,
+,Test Case,Applicant checks the home page does not offer the questions and guidance reports link,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Check the main menu on the Home page,The questions and guidance reports link is not displayed,,,
+,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,,,Step 5,Check the page heading,The page heading is visible,,,
+,Test Case,Applicant moves from the home page to the maintain cross-cutting issue scores page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Maintain Cross-Cutting Issue Scores in the main menu,The Maintain Cross-Cutting Issue Scores page is displayed,,,
+,,,Step 4,Check the page that is displayed,The maintain cross-cutting issue scores page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the compare profile versions page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Compare Profile Versions in the main menu,The Compare Profile Versions page is displayed,,,
+,,,Step 4,Check the page that is displayed,The compare profile versions page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant moves from the home page to the create disease ranking filter page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Create Disease Ranking Filter in the main menu,The Create Disease Ranking Filter page is displayed,,,
+,,,Step 4,Check the page that is displayed,The create disease ranking filter page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the create profile page directly and confirms the form remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Create new profile page,The Create new profile page is displayed with an empty title and a Create profile button,,,
+,,,Step 3,Check the page that is displayed,The create profile page is displayed,,,
+,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,,,Step 5,Check the page heading,The page heading is visible,,,

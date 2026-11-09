@@ -1,0 +1,266 @@
+{
+  "story_summary": "Manual cases for the additional-pages journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the review email page and sees the test-only notice without sending emails - features/additional-pages/additional-pages.feature:6",
+      "test_cases": [
+        "Applicant opens the review email page and sees the test-only notice without sending emails"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the question help window from the browse profile page - features/additional-pages/additional-pages.feature:11",
+      "test_cases": [
+        "Applicant opens the question help window from the browse profile page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the question help page without a question and sees the application error - features/additional-pages/additional-pages.feature:19",
+      "test_cases": [
+        "Applicant opens the question help page without a question and sees the application error"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant compares versions without selecting any - features/additional-pages/additional-pages.feature:24",
+      "test_cases": [
+        "Applicant compares versions without selecting any"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant compares versions after selecting only one - features/additional-pages/additional-pages.feature:30",
+      "test_cases": [
+        "Applicant compares versions after selecting only one"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant compares two profile versions - features/additional-pages/additional-pages.feature:37",
+      "test_cases": [
+        "Applicant compares two profile versions"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-164",
+      "title": "Applicant opens the review email page and sees the test-only notice without sending emails",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the review email page and sees the test-only notice without sending emails - features/additional-pages/additional-pages.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the review email page",
+          "expected": "The review email page is displayed with its heading and controls"
+        },
+        {
+          "action": "Read the text on the Review email page",
+          "expected": "The text \"This page is for testing purposes only\" is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-165",
+      "title": "Applicant opens the question help window from the browse profile page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the question help window from the browse profile page - features/additional-pages/additional-pages.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search disease profiles page",
+          "expected": "The Search disease profiles page is displayed with the search box and filters"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
+          "expected": "\"African Horse Sickness\" is shown in the field"
+        },
+        {
+          "action": "Click the Search profiles button",
+          "expected": "The search results list is displayed"
+        },
+        {
+          "action": "Tick Display draft versions and click Search profiles",
+          "expected": "Draft versions are included in the search results"
+        },
+        {
+          "action": "Click Browse profile on a draft version that shows the Contributions tab",
+          "expected": "The profile questions page is displayed with the tabs Summary, References, Further information, Review comments, All Revision dates and Contributions"
+        },
+        {
+          "action": "Click the first help icon next to a question",
+          "expected": "A help window opens"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A help window opens for the question"
+        }
+      ]
+    },
+    {
+      "ref": "TC-166",
+      "title": "Applicant opens the question help page without a question and sees the application error",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the question help page without a question and sees the application error - features/additional-pages/additional-pages.feature:19"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Profile question help page without a ProfileQuestionId in the address",
+          "expected": "The \"An error has occurred\" page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The application error page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-167",
+      "title": "Applicant compares versions without selecting any",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant compares versions without selecting any - features/additional-pages/additional-pages.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the compare profile versions page",
+          "expected": "The compare profile versions page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Compare button",
+          "expected": "The comparison is requested"
+        },
+        {
+          "action": "Check the message on the Compare profile versions page",
+          "expected": "The message \"Please select 2 disease profile versions to compare\" is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-168",
+      "title": "Applicant compares versions after selecting only one",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant compares versions after selecting only one - features/additional-pages/additional-pages.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the compare profile versions page",
+          "expected": "The compare profile versions page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click Open all to expand the profile version tree",
+          "expected": "All profile versions are listed with a tick box each"
+        },
+        {
+          "action": "Tick the first 1 profile version",
+          "expected": "1 version is ticked"
+        },
+        {
+          "action": "Click the Compare button",
+          "expected": "The comparison is requested"
+        },
+        {
+          "action": "Check the message on the Compare profile versions page",
+          "expected": "The message \"Please select 2 disease profile versions to compare\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-169",
+      "title": "Applicant compares two profile versions",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant compares two profile versions - features/additional-pages/additional-pages.feature:37"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the compare profile versions page",
+          "expected": "The compare profile versions page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click Open all to expand the profile version tree",
+          "expected": "All profile versions are listed with a tick box each"
+        },
+        {
+          "action": "Tick the first 2 profile versions",
+          "expected": "2 versions are ticked"
+        },
+        {
+          "action": "Click the Compare button",
+          "expected": "The comparison is requested"
+        },
+        {
+          "action": "Check for a new browser window",
+          "expected": "A new browser window opens for the ShowProfileVersionComparisonReport report"
+        }
+      ]
+    }
+  ]
+}

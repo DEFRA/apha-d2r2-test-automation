@@ -1,0 +1,168 @@
+{
+  "story_summary": "Manual cases for the help-using-d2r2 journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the Help Using D2R2 page and sees the manuals - features/help/help-using-d2r2.feature:6",
+      "test_cases": [
+        "Applicant opens the Help Using D2R2 page and sees the manuals"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the Help Using D2R2 page by clicking from home and sees the manuals - features/help/help-using-d2r2.feature:12",
+      "test_cases": [
+        "Applicant reaches the Help Using D2R2 page by clicking from home and sees the manuals"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the Help Using D2R2 page directly and confirms the manuals remain visible - features/help/help-using-d2r2.feature:19",
+      "test_cases": [
+        "Applicant opens the Help Using D2R2 page directly and confirms the manuals remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the Help Using D2R2 page directly and confirms the page remains stable after navigation - features/help/help-using-d2r2.feature:25",
+      "test_cases": [
+        "Applicant opens the Help Using D2R2 page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-017",
+      "title": "Applicant opens the Help Using D2R2 page and sees the manuals",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the Help Using D2R2 page and sees the manuals - features/help/help-using-d2r2.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the help using D2R2 page",
+          "expected": "The help using D2R2 page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The help using D2R2 page is displayed"
+        },
+        {
+          "action": "Check the help using D2R2 page content",
+          "expected": "The manuals are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-034",
+      "title": "Applicant reaches the Help Using D2R2 page by clicking from home and sees the manuals",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the Help Using D2R2 page by clicking from home and sees the manuals - features/help/help-using-d2r2.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click Help Using D2R2 in the main menu",
+          "expected": "The Help Using D2R2 page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Check the help using D2R2 page content",
+          "expected": "The manuals are visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-105",
+      "title": "Applicant opens the Help Using D2R2 page directly and confirms the manuals remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the Help Using D2R2 page directly and confirms the manuals remain visible - features/help/help-using-d2r2.feature:19"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the help using D2R2 page",
+          "expected": "The help using D2R2 page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The help using D2R2 page is displayed"
+        },
+        {
+          "action": "Check the help using D2R2 page content",
+          "expected": "The manuals are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-127",
+      "title": "Applicant opens the Help Using D2R2 page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the Help Using D2R2 page directly and confirms the page remains stable after navigation - features/help/help-using-d2r2.feature:25"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the help using D2R2 page",
+          "expected": "The help using D2R2 page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The help using D2R2 page is displayed"
+        },
+        {
+          "action": "Check the help using D2R2 page content",
+          "expected": "The manuals are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "story_summary": "Manual cases for the maintain-species-data journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the maintain species data page and sees the maintenance actions - features/maintain-species-data/maintain-species-data.feature:6",
+      "test_cases": [
+        "Applicant opens the maintain species data page and sees the maintenance actions"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the species data audit trail from the maintain species data page - features/maintain-species-data/maintain-species-data.feature:11",
+      "test_cases": [
+        "Applicant opens the species data audit trail from the maintain species data page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the edit species page from the species maintenance screen - features/maintain-species-data/maintain-species-data.feature:17",
+      "test_cases": [
+        "Applicant opens the edit species page from the species maintenance screen"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain species data page directly and confirms the maintenance actions remain visible - features/maintain-species-data/maintain-species-data.feature:23",
+      "test_cases": [
+        "Applicant opens the maintain species data page directly and confirms the maintenance actions remain visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the maintain species data page directly and confirms the page remains stable after navigation - features/maintain-species-data/maintain-species-data.feature:28",
+      "test_cases": [
+        "Applicant opens the maintain species data page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-015",
+      "title": "Applicant opens the maintain species data page and sees the maintenance actions",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain species data page and sees the maintenance actions - features/maintain-species-data/maintain-species-data.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain species data page",
+          "expected": "The maintain species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the maintain species data page content",
+          "expected": "The maintenance actions are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-054",
+      "title": "Applicant opens the species data audit trail from the maintain species data page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the species data audit trail from the maintain species data page - features/maintain-species-data/maintain-species-data.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain species data page",
+          "expected": "The maintain species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the View audit trail button",
+          "expected": "The audit trail page for the selected table is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The species data audit trail page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-061",
+      "title": "Applicant opens the edit species page from the species maintenance screen",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the edit species page from the species maintenance screen - features/maintain-species-data/maintain-species-data.feature:17"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain species data page",
+          "expected": "The maintain species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Click the Edit link for a species on the Maintain species data page",
+          "expected": "The Edit species data page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The edit species data page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-111",
+      "title": "Applicant opens the maintain species data page directly and confirms the maintenance actions remain visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain species data page directly and confirms the maintenance actions remain visible - features/maintain-species-data/maintain-species-data.feature:23"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain species data page",
+          "expected": "The maintain species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the maintain species data page content",
+          "expected": "The maintenance actions are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-124",
+      "title": "Applicant opens the maintain species data page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the maintain species data page directly and confirms the page remains stable after navigation - features/maintain-species-data/maintain-species-data.feature:28"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the maintain species data page",
+          "expected": "The maintain species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the maintain species data page content",
+          "expected": "The maintenance actions are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

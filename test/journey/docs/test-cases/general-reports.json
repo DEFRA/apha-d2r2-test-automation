@@ -1,0 +1,168 @@
+{
+  "story_summary": "Manual cases for the general-reports journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the general reports page and sees the report list - features/general-reports/general-reports.feature:6",
+      "test_cases": [
+        "Applicant opens the general reports page and sees the report list"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the general reports page from the home page - features/general-reports/general-reports.feature:12",
+      "test_cases": [
+        "Applicant reaches the general reports page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the general reports page directly and confirms the report list remains visible - features/general-reports/general-reports.feature:18",
+      "test_cases": [
+        "Applicant opens the general reports page directly and confirms the report list remains visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the general reports page directly and confirms the page remains stable after navigation - features/general-reports/general-reports.feature:24",
+      "test_cases": [
+        "Applicant opens the general reports page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-087",
+      "title": "Applicant opens the general reports page and sees the report list",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the general reports page and sees the report list - features/general-reports/general-reports.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the general reports page",
+          "expected": "The general reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The general reports page is displayed"
+        },
+        {
+          "action": "Check the general reports page content",
+          "expected": "The report links are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-088",
+      "title": "Applicant reaches the general reports page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the general reports page from the home page - features/general-reports/general-reports.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click General Reports in the main menu",
+          "expected": "The General Reports page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The general reports page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-108",
+      "title": "Applicant opens the general reports page directly and confirms the report list remains visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the general reports page directly and confirms the report list remains visible - features/general-reports/general-reports.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the general reports page",
+          "expected": "The general reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The general reports page is displayed"
+        },
+        {
+          "action": "Check the general reports page content",
+          "expected": "The report links are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-143",
+      "title": "Applicant opens the general reports page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the general reports page directly and confirms the page remains stable after navigation - features/general-reports/general-reports.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the general reports page",
+          "expected": "The general reports page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The general reports page is displayed"
+        },
+        {
+          "action": "Check the general reports page content",
+          "expected": "The report links are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    }
+  ]
+}

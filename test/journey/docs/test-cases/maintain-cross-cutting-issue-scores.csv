@@ -1,0 +1,26 @@
+﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the maintain cross-cutting issue scores page and sees the controls,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain cross-cutting issue scores page,The maintain cross-cutting issue scores page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The maintain cross-cutting issue scores page is displayed,,,
+,,,Step 4,Check the maintain cross-cutting issue scores page content,The controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant reaches the maintain cross-cutting issue scores page from the home page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Maintain Cross-Cutting Issue Scores in the main menu,The Maintain Cross-Cutting Issue Scores page is displayed,,,
+,,,Step 4,Check the page that is displayed,The maintain cross-cutting issue scores page is displayed,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the maintain cross-cutting issue scores page directly and confirms the controls remain visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain cross-cutting issue scores page,The maintain cross-cutting issue scores page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The maintain cross-cutting issue scores page is displayed,,,
+,,,Step 4,Check the maintain cross-cutting issue scores page content,The controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant reaches the maintain cross-cutting issue scores page from the home page and confirms the controls are visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Click Maintain Cross-Cutting Issue Scores in the main menu,The Maintain Cross-Cutting Issue Scores page is displayed,,,
+,,,Step 4,Check the maintain cross-cutting issue scores page content,The controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
+,Test Case,Applicant opens the maintain cross-cutting issue scores page directly and confirms the page remains stable after navigat,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the maintain cross-cutting issue scores page,The maintain cross-cutting issue scores page is displayed with its heading and controls,,,
+,,,Step 3,Check the page that is displayed,The maintain cross-cutting issue scores page is displayed,,,
+,,,Step 4,Check the maintain cross-cutting issue scores page content,The controls are visible,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

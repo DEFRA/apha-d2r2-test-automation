@@ -1,0 +1,207 @@
+{
+  "story_summary": "Manual cases for the maintain-external-users journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant opens the external users page and sees the management controls - features/external-users/maintain-external-users.feature:6",
+      "test_cases": [
+        "Applicant opens the external users page and sees the management controls"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the external users page from the home page - features/external-users/maintain-external-users.feature:12",
+      "test_cases": [
+        "Applicant reaches the external users page from the home page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the external users page directly - features/external-users/maintain-external-users.feature:18",
+      "test_cases": [
+        "Applicant opens the external users page directly"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the external users page directly and confirms the page remains visible - features/external-users/maintain-external-users.feature:23",
+      "test_cases": [
+        "Applicant opens the external users page directly and confirms the page remains visible"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the external users page directly and confirms the page remains stable after navigation - features/external-users/maintain-external-users.feature:28",
+      "test_cases": [
+        "Applicant opens the external users page directly and confirms the page remains stable after navigation"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-036",
+      "title": "Applicant opens the external users page and sees the management controls",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the external users page and sees the management controls - features/external-users/maintain-external-users.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click External Users in the main menu",
+          "expected": "The External Users page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The external users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-084",
+      "title": "Applicant reaches the external users page from the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the external users page from the home page - features/external-users/maintain-external-users.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Click External Users in the main menu",
+          "expected": "The External Users page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The external users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-104",
+      "title": "Applicant opens the external users page directly",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the external users page directly - features/external-users/maintain-external-users.feature:18"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the external users page",
+          "expected": "The external users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The external users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-113",
+      "title": "Applicant opens the external users page directly and confirms the page remains visible",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the external users page directly and confirms the page remains visible - features/external-users/maintain-external-users.feature:23"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the external users page",
+          "expected": "The external users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The external users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-125",
+      "title": "Applicant opens the external users page directly and confirms the page remains stable after navigation",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the external users page directly and confirms the page remains stable after navigation - features/external-users/maintain-external-users.feature:28"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the external users page",
+          "expected": "The external users page is displayed with its heading and controls"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The external users page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}
