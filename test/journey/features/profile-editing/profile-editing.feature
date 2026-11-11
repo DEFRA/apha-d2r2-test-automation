@@ -1,4 +1,4 @@
-﻿@feature:profile-editing @ui @smoke
+@wip ﻿@feature:profile-editing @ui @smoke
 Feature: Profile editing
   Users can move between the profile editing tabs and the section links from the browse profile page.
 

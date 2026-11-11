@@ -58,6 +58,14 @@ export async function expectPageLoaded(page, { heading, variant = 'default', rol
 }
 
 /**
+ * Assert a download started and has a file name.
+ * @param {import('@playwright/test').Download} download
+ */
+export async function expectDownloadNamed(download) {
+  expect(download.suggestedFilename()).not.toBe('')
+}
+
+/**
  * Assert an inline field error by meaning, tolerating the GOV.UK visually hidden prefix.
  * @param {import('@playwright/test').Locator} locator
  * @param {string} message

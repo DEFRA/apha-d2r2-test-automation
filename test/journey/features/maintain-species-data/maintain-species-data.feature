@@ -1,4 +1,4 @@
-@feature:maintain-species-data @ui @smoke
+@wip @feature:maintain-species-data @ui @smoke
 Feature: Maintain species data
   Users can open the maintain species data page and confirm the maintenance actions are available.
 

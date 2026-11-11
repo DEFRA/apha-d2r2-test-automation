@@ -57,7 +57,10 @@ Given('the applicant is on the manage profile page', async ({ page }) => {
 })
 
 Given('the applicant is on the profile reports page', async ({ page }) => {
-  await openProfileRouteWithId(page, 'ProfileReports.aspx')
+  const searchPage = new SearchPage(page)
+  await searchPage.openSearchPage()
+  await searchPage.searchFor('African Horse Sickness')
+  await page.getByRole('link', { name: /view reports/i }).first().click()
   await expectPageLoaded(page, { heading: pages.profileReports.heading })
 })
 
@@ -274,12 +277,11 @@ When('the applicant clones a new scenario from the manage page', async ({ page }
 })
 
 When('the applicant opens the profile reports page for the first result', async ({ page }) => {
-  const link = page.getByRole('link', { name: /view reports|profile reports|reports/i }).first()
-  await link.click()
+  await page.getByRole('link', { name: /view reports/i }).first().click()
 })
 
 When('the applicant browses the profile from the profile reports page', async ({ page }) => {
-  await page.getByRole('link', { name: /browse profile/i }).first().click()
+  await page.getByRole('link', { name: /browse (disease )?profile/i }).first().click()
 })
 
 When('the applicant opens the profile reports page from the manage page', async ({ page }) => {
@@ -296,7 +298,7 @@ Then('the edit profile title page is shown', async ({ page }) => {
 })
 
 Then('the profile reports page is shown', async ({ page }) => {
-  await page.getByText(/Access disease profiles from this page/i).waitFor({ state: 'visible' })
+  await expectPageLoaded(page, { heading: pages.profileReports.heading })
 })
 
 Then('the create bespoke report page is shown', async ({ page }) => {

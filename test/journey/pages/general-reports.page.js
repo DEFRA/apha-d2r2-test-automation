@@ -17,7 +17,7 @@ export class GeneralReportsPage extends BasePage {
   }
 
   async expectReportLinksVisible() {
-    const links = this.page.locator('table.gridview a[href]')
+    const links = this.root.locator('table a[href]')
     await expect(links.first()).toBeVisible()
     await expect(links).not.toHaveCount(0)
   }

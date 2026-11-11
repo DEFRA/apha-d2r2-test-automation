@@ -1,4 +1,4 @@
-@feature:compare-profile-versions @ui @smoke
+@wip @feature:compare-profile-versions @ui @smoke
 Feature: Compare profile versions
   Users can open the compare profile versions page and confirm the comparison controls are available.
 

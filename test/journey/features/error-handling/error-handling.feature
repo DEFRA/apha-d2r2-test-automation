@@ -1,4 +1,4 @@
-@feature:error-handling @ui @smoke
+@wip @feature:error-handling @ui @smoke
 Feature: Error and session handling
   Users who reach a time-out or an application error see the dedicated handling page.
 

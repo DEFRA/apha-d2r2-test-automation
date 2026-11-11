@@ -15,22 +15,11 @@ const testDir = defineBddConfig({
 
 const ci = !!process.env.CI
 const appBaseUrl = (process.env.UI_BASE_URL ?? '').replace(/\/$/, '').replace(/\/(?:Home|Search)\.aspx$/, '')
-const configuredRoles = (process.env.E2E_ROLES ?? 'sso')
-  .split(',')
-  .map((role) => role.trim())
-  .filter(Boolean)
-const defaultStorageState = configuredRoles.includes('sso')
-  ? { storageState: '.auth/sso.json' }
-  : configuredRoles.includes('applicant')
-    ? { storageState: '.auth/applicant.json' }
-    : configuredRoles.includes('admin')
-      ? { storageState: '.auth/admin.json' }
-      : {}
 
 export default defineConfig({
   testDir,
   forbidOnly: ci,
-  grepInvert: /@wip/, // work-in-progress scenarios are generated but never run
+  grepInvert: process.env.RUN_WIP ? undefined : /@wip/, // work-in-progress scenarios are generated but only run with RUN_WIP=1
   retries: ci ? 1 : 0,
   workers: 1,
   fullyParallel: false,
@@ -52,48 +41,18 @@ export default defineConfig({
     }
   },
   projects: [
-    // Logs in once per role and writes .auth/<role>.json. Add or remove roles here.
+    // Logs in once and writes .auth/user.json.
     {
       name: 'setup',
       testDir: './support',
       testMatch: /auth\.setup\.js/,
       metadata: { role: 'setup' }
     },
-    ...(
-      configuredRoles.includes('sso') || configuredRoles.includes('applicant') || configuredRoles.includes('admin')
-        ? [{
-            name: 'journey',
-            dependencies: ['setup'],
-            use: defaultStorageState,
-            metadata: {
-              role: configuredRoles.includes('sso')
-                ? 'sso'
-                : configuredRoles.includes('admin')
-                  ? 'admin'
-                  : 'applicant'
-            }
-          }]
-        : []
-    ),
-    // Copy this block per additional role, then run with --project=<name>.
-    ...(
-      configuredRoles.includes('admin')
-        ? [{
-            name: 'admin',
-            dependencies: ['setup'],
-            use: { storageState: '.auth/admin.json' },
-            metadata: { role: 'admin' }
-          }]
-        : []
-    ),
-    // No saved session: login and permission scenarios.
-    ...(
-      configuredRoles.length === 0 || configuredRoles.includes('anonymous')
-        ? [{
-            name: 'anonymous',
-            metadata: { role: 'anonymous' }
-          }]
-        : []
-    )
+    {
+      name: 'journey',
+      dependencies: ['setup'],
+      use: { storageState: '.auth/user.json' },
+      metadata: { role: 'sso' }
+    }
   ]
 })

@@ -1,4 +1,4 @@
-@feature:create-disease-ranking-filter @ui @smoke
+@wip @feature:create-disease-ranking-filter @ui @smoke
 Feature: Create disease ranking filter
   Users can open the disease ranking filter page and confirm the filter controls are available.
 

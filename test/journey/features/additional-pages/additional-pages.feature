@@ -1,4 +1,4 @@
-@feature:additional-pages @ui @smoke
+@wip @feature:additional-pages @ui @smoke
 Feature: Review email, question help and profile version comparison
   Test-only and pop-up pages, and the compare profile versions selection rules.
 

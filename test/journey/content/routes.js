@@ -2,6 +2,7 @@ import { byProfile } from '../support/profiles.js'
 import { uiBaseUrl } from '../support/env.js'
 
 const appRoot = uiBaseUrl()
+const siteRoot = new URL(appRoot).origin
 
 /**
  * Routes are used for navigation only (goto, expected destination). Never assert on the URL of
@@ -11,13 +12,13 @@ const appRoot = uiBaseUrl()
  * Two entries only; add one per screen during discovery.
  */
 export const routes = {
-  start: byProfile({ legacy: `${appRoot}/Home.aspx`, gds: `${appRoot}/` }), // source: app/Profiles.Web/Home.aspx:1-89
-  home: byProfile({ legacy: `${appRoot}/Home.aspx`, gds: `${appRoot}/` }), // source: app/Profiles.Web/Home.aspx:1-89
-  search: byProfile({ legacy: `${appRoot}/Search.aspx`, gds: `${appRoot}/search` }), // source: app/Profiles.Web/Search.aspx:1-30
-  diseaseRanking: byProfile({ legacy: `${appRoot}/DiseaseRanking.aspx`, gds: `${appRoot}/disease-ranking` }), // source: app/Profiles.Web/DiseaseRanking.aspx:1-30
-  generalReports: byProfile({ legacy: `${appRoot}/StaticReports.aspx`, gds: `${appRoot}/general-reports` }), // source: app/Profiles.Web/StaticReports.aspx:1-10
-  viewSpeciesData: byProfile({ legacy: `${appRoot}/ViewSpeciesData.aspx`, gds: `${appRoot}/species-data` }), // source: app/Profiles.Web/ViewSpeciesData.aspx:1-10
-  help: byProfile({ legacy: `${appRoot}/StaticReports.aspx?UserManual=1`, gds: `${appRoot}/help` }), // source: app/Profiles.Web/Home.aspx:88-90
+  start: byProfile({ legacy: `${appRoot}/Home.aspx`, gds: `${appRoot}/Home.aspx` }), // source: observed live home page /Landing/Internal/Home.aspx
+  home: byProfile({ legacy: `${appRoot}/Home.aspx`, gds: `${appRoot}/Home.aspx` }), // source: observed live home page /Landing/Internal/Home.aspx
+  search: byProfile({ legacy: `${appRoot}/Search.aspx`, gds: `${siteRoot}/SurveillanceProfiles/Search` }), // source: observed home page link "Search disease profiles"
+  diseaseRanking: byProfile({ legacy: `${appRoot}/DiseaseRanking.aspx`, gds: `${siteRoot}/Reports/DiseaseRanking` }), // source: observed home page link; the route returns a file download
+  generalReports: byProfile({ legacy: `${appRoot}/StaticReports.aspx`, gds: `${siteRoot}/Reports/General` }), // source: observed home page link "General reports"
+  viewSpeciesData: byProfile({ legacy: `${appRoot}/ViewSpeciesData.aspx`, gds: `${siteRoot}/ViewSpeciesData` }), // source: observed home page link "View species data"
+  help: byProfile({ legacy: `${appRoot}/StaticReports.aspx?UserManual=1`, gds: `${siteRoot}/HelpSupport/StaticReports?UserManual=1` }), // source: observed home page link "Help using D2R2"
   sessionTimeout: byProfile({ legacy: `${appRoot}/SessionTimeout.aspx`, gds: `${appRoot}/session-timeout` }), // source: app/Profiles.Web/SessionTimeout.aspx:1-12
   applicationError: byProfile({ legacy: `${appRoot}/ApplicationError.aspx`, gds: `${appRoot}/application-error` }), // source: app/Profiles.Web/ApplicationError.aspx:1-52
   createProfile: byProfile({ legacy: `${appRoot}/ProfileProperties.aspx`, gds: `${appRoot}/create-profile` }), // source: app/Profiles.Web/Home.aspx:1-89
@@ -46,12 +47,12 @@ export const routes = {
 
 /** Page identity. Assert these, not URLs. */
 export const pages = {
-  home: { heading: byProfile({ legacy: 'D2R2', gds: 'D2R2' }) }, // source: app/Profiles.Web/Home.aspx:1-89
-  search: { heading: byProfile({ legacy: 'Search disease profiles', gds: 'Search disease profiles' }) }, // source: app/Profiles.Web/Search.aspx:1-30
+  home: { heading: byProfile({ legacy: 'D2R2', gds: 'Welcome back' }) }, // source: observed home h1 "Welcome back, <name>"
+  search: { heading: byProfile({ legacy: 'Search disease profiles', gds: 'Search Disease Profiles' }) }, // source: observed search h1
   diseaseRanking: { heading: byProfile({ legacy: 'Disease ranking', gds: 'Disease ranking' }) }, // source: app/Profiles.Web/DiseaseRanking.aspx:1-30
   generalReports: { heading: byProfile({ legacy: 'General reports', gds: 'General reports' }) }, // source: app/Profiles.Web/StaticReports.aspx:1-10
   viewSpeciesData: { heading: byProfile({ legacy: 'View species data', gds: 'View species data' }) }, // source: app/Profiles.Web/ViewSpeciesData.aspx:1-10
-  help: { heading: byProfile({ legacy: 'Help using D2R2', gds: 'Help using D2R2' }) }, // source: app/Profiles.Web/StaticReports.aspx.vb:252-254
+  help: { heading: byProfile({ legacy: 'Help using D2R2', gds: 'Help Using D2R2' }) }, // source: observed help h1
   sessionTimeout: { heading: byProfile({ legacy: 'Your application session has expired', gds: 'Your application session has expired' }) }, // source: app/Profiles.Web/SessionTimeout.aspx:1-12
   applicationError: { heading: byProfile({ legacy: 'An error has occurred', gds: 'An error has occurred' }) }, // source: app/Profiles.Web/ApplicationError.aspx:1-52
   createProfile: { heading: byProfile({ legacy: 'Create new profile', gds: 'Create new profile' }) }, // source: app/Profiles.Web/ProfileProperties.aspx:1-40
@@ -60,9 +61,9 @@ export const pages = {
   compareProfileVersions: { heading: byProfile({ legacy: 'Compare profile versions', gds: 'Compare profile versions' }) }, // source: app/Profiles.Web/CompareProfileVersions.aspx:1-30
   manageProfile: { heading: byProfile({ legacy: 'Manage profile', gds: 'Manage profile' }) }, // source: app/Profiles.Web/ManageProfile.aspx:1-30
   profileProperties: { heading: byProfile({ legacy: 'Profile properties', gds: 'Profile properties' }) }, // source: app/Profiles.Web/ProfileProperties.aspx:1-30
-  profileReports: { heading: byProfile({ legacy: 'Profile reports', gds: 'Profile reports' }) }, // source: app/Profiles.Web/ProfileReports.aspx:1-100
+  profileReports: { heading: byProfile({ legacy: 'Profile reports', gds: 'Profile reports for' }) }, // source: observed ProfileReports page h1 "Profile reports for <title> v<version>"
   createBespokeReport: { heading: byProfile({ legacy: 'Create bespoke report', gds: 'Create bespoke report' }) }, // source: app/Profiles.Web/CreateBespokeReport.aspx:1-80
-  editProfileQuestions: { heading: byProfile({ legacy: 'Edit profile questions', gds: 'Edit profile questions' }) }, // source: app/Profiles.Web/EditProfileQuestions.aspx:1-20
+  editProfileQuestions: { heading: byProfile({ legacy: 'Edit profile questions', gds: 'African Horse Sickness' }) }, // source: observed browse page h1 is the profile title; scenarios browse African Horse Sickness
   editSpecies: { heading: byProfile({ legacy: 'Edit species data', gds: 'Edit species data' }) }, // source: app/Profiles.Web/EditSpecies.aspx:1-80
   editProfileTitle: { heading: byProfile({ legacy: 'Edit profile title', gds: 'Edit profile title' }) }, // source: app/Profiles.Web/EditProfileTitle.aspx:1-30
   maintainContributors: { heading: byProfile({ legacy: 'Maintain contributors for', gds: 'Maintain contributors for' }) }, // source: app/Profiles.Web/MaintainContributors.aspx:1-30

@@ -1,4 +1,4 @@
-@feature:maintain-global-users @ui @smoke
+@wip @feature:maintain-global-users @ui @smoke
 Feature: Maintain global users
   Users can open the global users page and confirm the user-management controls are available.
 

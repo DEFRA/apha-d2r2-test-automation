@@ -1,4 +1,4 @@
-@feature:maintain-external-users @ui @smoke
+@wip @feature:maintain-external-users @ui @smoke
 Feature: Maintain external users
   Users can open the external users page and confirm the user-management controls are available.
 

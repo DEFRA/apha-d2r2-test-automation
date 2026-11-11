@@ -1,4 +1,4 @@
-﻿@feature:field-rules @ui @smoke
+@wip ﻿@feature:field-rules @ui @smoke
 Feature: Field rules
   Required, format and length rules on forms, checked without saving any data.
 

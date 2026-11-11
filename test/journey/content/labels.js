@@ -17,9 +17,12 @@ export const labels = {
 }
 
 export const auth = {
-  username: byProfile({ legacy: 'Username', gds: 'Username' }), // source: CHANGE-ME
-  password: byProfile({ legacy: 'Password', gds: 'Password' }), // source: CHANGE-ME
-  submit: byProfile({ legacy: 'Sign in', gds: 'Sign in' }) // source: CHANGE-ME
+  // source: observed Microsoft Entra sign-in page (login.microsoftonline.com), two steps
+  username: byProfile({ legacy: 'Email, phone, or Skype', gds: 'Email, phone, or Skype' }),
+  next: byProfile({ legacy: 'Next', gds: 'Next' }),
+  password: byProfile({ legacy: 'Password', gds: 'Password' }), // source: Entra password placeholder, TODO confirm
+  submit: byProfile({ legacy: 'Sign in', gds: 'Sign in' }), // source: Entra password step, TODO confirm
+  staySignedInNo: byProfile({ legacy: 'No', gds: 'No' }) // source: Entra "Stay signed in?" prompt, TODO confirm
 }
 
 export const cookieBanner = {

@@ -1,5 +1,5 @@
 import { Given, Then, When } from '../../support/fixtures.js'
-import { expectHomePageLinksVisible, expectPageLoaded } from '../../assertions/page.assertions.js'
+import { expectDownloadNamed, expectHomePageLinksVisible, expectPageLoaded } from '../../assertions/page.assertions.js'
 import { pages, routes } from '../../content/routes.js'
 import { HomePage } from '../../pages/home.page.js'
 
@@ -35,9 +35,19 @@ Then('the search page is shown', async ({ page }) => {
   await expectPageLoaded(page, { heading: pages.search.heading })
 })
 
+const rankingDownloads = new WeakMap()
+
 When('the applicant chooses Disease Ranking Report', async ({ page }) => {
   const homePage = new HomePage(page)
+  const download = page.waitForEvent('download')
+  rankingDownloads.set(page, download)
   await homePage.openDiseaseRankingPage()
+  await download
+})
+
+Then('the disease ranking report is downloaded', async ({ page }) => {
+  const download = await rankingDownloads.get(page)
+  await expectDownloadNamed(download)
 })
 
 Then('the disease ranking page is shown', async ({ page }) => {

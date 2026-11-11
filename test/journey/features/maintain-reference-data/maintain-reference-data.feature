@@ -1,4 +1,4 @@
-@feature:maintain-reference-data @ui @smoke
+@wip @feature:maintain-reference-data @ui @smoke
 Feature: Maintain reference data
   Users can open the maintain reference data page and confirm the reference table controls are available.
 

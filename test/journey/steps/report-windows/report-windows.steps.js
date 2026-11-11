@@ -1,5 +1,15 @@
 import { When, Then } from '../../support/fixtures.js'
 import { expectReportWindow } from '../../assertions/report.assertions.js'
+import { expectDownloadNamed } from '../../assertions/page.assertions.js'
+
+const downloads = new WeakMap()
+
+async function downloadFrom(page, trigger) {
+  const download = page.waitForEvent('download')
+  downloads.set(page, download)
+  await trigger()
+  await download
+}
 
 async function openInNewWindow(page, trigger) {
   const popupPromise = page.waitForEvent('popup')
@@ -18,9 +28,9 @@ When('the applicant generates the {string} guidance report', async ({ page }, bu
   await openInNewWindow(page, () => page.getByRole('button', { name: buttonName, exact: true }).click())
 })
 
-// source: app/Profiles.Web/StaticReports.aspx.vb:213 (lnkViewStaticReportVersion opens ShowStaticReport.aspx)
+// source: observed Reports/General: report title links return a file download
 When('the applicant opens the first static report', async ({ page }) => {
-  await openInNewWindow(page, () => page.locator('a[id*="lnkViewStaticReportVersion"]').first().click())
+  await downloadFrom(page, () => page.locator('main table a[href*="document"]').first().click())
 })
 
 // source: app/Profiles.Web/MaintainPrioritisationVariables.aspx.vb:77 (btnPrint opens PrintPrioritisationVariables.aspx)
@@ -31,9 +41,13 @@ When('the applicant prints the variables for the first prioritisation category',
   await openInNewWindow(page, () => page.getByRole('button', { name: /print category variables/i }).click())
 })
 
-// source: app/Profiles.Web/ProfileReports.aspx.vb:131 (lnkEditProfileVersion opens ShowPublishedProfile.aspx)
+// source: observed ProfileReports page: each report link returns a PDF download
 When('the applicant opens the first profile report', async ({ page }) => {
-  await openInNewWindow(page, () => page.locator('a[id*="lnkEditProfileVersion"]').first().click())
+  await downloadFrom(page, () => page.locator('main').getByRole('link', { name: /summary prioritisation report/i }).click())
+})
+
+Then('the report file is downloaded', async ({ page }) => {
+  await expectDownloadNamed(await downloads.get(page))
 })
 
 Then('the {string} report window is opened', async ({ page }, destination) => {

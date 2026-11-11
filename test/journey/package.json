@@ -13,7 +13,6 @@
     "smoke": "bddgen && playwright test --grep @smoke",
     "regression": "bddgen && playwright test --grep @regression",
     "feature": "bddgen && playwright test --grep",
-    "role": "bddgen && playwright test --project",
     "auth": "playwright test --project=setup",
     "lint": "eslint .",
     "trace": "node scripts/trace-check.js",

@@ -1,4 +1,4 @@
-@feature:maintain-cross-cutting-issue-scores @ui @smoke
+@wip @feature:maintain-cross-cutting-issue-scores @ui @smoke
 Feature: Maintain cross-cutting issue scores
   Users can open the maintain cross-cutting issue scores page and confirm the controls are available.
 

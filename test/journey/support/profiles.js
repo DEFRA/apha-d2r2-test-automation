@@ -1,4 +1,4 @@
-export const PROFILE = process.env.UI_PROFILE ?? 'legacy' // 'legacy' | 'gds'
+export const PROFILE = process.env.UI_PROFILE ?? 'gds' // 'legacy' | 'gds'
 
 /**
  * Pick a value for the active UI profile. Falls back to `common`.

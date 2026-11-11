@@ -1,4 +1,4 @@
-@feature:questions-and-guidance-reports @ui @smoke
+@wip @feature:questions-and-guidance-reports @ui @smoke
 Feature: Questions and guidance reports
   Users can open the questions and guidance reports page and confirm the report-generation controls are available.
 

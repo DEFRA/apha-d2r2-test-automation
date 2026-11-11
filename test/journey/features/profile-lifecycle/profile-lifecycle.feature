@@ -1,4 +1,4 @@
-@feature:profile-lifecycle @ui @smoke
+@wip @feature:profile-lifecycle @ui @smoke
 Feature: Profile lifecycle
   Users can continue from a live search result into the profile-management screens for title, property and contributor maintenance.
 

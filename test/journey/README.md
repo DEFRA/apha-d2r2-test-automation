@@ -9,7 +9,7 @@ Playwright + `playwright-bdd` + Page Object Model, for one service with two UI p
 npm ci
 cp .env.example .env        # fill in the URLs and credentials; playwright.config.js loads it with dotenv
 npx playwright install      # once per machine
-npm run auth                # writes .auth/<role>.json
+npm run auth                # writes .auth/user.json
 npm run bdd
 ```
 
@@ -21,10 +21,9 @@ npm run bdd
 | `npm run smoke` | run only `@smoke` |
 | `npm run regression` | run only `@regression` |
 | `npm run feature -- @feature:applicant-details` | one feature |
-| `npm run role -- anonymous` | one role project (`journey`, `admin`, `anonymous`) |
 | `npm run auth` | refresh saved sessions |
 | `npm run lint` | ESLint, including the no-sleep / no-only / no-skip rules |
-| `npm run trace` | approvals, test-case↔scenario traceability, CSV freshness |
+| `npm run trace` | test-case↔scenario traceability, CSV freshness |
 | `npm run grounding` | every endpoint, page locator and content entry cites `// source:` |
 | `npm run readiness` | profile-dependency and legacy-only marker report |
 | `npm run a11y:report` | rebuild the accessibility HTML and JSON report |
@@ -42,7 +41,7 @@ api/    data/    assertions/      REST clients, seeded builders, shared assertio
 content/                          every label, message, route and page heading
 support/                          env, fixtures, profiles, a11y, text helpers
 scripts/                          trace-check, grounding, readiness, a11y helpers, automation map
-docs/                             discovery, plan, test cases, approvals, reports
+docs/                             discovery, plan, test cases, reports
 ```
 
 `content/` is the migration surface. After the cutover, only `content/`, `components/` and
@@ -57,7 +56,5 @@ rather than quietly running a legacy selector against the new UI.
 ## Notes
 
 - `.auth/`, `reports/` and `.features-gen/` are generated and git-ignored.
-- `docs/approvals.json` is the approval ledger; do not hand-edit it, and never build a feature
-  that is not approved there.
 - The example feature in `features/_example/` is tagged `@wip` and is excluded from runs.
   Delete it once real features exist.

@@ -28,24 +28,13 @@ export const apiBaseUrl = () => read('API_BASE_URL', { fallback: `${uiBaseUrl()}
 export const uiProfile = () => (process.env.UI_PROFILE ?? 'legacy').toLowerCase()
 
 /**
- * Credentials for one role, from `.env` or secret pipeline variables.
- * Never log the return value.
- * @param {string} role
+ * Sign-in credentials from `.env` or secret pipeline variables. Both empty means the
+ * current Windows SSO session is used. Never log the return value.
  * @returns {{ username: string, password: string }}
  */
-export function credentials(role) {
-  const key = role.toUpperCase().replace(/[^A-Z0-9]/g, '_')
-  const username = read(`E2E_${key}_USER`, { required: false })
-  const password = read(`E2E_${key}_PASSWORD`, { required: false })
+export function credentials() {
   return {
-    username: username ?? '',
-    password: password ?? ''
+    username: read('USER_NAME', { required: false }),
+    password: read('USER_PASSWORD', { required: false })
   }
 }
-
-/** Roles that have credentials, for the auth setup. @returns {string[]} */
-export const roles = () =>
-  (process.env.E2E_ROLES ?? 'sso')
-    .split(',')
-    .map((role) => role.trim())
-    .filter(Boolean)

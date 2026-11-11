@@ -17,7 +17,7 @@ export class SearchPage extends BasePage {
   }
 
   get searchButton() {
-    return this.page.getByRole('button', { name: /search profiles/i })
+    return this.page.locator('button.govuk-button').filter({ hasText: /search profiles/i })
   }
 
   get affectedSpeciesFilterButton() {

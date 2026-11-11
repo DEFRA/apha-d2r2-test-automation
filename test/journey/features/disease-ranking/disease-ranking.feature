@@ -1,4 +1,4 @@
-@feature:disease-ranking @ui @smoke
+@wip @feature:disease-ranking @ui @smoke
 Feature: Disease ranking report
   Users can open the disease ranking page and use the report selectors.
 

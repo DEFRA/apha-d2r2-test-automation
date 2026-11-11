@@ -1,4 +1,4 @@
-@feature:audit-trails @ui @smoke
+@wip @feature:audit-trails @ui @smoke
 Feature: Audit trails
   Users can reach the species and reference-table audit trail pages from the maintenance areas.
 

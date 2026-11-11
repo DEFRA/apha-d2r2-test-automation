@@ -17,7 +17,7 @@ export class ViewSpeciesDataPage extends BasePage {
   }
 
   async expectSpeciesFiltersVisible() {
-    const viewDataButton = this.page.getByRole('button', { name: /view data/i })
-    await expect(viewDataButton).toBeVisible()
+    await expect(this.page.getByRole('button', { name: /close all/i })).toBeVisible()
+    await expect(this.page.locator('input[name="species"]').first()).toBeAttached()
   }
 }

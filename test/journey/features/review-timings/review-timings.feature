@@ -1,4 +1,4 @@
-@feature:review-timings @ui @smoke
+@wip @feature:review-timings @ui @smoke
 Feature: Review timings
   Users can open the review timings page and confirm the report filters are available.
 

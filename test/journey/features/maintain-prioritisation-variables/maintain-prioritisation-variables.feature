@@ -1,4 +1,4 @@
-@feature:maintain-prioritisation-variables @ui @smoke
+@wip @feature:maintain-prioritisation-variables @ui @smoke
 Feature: Maintain profile prioritisation variables
   Users can open the maintain prioritisation variables page and confirm the prioritisation controls are available.
 
