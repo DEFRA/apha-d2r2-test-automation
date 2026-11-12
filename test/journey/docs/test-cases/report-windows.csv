@@ -1,40 +1,40 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
-,Test Case,Applicant opens the terrestrial disease ranking report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the terrestrial disease ranking report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the disease ranking page,The disease ranking page is displayed with its heading and controls,,,
 ,,,Step 3,"Select ""Disease ranking report: Terrestrial diseases"" in the disease ranking report list",A new browser window opens for the report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowDiseaseRankingReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant opens the aquatic disease ranking report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the aquatic disease ranking report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the disease ranking page,The disease ranking page is displayed with its heading and controls,,,
 ,,,Step 3,"Select ""Disease ranking report: Aquatic diseases"" in the disease ranking report list",A new browser window opens for the report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowDiseaseRankingReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant opens the terrestrial disease ranking RFI report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the terrestrial disease ranking RFI report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the disease ranking page,The disease ranking page is displayed with its heading and controls,,,
 ,,,Step 3,"Select ""Disease ranking report: Terrestrial diseases"" in the RFI report list",A new browser window opens for the report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowDiseaseRankingRFIReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant opens the aquatic disease ranking RFI report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the aquatic disease ranking RFI report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the disease ranking page,The disease ranking page is displayed with its heading and controls,,,
 ,,,Step 3,"Select ""Disease ranking report: Aquatic diseases"" in the RFI report list",A new browser window opens for the report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowDiseaseRankingRFIReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant generates the full profile guidance report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant generates the full profile guidance report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the questions and guidance reports page,The questions and guidance reports page is displayed with its heading and controls,,,
 ,,,Step 3,Click the Full profile guidance report button,A new browser window opens for the guidance report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowProfileGuidanceReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant generates the summary profile guidance report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant generates the summary profile guidance report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the questions and guidance reports page,The questions and guidance reports page is displayed with its heading and controls,,,
 ,,,Step 3,Click the Summary profile guidance report button,A new browser window opens for the guidance report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowProfileGuidanceReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant generates the SPR guidance report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant generates the SPR guidance report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the questions and guidance reports page,The questions and guidance reports page is displayed with its heading and controls,,,
 ,,,Step 3,Click the SPR guidance report button,A new browser window opens for the guidance report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowProfileGuidanceReport report,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant generates the Q and A sheet guidance report,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant generates the Q and A sheet guidance report,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the questions and guidance reports page,The questions and guidance reports page is displayed with its heading and controls,,,
 ,,,Step 3,Click the Q&A sheet guidance report button,A new browser window opens for the guidance report,,,
 ,,,Step 4,Check for a new browser window,A new browser window opens for the ShowProfileGuidanceReport report,,,
@@ -42,17 +42,16 @@
 ,Test Case,Applicant opens a static report from the general reports page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the general reports page,The general reports page is displayed with its heading and controls,,,
 ,,,Step 3,Click the title of the first report in the general reports list,The report opens in a new browser window,,,
-,,,Step 4,Check for a new browser window,A new browser window opens for the ShowStaticReport report,,,
+,,,Step 4,The report file is downloaded,The result is displayed on the page,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant prints the category variables for a prioritisation category,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant prints the category variables for a prioritisation category,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the maintain profile prioritisation variables page,The maintain profile prioritisation variables page is displayed with its heading and controls,,,
 ,,,Step 3,Select the first category in the prioritisation categories list,The variables for the category are listed,,,
 ,,,Step 4,Click the Print category variables button,A new browser window opens for the print version,,,
 ,,,Step 5,Check for a new browser window,A new browser window opens for the PrintPrioritisationVariables report,,,
 ,Test Case,Applicant opens a published profile report from the profile reports page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
-,,,Step 6,Click the title of the first report in the Profile reports list,The report opens in a new browser window,,,
-,,,Step 7,Check for a new browser window,A new browser window opens for the ShowPublishedProfile report,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
+,,,Step 5,Click the title of the first report in the Profile reports list,The report opens in a new browser window,,,
+,,,Step 6,The report file is downloaded,The result is displayed on the page,,,

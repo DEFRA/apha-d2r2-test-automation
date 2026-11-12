@@ -1,10 +1,10 @@
 # Status
-phase: executed (14 failing)
-source: c:\Dev\alpha-d2r2\app
-base-url: http://apha-008.cvlnt.vla.gov.uk/SurveillanceProfiles/Home.aspx
-ui-profile: legacy
-role: sso
-scope: home navigation + direct route verification + session/error + audit-trail coverage + profile-management/species edit + report-builder + search-result browse+clone + profile-reports browse + review-comments expansion + review-comment validation + valid review-comment save + contributor validation + empty-title validation + help and disease-ranking direct access
-approved: not-required
-testcases: traced
-next: fix 14 failing scenarios (draft version step) and 3 timing-flaky new ones; persisting flows need data decision
+phase: investigated and automated for the non-editor role; editor scenarios unverified
+source: C:\Dev\Laps-new\apha-cdc-apps (0576aaa)
+base-url: UI_BASE_URL in .env (host root pages, entry /Landing/Internal)
+ui-profile: gds
+role: non-editor (no ProfileEditor)
+default run: 210 passed, 0 failed; trace 283 cases / 238 scenarios
+blocked: 122 @needs:editor scenarios need an editor-role account (EDITOR_ACCOUNT=1)
+open defects: docs/04-potential-defects.md (known-defect TC-248)
+next: provide editor account, rerun with EDITOR_ACCOUNT=1

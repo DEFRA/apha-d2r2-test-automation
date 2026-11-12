@@ -1,96 +1,85 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
-,Test Case,Applicant opens the manage profile page and sees the management actions,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the manage profile page and sees the management actions,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Check the page that is displayed,The manage profile page is displayed,,,
-,Test Case,Applicant opens the manage profile page directly and confirms the management actions remain visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 5,Check the page that is displayed,The manage profile page is displayed,,,
+,Test Case,Applicant opens the manage profile page directly and confirms the management actions remain visible,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the manage profile page,The manage profile page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The manage profile page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the manage profile page directly and confirms the management route remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the manage profile page directly and confirms the management route remains stable after navigation,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the manage profile page,The manage profile page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The manage profile page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the maintain contributors page from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the maintain contributors page from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the Maintain contributors and reviewers link on the Manage profile page,The maintain contributors page is displayed,,,
-,,,Step 7,Check the page that is displayed,The maintain contributors page is displayed,,,
-,Test Case,Applicant opens the profile properties page from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 5,Click the Maintain contributors and reviewers link on the Manage profile page,The maintain contributors page is displayed,,,
+,,,Step 6,Check the page that is displayed,The maintain contributors page is displayed,,,
+,Test Case,Applicant opens the profile properties page from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the Edit properties link on the Manage profile page,The profile properties page is displayed,,,
-,,,Step 7,Check the page that is displayed,The profile properties page is displayed,,,
-,Test Case,Applicant opens the contributions report from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 5,Click the Edit properties link on the Manage profile page,The profile properties page is displayed,,,
+,,,Step 6,Check the page that is displayed,The profile properties page is displayed,,,
+,Test Case,Applicant opens the contributions report from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the Contributions link on the Manage profile page,The contributions report is displayed,,,
-,,,Step 7,Check the page that is displayed,The contributions report is displayed,,,
-,Test Case,Applicant clones a new profile from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 5,Click the Contributions link on the Manage profile page,The contributions report is displayed,,,
+,,,Step 6,Check the page that is displayed,The contributions report is displayed,,,
+,Test Case,Applicant clones a new profile from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the Clone profile link (Clone new profile on the Manage page),The Profile properties page is displayed for the new copy,,,
-,,,Step 7,Check the page that is displayed,The profile properties page is displayed,,,
-,Test Case,Applicant clones a new scenario from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 5,Click the Clone profile link (Clone new profile on the Manage page),The Profile properties page is displayed for the new copy,,,
+,,,Step 6,Check the page that is displayed,The profile properties page is displayed,,,
+,Test Case,Applicant clones a new scenario from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the Clone scenario link (Clone new scenario on the Manage page),The Profile properties page is displayed for the new copy,,,
-,,,Step 7,Check the page that is displayed,The profile properties page is displayed,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 5,Click the Clone scenario link (Clone new scenario on the Manage page),The Profile properties page is displayed for the new copy,,,
+,,,Step 6,Check the page that is displayed,The profile properties page is displayed,,,
 ,Test Case,Applicant opens the profile reports page from the search result,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
+,,,Step 5,Check the page that is displayed,The profile reports page is displayed,,,
+,Test Case,Applicant opens the bespoke report builder from the profile reports page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
+,,,Step 5,Click the Create bespoke report button,The Create bespoke report page is displayed,,,
+,,,Step 6,Check the page that is displayed,The create bespoke report page is displayed,,,
+,Test Case,Applicant browses the profile from the profile reports page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
+,,,Step 5,Click the Browse profile link on the Profile reports page,The profile questions page for that version is displayed,,,
+,,,Step 6,Check the page that is displayed,The browse profile page is displayed,,,
+,Test Case,Applicant opens the profile reports page from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
 ,,,Step 5,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
 ,,,Step 6,Check the page that is displayed,The profile reports page is displayed,,,
-,Test Case,Applicant opens the bespoke report builder from the profile reports page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the bespoke report builder from the manage profile page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Click the Manage link on the first search result,The Manage profile page is displayed,,,
 ,,,Step 5,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
 ,,,Step 6,Click the Create bespoke report button,The Create bespoke report page is displayed,,,
 ,,,Step 7,Check the page that is displayed,The create bespoke report page is displayed,,,
-,Test Case,Applicant browses the profile from the profile reports page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
-,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
-,,,Step 6,Click the Browse profile link on the Profile reports page,The profile questions page for that version is displayed,,,
-,,,Step 7,Check the page that is displayed,The browse profile page is displayed,,,
-,Test Case,Applicant opens the profile reports page from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
-,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
-,,,Step 7,Check the page that is displayed,The profile reports page is displayed,,,
-,Test Case,Applicant opens the bespoke report builder from the manage profile page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
-,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 6,Click the link to the profile reports (View reports) for the first result,The Profile reports page is displayed,,,
-,,,Step 7,Click the Create bespoke report button,The Create bespoke report page is displayed,,,
-,,,Step 8,Check the page that is displayed,The create bespoke report page is displayed,,,
 ,Test Case,Applicant opens the profile reports page directly and confirms the route remains stable,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the profile reports page,The profile reports page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The profile reports page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the bespoke report builder directly and confirms the route remains stable,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the bespoke report builder directly and confirms the route remains stable,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the create bespoke report page,The create bespoke report page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The create bespoke report page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

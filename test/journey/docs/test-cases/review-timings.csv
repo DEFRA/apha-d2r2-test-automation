@@ -1,25 +1,25 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
-,Test Case,Applicant opens the review timings page and sees the filters,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the review timings page and sees the filters,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the review timings page,The review timings page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The review timings page is displayed,,,
 ,,,Step 4,Check the review timings page content,The filters are visible,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant reaches the review timings page from the home page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant reaches the review timings page from the home page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
 ,,,Step 3,Click Review Timings in the main menu,The Review Timings page is displayed,,,
 ,,,Step 4,Check the page that is displayed,The review timings page is displayed,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant reaches the review timings page from the home page and confirms the filters are visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant reaches the review timings page from the home page and confirms the filters are visible,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
 ,,,Step 3,Click Review Timings in the main menu,The Review Timings page is displayed,,,
 ,,,Step 4,Check the review timings page content,The filters are visible,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant opens the review timings page directly and confirms the filters remain visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the review timings page directly and confirms the filters remain visible,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the review timings page,The review timings page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The review timings page is displayed,,,
 ,,,Step 4,Check the review timings page content,The filters are visible,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant opens the review timings page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the review timings page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the review timings page,The review timings page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The review timings page is displayed,,,
 ,,,Step 4,Check the review timings page content,The filters are visible,,,

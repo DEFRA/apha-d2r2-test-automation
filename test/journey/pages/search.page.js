@@ -38,7 +38,8 @@ export class SearchPage extends BasePage {
 
   async searchFor(term) {
     await this.searchInput.fill(term)
-    await this.searchButton.click()
+    await this.searchButton.first().click()
+    await this.page.waitForLoadState('load')
   }
 
   async expectFiltersVisible() {
@@ -56,5 +57,86 @@ export class SearchPage extends BasePage {
 
   async openManagePageForFirstResult() {
     await this.manageLink.click()
+  }
+
+  // source: CDC.Web/Pages/SurveillanceProfiles/Search.cshtml:32-200 and _SearchResults.cshtml:30-147
+  get form() {
+    return this.page.locator('#search-form')
+  }
+
+  get resultCards() {
+    return this.page.locator('.app-profile-card')
+  }
+
+  get resultTitles() {
+    return this.page.locator('.app-profile-card h3')
+  }
+
+  get resultCountText() {
+    return this.page.getByText(/disease profile\(s\) found containing the search words/i)
+  }
+
+  get noResultsMessage() {
+    return this.page.getByText(/no disease profiles match your search criteria/i)
+  }
+
+  statusCheckbox(label) {
+    return this.page.getByRole('checkbox', { name: label })
+  }
+
+  get appearsIn() {
+    return this.page.getByLabel('Appears in')
+  }
+
+  get sortBy() {
+    return this.page.getByLabel('Sort by:')
+  }
+
+  get pageSize() {
+    return this.page.getByLabel('Items per page:')
+  }
+
+  get moreFiltersToggle() {
+    return this.page.getByRole('button', { name: /more filters|hide more filters|fewer filters/i })
+  }
+
+  letterLink(letter) {
+    return this.page.locator(`a[data-app-search-letter="${letter}"]`)
+  }
+
+  get speciesTree() {
+    return this.page.locator('#species-filter-content')
+  }
+
+  speciesBox(label) {
+    return this.speciesTree.getByLabel(label, { exact: true })
+  }
+
+  get speciesStatus() {
+    return this.page.locator('#species-tree-status')
+  }
+
+  get speciesToggleAll() {
+    return this.page.locator('.app-tree__toggle-all')
+  }
+
+  get pagination() {
+    return this.page.getByRole('navigation', { name: /search results pages/i })
+  }
+
+  async resultCount() {
+    const text = await this.page.locator('strong').filter({ hasText: /^\d+$/ }).first().innerText()
+    return Number(text)
+  }
+
+  async waitForResults() {
+    await Promise.race([
+      this.resultCountText.waitFor({ state: 'visible' }),
+      this.noResultsMessage.waitFor({ state: 'visible' })
+    ])
+  }
+
+  async submit() {
+    await this.searchButton.first().click()
   }
 }

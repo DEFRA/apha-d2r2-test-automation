@@ -1,4 +1,4 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
 ,Test Case,Applicant opens the general reports page and sees the report list,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the general reports page,The general reports page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The general reports page is displayed,,,

@@ -1,0 +1,4211 @@
+{
+ "base": "https://d2r2-tst.aws-int.defra.cloud/Landing/Internal",
+ "when": "2026-11-11T18:26:14.735Z",
+ "pages": [
+  {
+   "key": "/Landing/Internal",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Landing/Internal",
+   "status": 200,
+   "h1": "Welcome back, Nagarajan",
+   "links": [
+    "Skip to main content -> /Landing/Internal",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "Back to top -> /Landing/Internal",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /Landing/Internal",
+    "Accessibility statement -> /Landing/Internal",
+    "Privacy notice -> /Landing/Internal",
+    "Open Government Licence v3.0 -> /Landing/Internal",
+    "© Crown copyright -> /Landing/Internal"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/HelpSupport/StaticReports?UserManual",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/HelpSupport/StaticReports?UserManual=1",
+   "status": 200,
+   "h1": "Help Using D2R2",
+   "links": [
+    "Skip to main content -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "aphaservicedesk@apha.gov.uk -> aphaservicedesk@apha.gov.uk",
+    "Title -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Version -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Effective dates -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Business Objects Infoview user guide -> /static-reports/versions/{id}/document?download",
+    "History for Business Objects Infoview user guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Contributors' guide -> /static-reports/versions/{id}/document?download",
+    "History for Contributors' guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Desk Instructions for Authors, Vets and Policy Leads -  -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Desk Instructions for Authors, Vets and Pol -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Quality Statement -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Quality Statement -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Quick Guide - Profile Completion -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Quick Guide - Profile Completion -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Style Guide -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Style Guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 tool Quality Statement -Jan 2021 Final -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 tool Quality Statement -Jan 2021 Final -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Validation Guidance for Vet and Policy Reviewers -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Validation Guidance for Vet and Policy Revi -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2-Contributors' guide-PDF-v7.0 -> /static-reports/versions/{id}/document?download",
+    "History for D2R2-Contributors' guide-PDF-v7.0 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "DiseaseRankingReport_Viral_test_22_10_2026_10_48_08 -> /static-reports/versions/{id}/document?download",
+    "History for DiseaseRankingReport_Viral_test_22_10_2026_10_48 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "1 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "2 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Next page -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Back to top -> /HelpSupport/StaticReports?UserManual",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /HelpSupport/StaticReports?UserManual",
+    "Accessibility statement -> /HelpSupport/StaticReports?UserManual",
+    "Privacy notice -> /HelpSupport/StaticReports?UserManual",
+    "Open Government Licence v3.0 -> /HelpSupport/StaticReports?UserManual",
+    "© Crown copyright -> /HelpSupport/StaticReports?UserManual"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/Search",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/Search",
+   "status": 200,
+   "h1": "Search Disease Profiles",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/Search",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "All -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "A -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "B -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "C -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "D -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "E -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "F -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "G -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "H -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "I -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "J -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "K -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "L -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "M -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "N -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "O -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "P -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Q -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "R -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "S -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "T -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "U -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "V -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "W -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "X -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Y -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Z -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "View reports -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Browse profile -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "1 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "2 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "6 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Next page -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Back to top -> /SurveillanceProfiles/Search",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/Search",
+    "Accessibility statement -> /SurveillanceProfiles/Search",
+    "Privacy notice -> /SurveillanceProfiles/Search",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/Search",
+    "© Crown copyright -> /SurveillanceProfiles/Search"
+   ],
+   "buttons": [
+    "Menu",
+    "Search profiles",
+    "Show filter by affected species",
+    "Close all",
+    "Amphibians",
+    "Amphibians - other",
+    "Birds",
+    "Birds - native and introduced - captive",
+    "Birds - native and introduced - free-ranging",
+    "Gamebirds (excluding zoo kept)",
+    "Poultry - domestic and commercial",
+    "Crustacea",
+    "Decapods",
+    "Shrimp",
+    "Fish",
+    "Carp",
+    "Salmonids",
+    "Tench",
+    "Mammals",
+    "Camelids",
+    "Carnivores (mammalian)",
+    "Canids - wild",
+    "Feline - wild",
+    "Mustelids - wild",
+    "Lagomorphs",
+    "Perisodactyla",
+    "Rodents",
+    "Rodents - wild",
+    "Squirrel",
+    "Ruminants",
+    "Deer",
+    "Suids",
+    "Suids - domestic",
+    "Molluscs",
+    "Reptiles",
+    "Crocodilians",
+    "More filters",
+    "Show previous versions",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "SearchText",
+     "ty": "text",
+     "req": false,
+     "max": 255
+    },
+    {
+     "n": "DisplayPublished",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "DisplayDraft",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "DisplayScenarios",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SearchForExactPhrase",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SearchForAllWords",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "AppearsIn",
+     "ty": "select-one",
+     "req": false
+    },
+    {
+     "n": "SortBy",
+     "ty": "select-one",
+     "req": false
+    },
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/Reports/General",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Reports/General",
+   "status": 200,
+   "h1": "General reports",
+   "links": [
+    "Skip to main content -> /Reports/General",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "Title -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Version -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Public? -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Effective dates -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "DiseaseRankingReport -> /static-reports/versions/{id}/document?download",
+    "History -> /Reports/General?staticReportId",
+    "Back to top -> /Reports/General",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /Reports/General",
+    "Accessibility statement -> /Reports/General",
+    "Privacy notice -> /Reports/General",
+    "Open Government Licence v3.0 -> /Reports/General",
+    "© Crown copyright -> /Reports/General"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Reports/General"
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/Reports/DiseaseRanking",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Reports/DiseaseRanking",
+   "status": null,
+   "h1": null,
+   "links": [],
+   "buttons": [],
+   "forms": [],
+   "inputs": [],
+   "tables": 0,
+   "nav": [],
+   "error": "page.goto: Download is starting"
+  },
+  {
+   "key": "/ViewSpeciesData",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/ViewSpeciesData",
+   "status": 200,
+   "h1": "View species data",
+   "links": [
+    "Skip to main content -> /ViewSpeciesData",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Back to top -> /ViewSpeciesData",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /ViewSpeciesData",
+    "Accessibility statement -> /ViewSpeciesData",
+    "Privacy notice -> /ViewSpeciesData",
+    "Open Government Licence v3.0 -> /ViewSpeciesData",
+    "© Crown copyright -> /ViewSpeciesData"
+   ],
+   "buttons": [
+    "Menu",
+    "Close all",
+    "Amphibians",
+    "Amphibians - other",
+    "Birds",
+    "Birds - native and introduced - captive",
+    "Birds - native and introduced - free-ranging",
+    "Gamebirds (excluding zoo kept)",
+    "Poultry - domestic and commercial",
+    "Crustacea",
+    "Decapods",
+    "Shrimp",
+    "Fish",
+    "Carp",
+    "Salmonids",
+    "Tench",
+    "Mammals",
+    "Camelids",
+    "Carnivores (mammalian)",
+    "Canids - wild",
+    "Feline - wild",
+    "Mustelids - wild",
+    "Lagomorphs",
+    "Perisodactyla",
+    "Rodents",
+    "Rodents - wild",
+    "Squirrel",
+    "Ruminants",
+    "Deer",
+    "Suids",
+    "Suids - domestic",
+    "Molluscs",
+    "Reptiles",
+    "Crocodilians",
+    "Remove selection",
+    "View data",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    },
+    {
+     "n": "species",
+     "ty": "radio",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/HelpSupport/QualityStatement",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/HelpSupport/QualityStatement",
+   "status": null,
+   "h1": null,
+   "links": [],
+   "buttons": [],
+   "forms": [],
+   "inputs": [],
+   "tables": 0,
+   "nav": [],
+   "error": "page.goto: Download is starting"
+  },
+  {
+   "key": "/HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/HelpSupport/StaticReports?UserManual=1&PageSize=10&PageNumber=1&SortColumn=Title&SortDirection=Descending",
+   "status": 200,
+   "h1": "Help Using D2R2",
+   "links": [
+    "Skip to main content -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "aphaservicedesk@apha.gov.uk -> aphaservicedesk@apha.gov.uk",
+    "Title -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Version -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Effective dates -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Who completes which questions and general approach to take w -> /static-reports/versions/{id}/document?download",
+    "History for Who completes which questions and general approa -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "ProfileVersionComparison (1) -> /static-reports/versions/{id}/document?download",
+    "History for ProfileVersionComparison (1) -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Profile Editor user guide -> /static-reports/versions/{id}/document?download",
+    "History for Profile Editor user guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Guidance for completing a profile -> /static-reports/versions/{id}/document?download",
+    "History for Guidance for completing a profile -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Guidance for answering each question -> /static-reports/versions/{id}/document?download",
+    "History for Guidance for answering each question -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "DiseaseRankingReport_Viral_test_22_10_2026_10_48_08 -> /static-reports/versions/{id}/document?download",
+    "History for DiseaseRankingReport_Viral_test_22_10_2026_10_48 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2-Contributors' guide-PDF-v7.0 -> /static-reports/versions/{id}/document?download",
+    "History for D2R2-Contributors' guide-PDF-v7.0 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Validation Guidance for Vet and Policy Reviewers -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Validation Guidance for Vet and Policy Revi -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 tool Quality Statement -Jan 2021 Final -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 tool Quality Statement -Jan 2021 Final -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Style Guide -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Style Guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "1 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "2 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Next page -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Back to top -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Accessibility statement -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Privacy notice -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Open Government Licence v3.0 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "© Crown copyright -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/HelpSupport/StaticReports?StaticReportId&UserManual",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/HelpSupport/StaticReports?StaticReportId={id}&UserManual=1",
+   "status": 200,
+   "h1": "History for Business Objects Infoview user guide",
+   "links": [
+    "Skip to main content -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Help Using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "Business Objects Infoview user guide -> /static-reports/versions/{id}/document?download",
+    "Back to top -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Accessibility statement -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Privacy notice -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Open Government Licence v3.0 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "© Crown copyright -> /HelpSupport/StaticReports?StaticReportId&UserManual"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/HelpSupport/StaticReports?UserManual=1&PageSize=10&PageNumber=1&SortColumn=Title",
+   "status": 200,
+   "h1": "Help Using D2R2",
+   "links": [
+    "Skip to main content -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "aphaservicedesk@apha.gov.uk -> aphaservicedesk@apha.gov.uk",
+    "Title -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Version -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Effective dates -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&SortDirection&UserManual",
+    "Business Objects Infoview user guide -> /static-reports/versions/{id}/document?download",
+    "History for Business Objects Infoview user guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "Contributors' guide -> /static-reports/versions/{id}/document?download",
+    "History for Contributors' guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Desk Instructions for Authors, Vets and Policy Leads -  -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Desk Instructions for Authors, Vets and Pol -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Quality Statement -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Quality Statement -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Quick Guide - Profile Completion -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Quick Guide - Profile Completion -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Style Guide -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Style Guide -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 tool Quality Statement -Jan 2021 Final -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 tool Quality Statement -Jan 2021 Final -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2 Validation Guidance for Vet and Policy Reviewers -> /static-reports/versions/{id}/document?download",
+    "History for D2R2 Validation Guidance for Vet and Policy Revi -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "D2R2-Contributors' guide-PDF-v7.0 -> /static-reports/versions/{id}/document?download",
+    "History for D2R2-Contributors' guide-PDF-v7.0 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "DiseaseRankingReport_Viral_test_22_10_2026_10_48_08 -> /static-reports/versions/{id}/document?download",
+    "History for DiseaseRankingReport_Viral_test_22_10_2026_10_48 -> /HelpSupport/StaticReports?StaticReportId&UserManual",
+    "1 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "2 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Next page -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Back to top -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Accessibility statement -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Privacy notice -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "Open Government Licence v3.0 -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual",
+    "© Crown copyright -> /HelpSupport/StaticReports?PageNumber&PageSize&SortColumn&UserManual"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/Search?DisplayPublished=True&DisplayDraft=False&DisplayScenarios=False&AppearsIn=ProfileTitles&SearchForExactPhrase=True&SearchForAllWords=False&SortBy=Az&PageSize=10&SelectedLetter=All",
+   "status": 200,
+   "h1": "Search Disease Profiles",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "All -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "A -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "B -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "C -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "D -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "E -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "F -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "G -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "H -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "I -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "J -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "K -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "L -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "M -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "N -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "O -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "P -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Q -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "R -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "S -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "T -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "U -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "V -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "W -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "X -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Y -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Z -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "View reports -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Browse profile -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "1 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "2 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "6 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Next page -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Back to top -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Accessibility statement -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Privacy notice -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "© Crown copyright -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy"
+   ],
+   "buttons": [
+    "Menu",
+    "Search profiles",
+    "Show filter by affected species",
+    "Close all",
+    "Amphibians",
+    "Amphibians - other",
+    "Birds",
+    "Birds - native and introduced - captive",
+    "Birds - native and introduced - free-ranging",
+    "Gamebirds (excluding zoo kept)",
+    "Poultry - domestic and commercial",
+    "Crustacea",
+    "Decapods",
+    "Shrimp",
+    "Fish",
+    "Carp",
+    "Salmonids",
+    "Tench",
+    "Mammals",
+    "Camelids",
+    "Carnivores (mammalian)",
+    "Canids - wild",
+    "Feline - wild",
+    "Mustelids - wild",
+    "Lagomorphs",
+    "Perisodactyla",
+    "Rodents",
+    "Rodents - wild",
+    "Squirrel",
+    "Ruminants",
+    "Deer",
+    "Suids",
+    "Suids - domestic",
+    "Molluscs",
+    "Reptiles",
+    "Crocodilians",
+    "More filters",
+    "Show previous versions",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "SearchText",
+     "ty": "text",
+     "req": false,
+     "max": 255
+    },
+    {
+     "n": "DisplayPublished",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "DisplayDraft",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "DisplayScenarios",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SearchForExactPhrase",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SearchForAllWords",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "AppearsIn",
+     "ty": "select-one",
+     "req": false
+    },
+    {
+     "n": "SortBy",
+     "ty": "select-one",
+     "req": false
+    },
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/ProfileReports/{id}",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/ProfileReports/{id}",
+   "status": 200,
+   "h1": "Profile reports for African Horse Sickness (AHS) v14.0",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/ProfileReports/{id}",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "Summary prioritisation report -> /SurveillanceProfiles/ProfileReports/{id}?handler&reportId",
+    "Summary profile -> /SurveillanceProfiles/ProfileReports/{id}?handler&reportId",
+    "Question and answer sheet -> /SurveillanceProfiles/ProfileReports/{id}?handler&reportId",
+    "Browse disease profile -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "Back to top -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Accessibility statement -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Privacy notice -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/ProfileReports/{id}",
+    "© Crown copyright -> /SurveillanceProfiles/ProfileReports/{id}"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId={id}",
+   "status": 200,
+   "h1": "African Horse Sickness (AHS)",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Section validated: 1. Summary -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 2. Geographic distribution and levels of  -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 3. Epidemiology of animal infection -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 4. Characteristics of the agent -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 5. Animal welfare -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 6. Human health implications -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 7. Impact on wider society and stakeholde -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 8. Legislation and other mandates -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 9. Approach to control of this issue in a -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 10. Risk assessment -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 11. Laboratories -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 12. Current surveillance activities in th -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 13. International trade -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 14. Opportunity to add value -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 15. Public and stakeholder perception -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 16. Areas of uncertainty -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Next page : 2. Geographic distribution and levels of disease -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Back to top -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "Accessibility statement -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "Privacy notice -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "© Crown copyright -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId"
+   ],
+   "buttons": [
+    "Menu",
+    "view more tabs",
+    "Summary",
+    "References",
+    "Further information",
+    "Show all sections",
+    "1.1 Summary description , Show",
+    "1.2 Description , Show",
+    "1.3 Profiled species , Show",
+    "1.4 Other affected species , Show",
+    "1.5 Scenario description , Show",
+    "1.6 Revision history , Show",
+    "Yes, extend session",
+    "Sign in again",
+    "Ignore",
+    "Ignore All",
+    "Add Custom",
+    "Change",
+    "Change All",
+    "Undo",
+    "Close"
+   ],
+   "forms": [
+    {
+     "m": "post",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "spell-check-edit",
+     "ty": "text",
+     "req": false
+    },
+    {
+     "n": "spell-check-suggestions",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/Search?DisplayPublished=True&DisplayDraft=False&DisplayScenarios=False&AppearsIn=ProfileTitles&SearchForExactPhrase=True&SearchForAllWords=False&SortBy=Az&PageSize=10&SelectedLetter=All&PageNumber=1",
+   "status": 200,
+   "h1": "Search Disease Profiles",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "All -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "A -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "B -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "C -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "D -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "E -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "F -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "G -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "H -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "I -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "J -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "K -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "L -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "M -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "N -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "O -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "P -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Q -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "R -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "S -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "T -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "U -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "V -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "W -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "X -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Y -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Z -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "View reports -> /SurveillanceProfiles/ProfileReports/{id}",
+    "Browse profile -> /SurveillanceProfiles/EditProfileQuestions/{id}?profileVersionId",
+    "1 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "2 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "6 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Next page -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Back to top -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Accessibility statement -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Privacy notice -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy",
+    "© Crown copyright -> /SurveillanceProfiles/Search?AppearsIn&DisplayDraft&DisplayPublished&DisplayScenarios&PageNumber&PageSize&SearchForAllWords&SearchForExactPhrase&SelectedLetter&SortBy"
+   ],
+   "buttons": [
+    "Menu",
+    "Search profiles",
+    "Show filter by affected species",
+    "Close all",
+    "Amphibians",
+    "Amphibians - other",
+    "Birds",
+    "Birds - native and introduced - captive",
+    "Birds - native and introduced - free-ranging",
+    "Gamebirds (excluding zoo kept)",
+    "Poultry - domestic and commercial",
+    "Crustacea",
+    "Decapods",
+    "Shrimp",
+    "Fish",
+    "Carp",
+    "Salmonids",
+    "Tench",
+    "Mammals",
+    "Camelids",
+    "Carnivores (mammalian)",
+    "Canids - wild",
+    "Feline - wild",
+    "Mustelids - wild",
+    "Lagomorphs",
+    "Perisodactyla",
+    "Rodents",
+    "Rodents - wild",
+    "Squirrel",
+    "Ruminants",
+    "Deer",
+    "Suids",
+    "Suids - domestic",
+    "Molluscs",
+    "Reptiles",
+    "Crocodilians",
+    "More filters",
+    "Show previous versions",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "SearchText",
+     "ty": "text",
+     "req": false,
+     "max": 255
+    },
+    {
+     "n": "DisplayPublished",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "DisplayDraft",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "DisplayScenarios",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SelectedSpecies",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SearchForExactPhrase",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "SearchForAllWords",
+     "ty": "checkbox",
+     "req": false
+    },
+    {
+     "n": "AppearsIn",
+     "ty": "select-one",
+     "req": false
+    },
+    {
+     "n": "SortBy",
+     "ty": "select-one",
+     "req": false
+    },
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Reports/General?PageSize=10&PageNumber=1&SortColumn=Title&SortDirection=Ascending",
+   "status": 200,
+   "h1": "General reports",
+   "links": [
+    "Skip to main content -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "D2R2@defra.gov.uk -> D2R2@defra.gov.uk",
+    "Title -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Version -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Public? -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Effective dates -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "DiseaseRankingReport -> /static-reports/versions/{id}/document?download",
+    "History -> /Reports/General?staticReportId",
+    "Back to top -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Accessibility statement -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Privacy notice -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "Open Government Licence v3.0 -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection",
+    "© Crown copyright -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Reports/General"
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/Reports/General?staticReportId",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Reports/General?staticReportId={id}",
+   "status": 200,
+   "h1": "History for DiseaseRankingReport",
+   "links": [
+    "Skip to main content -> /Reports/General?staticReportId",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Title -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Version -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Public? -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Effective dates -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "DiseaseRankingReport version 20.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 19.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 18.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 17.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 16.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 15.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 14.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 13.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 12.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 11.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "1 -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "2 -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Next page -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Back to top -> /Reports/General?staticReportId",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /Reports/General?staticReportId",
+    "Accessibility statement -> /Reports/General?staticReportId",
+    "Privacy notice -> /Reports/General?staticReportId",
+    "Open Government Licence v3.0 -> /Reports/General?staticReportId",
+    "© Crown copyright -> /Reports/General?staticReportId"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Reports/General"
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/EditProfileQuestions/{id}",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/EditProfileQuestions/{id}",
+   "status": 200,
+   "h1": "African Horse Sickness (AHS)",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Section validated: 1. Summary -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 2. Geographic distribution and levels of  -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 3. Epidemiology of animal infection -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 4. Characteristics of the agent -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 5. Animal welfare -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 6. Human health implications -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 7. Impact on wider society and stakeholde -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 8. Legislation and other mandates -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 9. Approach to control of this issue in a -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 10. Risk assessment -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 11. Laboratories -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 12. Current surveillance activities in th -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 13. International trade -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 14. Opportunity to add value -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 15. Public and stakeholder perception -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 16. Areas of uncertainty -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Next page : 2. Geographic distribution and levels of disease -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Back to top -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "Accessibility statement -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "Privacy notice -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/EditProfileQuestions/{id}",
+    "© Crown copyright -> /SurveillanceProfiles/EditProfileQuestions/{id}"
+   ],
+   "buttons": [
+    "Menu",
+    "view more tabs",
+    "Summary",
+    "References",
+    "Further information",
+    "Show all sections",
+    "1.1 Summary description , Show",
+    "1.2 Description , Show",
+    "1.3 Profiled species , Show",
+    "1.4 Other affected species , Show",
+    "1.5 Scenario description , Show",
+    "1.6 Revision history , Show",
+    "Yes, extend session",
+    "Sign in again",
+    "Ignore",
+    "Ignore All",
+    "Add Custom",
+    "Change",
+    "Change All",
+    "Undo",
+    "Close"
+   ],
+   "forms": [
+    {
+     "m": "post",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "spell-check-edit",
+     "ty": "text",
+     "req": false
+    },
+    {
+     "n": "spell-check-suggestions",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/SurveillanceProfiles/EditProfileQuestions/{id}?section",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/SurveillanceProfiles/EditProfileQuestions/{id}?section={id}",
+   "status": 200,
+   "h1": "African Horse Sickness (AHS)",
+   "links": [
+    "Skip to main content -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Section validated: 1. Summary -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 2. Geographic distribution and levels of  -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 3. Epidemiology of animal infection -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 4. Characteristics of the agent -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 5. Animal welfare -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 6. Human health implications -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 7. Impact on wider society and stakeholde -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 8. Legislation and other mandates -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 9. Approach to control of this issue in a -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 10. Risk assessment -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 11. Laboratories -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 12. Current surveillance activities in th -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 13. International trade -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 14. Opportunity to add value -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 15. Public and stakeholder perception -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Section validated: 16. Areas of uncertainty -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Next page : 2. Geographic distribution and levels of disease -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Back to top -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Accessibility statement -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Privacy notice -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "Open Government Licence v3.0 -> /SurveillanceProfiles/EditProfileQuestions/{id}?section",
+    "© Crown copyright -> /SurveillanceProfiles/EditProfileQuestions/{id}?section"
+   ],
+   "buttons": [
+    "Menu",
+    "view more tabs",
+    "Summary",
+    "References",
+    "Further information",
+    "Show all sections",
+    "1.1 Summary description , Show",
+    "1.2 Description , Show",
+    "1.3 Profiled species , Show",
+    "1.4 Other affected species , Show",
+    "1.5 Scenario description , Show",
+    "1.6 Revision history , Show",
+    "Yes, extend session",
+    "Sign in again",
+    "Ignore",
+    "Ignore All",
+    "Add Custom",
+    "Change",
+    "Change All",
+    "Undo",
+    "Close"
+   ],
+   "forms": [
+    {
+     "m": "post",
+     "a": ""
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "spell-check-edit",
+     "ty": "text",
+     "req": false
+    },
+    {
+     "n": "spell-check-suggestions",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 0,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Reports/General?StaticReportId={id}&PageSize=10&PageNumber=1&SortColumn=Title&SortDirection=Ascending",
+   "status": 200,
+   "h1": "History for DiseaseRankingReport",
+   "links": [
+    "Skip to main content -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Title -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Version -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Public? -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Effective dates -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "DiseaseRankingReport version 20.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 19.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 18.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 17.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 16.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 15.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 14.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 13.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 12.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 11.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "1 -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "2 -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Next page -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Back to top -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Accessibility statement -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Privacy notice -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Open Government Licence v3.0 -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "© Crown copyright -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Reports/General"
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  },
+  {
+   "key": "/Reports/General?PageNumber&PageSize&StaticReportId",
+   "url": "https://d2r2-tst.aws-int.defra.cloud/Reports/General?StaticReportId={id}&PageSize=10&PageNumber=1",
+   "status": 200,
+   "h1": "History for DiseaseRankingReport",
+   "links": [
+    "Skip to main content -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "D2R2 -> /Landing/Internal",
+    " -> /HelpSupport/StaticReports?UserManual",
+    "Search disease profiles -> /SurveillanceProfiles/Search",
+    "General reports -> /Reports/General",
+    "Disease ranking report -> /Reports/DiseaseRanking",
+    "View species data -> /ViewSpeciesData",
+    " -> /sites/APHAIntranet",
+    "D2R2 Home -> /Landing/Internal",
+    "Title -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Version -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Public? -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "Effective dates -> /Reports/General?PageNumber&PageSize&SortColumn&SortDirection&StaticReportId",
+    "DiseaseRankingReport version 20.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 19.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 18.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 17.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 16.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 15.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 14.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 13.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 12.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "DiseaseRankingReport version 11.0 (PDF download) -> /static-reports/versions/{id}/document?download",
+    "1 -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "2 -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Next page -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Back to top -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Help using D2R2 -> /HelpSupport/StaticReports?UserManual",
+    "D2R2 Quality Statement -> /HelpSupport/QualityStatement",
+    "Cookies -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Accessibility statement -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Privacy notice -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "Open Government Licence v3.0 -> /Reports/General?PageNumber&PageSize&StaticReportId",
+    "© Crown copyright -> /Reports/General?PageNumber&PageSize&StaticReportId"
+   ],
+   "buttons": [
+    "Menu",
+    "Yes, extend session",
+    "Sign in again"
+   ],
+   "forms": [
+    {
+     "m": "get",
+     "a": "/Reports/General"
+    },
+    {
+     "m": "get",
+     "a": "/Session/SignInAgain"
+    }
+   ],
+   "inputs": [
+    {
+     "n": "PageSize",
+     "ty": "select-one",
+     "req": false
+    }
+   ],
+   "tables": 1,
+   "nav": [],
+   "denied": false
+  }
+ ]
+}

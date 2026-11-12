@@ -1,4 +1,4 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
 ,Test Case,Verify a profile can be created with a title and appears in the search,Step 1,Log in to D2R2 as <D2R2 account with the Profile editor role>,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click Create Profile in the main menu,The Create new profile page is displayed,,,
 ,,,Step 3,"Enter ""ADO-TEST <unique test title with date>"" in the profile title",The title is shown in the title box,,,

@@ -1,4 +1,4 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
 ,Test Case,Verify an unauthenticated browser is sent to the sign-in page for Home,Step 1,Open a browser on a machine or profile that has no Windows or SSO session for the service,No D2R2 session cookie exists,Path x,,Design
 ,,,Step 2,Open the D2R2 Home page address,The browser is redirected to the sign-in page (VLAServices Login) instead of the D2R2 Home page,,,
 ,,,Step 3,Check the page content,"No D2R2 menu, search box or profile data is displayed",,,

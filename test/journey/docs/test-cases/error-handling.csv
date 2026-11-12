@@ -1,28 +1,28 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
-,Test Case,Applicant sees the session timeout page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
-,,,Step 2,Open the session timeout page directly in the browser,"The page with the heading ""Your application session has expired"" is displayed",,,
-,,,Step 3,Check the page that is displayed,The session timeout page is displayed,,,
-,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,,,Step 5,Check the page heading,The page heading is visible,,,
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant's signed-in session reports the time it has left,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Request GET /Session/Status while signed in,The request returns HTTP 200 with JSON,,,
+,,,Step 4,Check the JSON response,authenticated is true and remainingSeconds is greater than 0,,,
+,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,Test Case,Applicant sees the application error page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the application error page directly in the browser,"The page with the heading ""An error has occurred"" is displayed",,,
 ,,,Step 3,Check the page that is displayed,The application error page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the session timeout page and confirms the dedicated error state is visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
-,,,Step 2,Open the session timeout page directly in the browser,"The page with the heading ""Your application session has expired"" is displayed",,,
-,,,Step 3,Check the page that is displayed,The session timeout page is displayed,,,
-,,,Step 4,Check the page after it loads,The session timeout page stays displayed and does not redirect,,,
+,Test Case,Applicant's page carries the session warning and expiry dialogs without showing them,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Check the Extend session? dialog,The dialog exists in the page but is not displayed,,,
+,,,Step 4,Check the Session expired dialog,The dialog exists in the page but is not displayed,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,Test Case,Applicant opens the application error page and confirms the error state is visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the application error page directly in the browser,"The page with the heading ""An error has occurred"" is displayed",,,
 ,,,Step 3,Check the page that is displayed,The application error page is displayed,,,
 ,,,Step 4,Check the page after it loads,The application error page stays displayed and does not redirect,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
-,Test Case,Applicant opens the session timeout page directly and confirms the error page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
-,,,Step 2,Open the session timeout page directly in the browser,"The page with the heading ""Your application session has expired"" is displayed",,,
-,,,Step 3,Check the page that is displayed,The session timeout page is displayed,,,
-,,,Step 4,Check the page after it loads,The session timeout page stays displayed and does not redirect,,,
+,Test Case,Applicant's session cannot be extended without an antiforgery token,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 2,Open the D2R2 Home page,The Home page is displayed with the D2R2 menu,,,
+,,,Step 3,Send POST /Session/Extend without an antiforgery token,The request is sent,,,
+,,,Step 4,Check the response,The response is HTTP 400 and the session is not extended,,,
 ,,,Step 5,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,Test Case,Applicant opens the application error page directly and confirms the error page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the application error page directly in the browser,"The page with the heading ""An error has occurred"" is displayed",,,

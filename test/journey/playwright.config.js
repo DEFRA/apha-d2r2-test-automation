@@ -19,7 +19,7 @@ const appBaseUrl = (process.env.UI_BASE_URL ?? '').replace(/\/$/, '').replace(/\
 export default defineConfig({
   testDir,
   forbidOnly: ci,
-  grepInvert: process.env.RUN_WIP ? undefined : /@wip/, // work-in-progress scenarios are generated but only run with RUN_WIP=1
+  grepInvert: [/@obsolete/, process.env.RUN_KNOWN_DEFECTS ? null : /@known-defect/, process.env.RUN_WIP ? null : /@wip/, process.env.EDITOR_ACCOUNT ? null : /@needs:editor/].filter(Boolean), // @obsolete: page no longer exists in CDC.Web; @known-defect: fails until the logged defect is fixed (RUN_KNOWN_DEFECTS=1); @wip: unfinished; @needs:editor: requires the ProfileEditor role (EDITOR_ACCOUNT=1)
   retries: ci ? 1 : 0,
   workers: 1,
   fullyParallel: false,

@@ -1,0 +1,537 @@
+{
+  "story_summary": "Manual cases for the gap-closure journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant lists profiles beginning with each remaining letter - features/gap-closure/gap-closure.feature:6",
+      "test_cases": [
+        "Applicant lists profiles beginning with each remaining letter"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant finds the letter counts add up to every profile - features/gap-closure/gap-closure.feature:36",
+      "test_cases": [
+        "Applicant finds the letter counts add up to every profile"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reaches the last page of results - features/gap-closure/gap-closure.feature:41",
+      "test_cases": [
+        "Applicant reaches the last page of results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sorts by recency and the newest comes before the oldest - features/gap-closure/gap-closure.feature:48",
+      "test_cases": [
+        "Applicant sorts by recency and the newest comes before the oldest"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reads the reference groups on the References tab - features/gap-closure/gap-closure.feature:56",
+      "test_cases": [
+        "Applicant reads the reference groups on the References tab"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the Further information tab without an error - features/gap-closure/gap-closure.feature:63",
+      "test_cases": [
+        "Applicant opens the Further information tab without an error"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant uses the header menu on a phone-sized screen - features/gap-closure/gap-closure.feature:70",
+      "test_cases": [
+        "Applicant uses the header menu on a phone-sized screen"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-243",
+      "title": "Applicant lists profiles beginning with each remaining letter",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant lists profiles beginning with each remaining letter - features/gap-closure/gap-closure.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click D in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click E in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click F in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click G in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click H in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click I in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click J in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click K in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click L in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click M in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click N in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click O in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click P in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click Q in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click R in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click T in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click U in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click V in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click W in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click Y in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click Z in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with D"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with E"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with F"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with G"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with H"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with I"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with J"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with K"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with L"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with M"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with N"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with O"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with P"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with Q"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with R"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with T"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with U"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with V"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with W"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with Y"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with Z"
+        }
+      ]
+    },
+    {
+      "ref": "TC-244",
+      "title": "Applicant finds the letter counts add up to every profile",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant finds the letter counts add up to every profile - features/gap-closure/gap-closure.feature:36"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Search with each letter A to Z and note the counts, then search with All",
+          "expected": "The 26 counts add up to the count for All"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-245",
+      "title": "Applicant reaches the last page of results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reaches the last page of results - features/gap-closure/gap-closure.feature:41"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click the highest page number under the results",
+          "expected": "The last page is displayed and marked as current"
+        },
+        {
+          "action": "Count the profiles on the last page",
+          "expected": "The count equals the remainder of the total divided by the page size"
+        },
+        {
+          "action": "Check the page numbers under the results",
+          "expected": "There is a Previous page link and no Next page link"
+        }
+      ]
+    },
+    {
+      "ref": "TC-246",
+      "title": "Applicant sorts by recency and the newest comes before the oldest",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sorts by recency and the newest comes before the oldest - features/gap-closure/gap-closure.feature:48"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Choose \"Least recently updated\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Note the date shown for the first profile",
+          "expected": "The date is noted"
+        },
+        {
+          "action": "Choose \"Most recently updated\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Compare the first profile date with the noted date",
+          "expected": "The newer sort shows an equal or later date"
+        }
+      ]
+    },
+    {
+      "ref": "TC-247",
+      "title": "Applicant reads the reference groups on the References tab",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reads the reference groups on the References tab - features/gap-closure/gap-closure.feature:56"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click the References tab",
+          "expected": "The References content opens"
+        },
+        {
+          "action": "Read the References tab",
+          "expected": "Scientific paper references and Legislative references are listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-248",
+      "title": "Applicant opens the Further information tab without an error",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the Further information tab without an error - features/gap-closure/gap-closure.feature:63"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click the Further information tab",
+          "expected": "The Further information content opens"
+        },
+        {
+          "action": "Check the page",
+          "expected": "No \"There is a problem\" message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-249",
+      "title": "Applicant uses the header menu on a phone-sized screen",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant uses the header menu on a phone-sized screen - features/gap-closure/gap-closure.feature:70"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Set the browser window to 375 by 667 pixels",
+          "expected": "The page uses the phone layout"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the header menu",
+          "expected": "The menu panel is hidden and the menu button is not expanded"
+        },
+        {
+          "action": "Open the header menu",
+          "expected": "The menu panel is displayed"
+        },
+        {
+          "action": "Check the menu panel",
+          "expected": "It offers Search disease profiles, General reports, Disease ranking report and View species data"
+        },
+        {
+          "action": "Press the Escape key",
+          "expected": "The menu closes"
+        },
+        {
+          "action": "Check the header menu",
+          "expected": "The menu panel is hidden and the menu button is not expanded"
+        }
+      ]
+    }
+  ]
+}

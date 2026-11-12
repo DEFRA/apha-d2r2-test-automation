@@ -194,8 +194,8 @@
           "expected": "The Disease Ranking Report page is displayed"
         },
         {
-          "action": "Check the page that is displayed",
-          "expected": "The disease ranking page is displayed"
+          "action": "Check the browser downloads",
+          "expected": "The stored Disease ranking report file is downloaded"
         },
         {
           "action": "Check the page for error messages",
@@ -314,7 +314,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -347,7 +347,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -380,7 +380,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -413,7 +413,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -512,7 +512,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -545,7 +545,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -578,7 +578,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -611,7 +611,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {

@@ -1,8 +1,8 @@
-@wip ﻿@feature:profile-editing @ui @smoke
+ ﻿@feature:profile-editing @ui @smoke
 Feature: Profile editing
   Users can move between the profile editing tabs and the section links from the browse profile page.
 
-  @role:sso @TC-151
+  @role:sso @TC-151 @obsolete
   Scenario: Applicant opens the references tab from the browse profile page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -10,7 +10,7 @@ Feature: Profile editing
     And the applicant opens the "References" tab of the browse profile page
     Then the edit page for the "References" tab is shown
 
-  @role:sso @TC-144
+  @role:sso @TC-144 @obsolete
   Scenario: Applicant opens the further information tab from the browse profile page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -18,7 +18,7 @@ Feature: Profile editing
     And the applicant opens the "Further information" tab of the browse profile page
     Then the edit page for the "Further information" tab is shown
 
-  @role:sso @TC-152
+  @role:sso @TC-152 @needs:editor
   Scenario: Applicant opens the all revision dates tab from the browse profile page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -26,7 +26,7 @@ Feature: Profile editing
     And the applicant opens the "All Revision dates" tab of the browse profile page
     Then the edit page for the "All Revision dates" tab is shown
 
-  @role:sso @TC-146
+  @role:sso @TC-146 @needs:editor
   Scenario: Applicant opens the contributions tab from the browse profile page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -34,7 +34,7 @@ Feature: Profile editing
     And the applicant opens the "Contributions" tab of the browse profile page
     Then the edit page for the "Contributions" tab is shown
 
-  @role:sso @TC-147
+  @role:sso @TC-147 @obsolete
   Scenario: Applicant opens the profile references page from the section links
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -42,7 +42,7 @@ Feature: Profile editing
     And the applicant opens the "Profile references" section link
     Then the profile references page is shown
 
-  @role:sso @TC-148
+  @role:sso @TC-148 @obsolete
   Scenario: Applicant opens the summary profile report from the section links
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -50,7 +50,7 @@ Feature: Profile editing
     And the applicant opens the "Summary profile report" section link
     Then the report page loads without an application error
 
-  @role:sso @TC-149
+  @role:sso @TC-149 @obsolete
   Scenario: Applicant opens the summary prioritisation report from the section links
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -58,7 +58,7 @@ Feature: Profile editing
     And the applicant opens the "Summary prioritisation report" section link
     Then the report page loads without an application error
 
-  @role:sso @TC-150
+  @role:sso @TC-150 @needs:editor
   Scenario: Applicant opens the full profile print version from the section links
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"

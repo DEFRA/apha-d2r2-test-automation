@@ -7,37 +7,37 @@
   "open_questions": [],
   "coverage": [
     {
-      "ac": "DERIVED: Applicant sees the session timeout page - features/error-handling/error-handling.feature:6",
+      "ac": "DERIVED: Applicant's signed-in session reports the time it has left - features/error-handling/error-handling.feature:6",
       "test_cases": [
-        "Applicant sees the session timeout page"
+        "Applicant's signed-in session reports the time it has left"
       ]
     },
     {
-      "ac": "DERIVED: Applicant sees the application error page - features/error-handling/error-handling.feature:11",
+      "ac": "DERIVED: Applicant sees the application error page - features/error-handling/error-handling.feature:12",
       "test_cases": [
         "Applicant sees the application error page"
       ]
     },
     {
-      "ac": "DERIVED: Applicant opens the session timeout page and confirms the dedicated error state is visible - features/error-handling/error-handling.feature:16",
+      "ac": "DERIVED: Applicant's page carries the session warning and expiry dialogs without showing them - features/error-handling/error-handling.feature:17",
       "test_cases": [
-        "Applicant opens the session timeout page and confirms the dedicated error state is visible"
+        "Applicant's page carries the session warning and expiry dialogs without showing them"
       ]
     },
     {
-      "ac": "DERIVED: Applicant opens the application error page and confirms the error state is visible - features/error-handling/error-handling.feature:22",
+      "ac": "DERIVED: Applicant opens the application error page and confirms the error state is visible - features/error-handling/error-handling.feature:23",
       "test_cases": [
         "Applicant opens the application error page and confirms the error state is visible"
       ]
     },
     {
-      "ac": "DERIVED: Applicant opens the session timeout page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:28",
+      "ac": "DERIVED: Applicant's session cannot be extended without an antiforgery token - features/error-handling/error-handling.feature:29",
       "test_cases": [
-        "Applicant opens the session timeout page directly and confirms the error page remains stable after navigation"
+        "Applicant's session cannot be extended without an antiforgery token"
       ]
     },
     {
-      "ac": "DERIVED: Applicant opens the application error page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:34",
+      "ac": "DERIVED: Applicant opens the application error page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:35",
       "test_cases": [
         "Applicant opens the application error page directly and confirms the error page remains stable after navigation"
       ]
@@ -46,10 +46,10 @@
   "test_cases": [
     {
       "ref": "TC-050",
-      "title": "Applicant sees the session timeout page",
+      "title": "Applicant's signed-in session reports the time it has left",
       "layer": "ui",
       "acs": [
-        "DERIVED: Applicant sees the session timeout page - features/error-handling/error-handling.feature:6"
+        "DERIVED: Applicant's signed-in session reports the time it has left - features/error-handling/error-handling.feature:6"
       ],
       "area_path": "Path x",
       "assigned_to": "",
@@ -60,20 +60,20 @@
           "expected": "The D2R2 Home page is displayed"
         },
         {
-          "action": "Open the session timeout page directly in the browser",
-          "expected": "The page with the heading \"Your application session has expired\" is displayed"
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
         },
         {
-          "action": "Check the page that is displayed",
-          "expected": "The session timeout page is displayed"
+          "action": "Request GET /Session/Status while signed in",
+          "expected": "The request returns HTTP 200 with JSON"
+        },
+        {
+          "action": "Check the JSON response",
+          "expected": "authenticated is true and remainingSeconds is greater than 0"
         },
         {
           "action": "Check the page for error messages",
           "expected": "No \"An error has occurred\" heading or error message is displayed"
-        },
-        {
-          "action": "Check the page heading",
-          "expected": "The page heading is visible"
         }
       ]
     },
@@ -82,7 +82,7 @@
       "title": "Applicant sees the application error page",
       "layer": "ui",
       "acs": [
-        "DERIVED: Applicant sees the application error page - features/error-handling/error-handling.feature:11"
+        "DERIVED: Applicant sees the application error page - features/error-handling/error-handling.feature:12"
       ],
       "area_path": "Path x",
       "assigned_to": "",
@@ -112,10 +112,10 @@
     },
     {
       "ref": "TC-099",
-      "title": "Applicant opens the session timeout page and confirms the dedicated error state is visible",
+      "title": "Applicant's page carries the session warning and expiry dialogs without showing them",
       "layer": "ui",
       "acs": [
-        "DERIVED: Applicant opens the session timeout page and confirms the dedicated error state is visible - features/error-handling/error-handling.feature:16"
+        "DERIVED: Applicant's page carries the session warning and expiry dialogs without showing them - features/error-handling/error-handling.feature:17"
       ],
       "area_path": "Path x",
       "assigned_to": "",
@@ -126,16 +126,16 @@
           "expected": "The D2R2 Home page is displayed"
         },
         {
-          "action": "Open the session timeout page directly in the browser",
-          "expected": "The page with the heading \"Your application session has expired\" is displayed"
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
         },
         {
-          "action": "Check the page that is displayed",
-          "expected": "The session timeout page is displayed"
+          "action": "Check the Extend session? dialog",
+          "expected": "The dialog exists in the page but is not displayed"
         },
         {
-          "action": "Check the page after it loads",
-          "expected": "The session timeout page stays displayed and does not redirect"
+          "action": "Check the Session expired dialog",
+          "expected": "The dialog exists in the page but is not displayed"
         },
         {
           "action": "Check the page for error messages",
@@ -148,7 +148,7 @@
       "title": "Applicant opens the application error page and confirms the error state is visible",
       "layer": "ui",
       "acs": [
-        "DERIVED: Applicant opens the application error page and confirms the error state is visible - features/error-handling/error-handling.feature:22"
+        "DERIVED: Applicant opens the application error page and confirms the error state is visible - features/error-handling/error-handling.feature:23"
       ],
       "area_path": "Path x",
       "assigned_to": "",
@@ -178,10 +178,10 @@
     },
     {
       "ref": "TC-133",
-      "title": "Applicant opens the session timeout page directly and confirms the error page remains stable after navigation",
+      "title": "Applicant's session cannot be extended without an antiforgery token",
       "layer": "ui",
       "acs": [
-        "DERIVED: Applicant opens the session timeout page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:28"
+        "DERIVED: Applicant's session cannot be extended without an antiforgery token - features/error-handling/error-handling.feature:29"
       ],
       "area_path": "Path x",
       "assigned_to": "",
@@ -192,16 +192,16 @@
           "expected": "The D2R2 Home page is displayed"
         },
         {
-          "action": "Open the session timeout page directly in the browser",
-          "expected": "The page with the heading \"Your application session has expired\" is displayed"
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
         },
         {
-          "action": "Check the page that is displayed",
-          "expected": "The session timeout page is displayed"
+          "action": "Send POST /Session/Extend without an antiforgery token",
+          "expected": "The request is sent"
         },
         {
-          "action": "Check the page after it loads",
-          "expected": "The session timeout page stays displayed and does not redirect"
+          "action": "Check the response",
+          "expected": "The response is HTTP 400 and the session is not extended"
         },
         {
           "action": "Check the page for error messages",
@@ -214,7 +214,7 @@
       "title": "Applicant opens the application error page directly and confirms the error page remains stable after navigation",
       "layer": "ui",
       "acs": [
-        "DERIVED: Applicant opens the application error page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:34"
+        "DERIVED: Applicant opens the application error page directly and confirms the error page remains stable after navigation - features/error-handling/error-handling.feature:35"
       ],
       "area_path": "Path x",
       "assigned_to": "",

@@ -1,0 +1,675 @@
+{
+  "story_summary": "Manual cases for the site-links journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant uses a shared link from a page - features/site-links/site-links.feature:6",
+      "test_cases": [
+        "Applicant uses a shared link from a page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant uses the skip link to reach the main content - features/site-links/site-links.feature:24",
+      "test_cases": [
+        "Applicant uses the skip link to reach the main content"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant uses back to top at the foot of a page - features/site-links/site-links.feature:30",
+      "test_cases": [
+        "Applicant uses back to top at the foot of a page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the D2R2 quality statement - features/site-links/site-links.feature:36",
+      "test_cases": [
+        "Applicant opens the D2R2 quality statement"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses a footer link that has no destination yet - features/site-links/site-links.feature:42",
+      "test_cases": [
+        "Applicant chooses a footer link that has no destination yet"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sees the APHA logo link to the APHA intranet - features/site-links/site-links.feature:55",
+      "test_cases": [
+        "Applicant sees the APHA logo link to the APHA intranet"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant uses the header help icon - features/site-links/site-links.feature:60",
+      "test_cases": [
+        "Applicant uses the header help icon"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the header menu and sees every section - features/site-links/site-links.feature:66",
+      "test_cases": [
+        "Applicant opens the header menu and sees every section"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant navigates with the header menu - features/site-links/site-links.feature:72",
+      "test_cases": [
+        "Applicant navigates with the header menu"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant downloads a user manual from the help page - features/site-links/site-links.feature:85",
+      "test_cases": [
+        "Applicant downloads a user manual from the help page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sees a support contact on the help page - features/site-links/site-links.feature:91",
+      "test_cases": [
+        "Applicant sees a support contact on the help page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant downloads the disease ranking report from the general reports page - features/site-links/site-links.feature:101",
+      "test_cases": [
+        "Applicant downloads the disease ranking report from the general reports page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant downloads an earlier version from a report history - features/site-links/site-links.feature:107",
+      "test_cases": [
+        "Applicant downloads an earlier version from a report history"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-212",
+      "title": "Applicant uses a shared link from a page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant uses a shared link from a page - features/site-links/site-links.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search page",
+          "expected": "The Search page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Open the View species data page",
+          "expected": "The View species data page is displayed"
+        },
+        {
+          "action": "Open the Search page",
+          "expected": "The Search page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Open the View species data page",
+          "expected": "The View species data page is displayed"
+        },
+        {
+          "action": "Open the Search page",
+          "expected": "The Search page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Open the View species data page",
+          "expected": "The View species data page is displayed"
+        },
+        {
+          "action": "Click D2R2",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click D2R2",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click D2R2",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click D2R2 Home",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click D2R2 Home",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click D2R2 Home",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click Help using D2R2",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click Help using D2R2",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click Help using D2R2",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The help page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-213",
+      "title": "Applicant uses the skip link to reach the main content",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant uses the skip link to reach the main content - features/site-links/site-links.feature:24"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search page",
+          "expected": "The Search page is displayed"
+        },
+        {
+          "action": "Click Skip to main content",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Check the browser address",
+          "expected": "It ends with #main-content"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-214",
+      "title": "Applicant uses back to top at the foot of a page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant uses back to top at the foot of a page - features/site-links/site-links.feature:30"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Click Back to top",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Check the browser address",
+          "expected": "It ends with #top"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-215",
+      "title": "Applicant opens the D2R2 quality statement",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the D2R2 quality statement - features/site-links/site-links.feature:36"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Click D2R2 Quality Statement in the footer",
+          "expected": "The quality statement document is downloaded"
+        },
+        {
+          "action": "Check the browser downloads",
+          "expected": "A file with a name is downloaded"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-216",
+      "title": "Applicant chooses a footer link that has no destination yet",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses a footer link that has no destination yet - features/site-links/site-links.feature:42"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Click Cookies",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click Accessibility statement",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click Privacy notice",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Click Open Government Licence v3.0",
+          "expected": "The link is followed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is still displayed because the link has no destination"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is still displayed because the link has no destination"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is still displayed because the link has no destination"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The home page is still displayed because the link has no destination"
+        }
+      ]
+    },
+    {
+      "ref": "TC-217",
+      "title": "Applicant sees the APHA logo link to the APHA intranet",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees the APHA logo link to the APHA intranet - features/site-links/site-links.feature:55"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Check the APHA logo link",
+          "expected": "It points to the APHA intranet"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-218",
+      "title": "Applicant uses the header help icon",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant uses the header help icon - features/site-links/site-links.feature:60"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search page",
+          "expected": "The Search page is displayed"
+        },
+        {
+          "action": "Click the help icon in the header",
+          "expected": "The Help Using D2R2 page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-219",
+      "title": "Applicant opens the header menu and sees every section",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the header menu and sees every section - features/site-links/site-links.feature:66"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the header menu",
+          "expected": "The menu panel is displayed"
+        },
+        {
+          "action": "Check the menu panel",
+          "expected": "It offers Search disease profiles, General reports, Disease ranking report and View species data"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-220",
+      "title": "Applicant navigates with the header menu",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant navigates with the header menu - features/site-links/site-links.feature:72"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the home page",
+          "expected": "The home page is displayed"
+        },
+        {
+          "action": "Open the header menu",
+          "expected": "The menu panel is displayed"
+        },
+        {
+          "action": "Open the header menu",
+          "expected": "The menu panel is displayed"
+        },
+        {
+          "action": "Open the header menu",
+          "expected": "The menu panel is displayed"
+        },
+        {
+          "action": "Click Search disease profiles in the menu",
+          "expected": "The page opens"
+        },
+        {
+          "action": "Click General reports in the menu",
+          "expected": "The page opens"
+        },
+        {
+          "action": "Click View species data in the menu",
+          "expected": "The page opens"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The Search page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The View species data page is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-221",
+      "title": "Applicant downloads a user manual from the help page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant downloads a user manual from the help page - features/site-links/site-links.feature:85"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the help page",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Click the first manual",
+          "expected": "The document is downloaded"
+        },
+        {
+          "action": "Check the browser downloads",
+          "expected": "A file with a name is downloaded"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-222",
+      "title": "Applicant sees a support contact on the help page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees a support contact on the help page - features/site-links/site-links.feature:91"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the help page",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Open the help page",
+          "expected": "The help page is displayed"
+        },
+        {
+          "action": "Check the contact links",
+          "expected": "A mailto link for D2R2@defra.gov.uk is displayed"
+        },
+        {
+          "action": "Check the contact links",
+          "expected": "A mailto link for aphaservicedesk@apha.gov.uk is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-223",
+      "title": "Applicant downloads the disease ranking report from the general reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant downloads the disease ranking report from the general reports page - features/site-links/site-links.feature:101"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Click the first report",
+          "expected": "The document is downloaded"
+        },
+        {
+          "action": "Check the browser downloads",
+          "expected": "A file with a name is downloaded"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-224",
+      "title": "Applicant downloads an earlier version from a report history",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant downloads an earlier version from a report history - features/site-links/site-links.feature:107"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "The General reports page is displayed"
+        },
+        {
+          "action": "Click History on the first report row",
+          "expected": "The History for <report title> page is displayed"
+        },
+        {
+          "action": "Click the first version in the history",
+          "expected": "The document is downloaded"
+        },
+        {
+          "action": "Check the browser downloads",
+          "expected": "A file with a name is downloaded"
+        }
+      ]
+    }
+  ]
+}

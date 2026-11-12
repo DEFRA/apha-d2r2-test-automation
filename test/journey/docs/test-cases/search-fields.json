@@ -1,0 +1,1338 @@
+{
+  "story_summary": "Manual cases for the search-fields journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant searches with every field left at its default - features/search-fields/search-fields.feature:6",
+      "test_cases": [
+        "Applicant searches with every field left at its default"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches for part or all of a profile title - features/search-fields/search-fields.feature:12",
+      "test_cases": [
+        "Applicant searches for part or all of a profile title"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches for text that matches no profile - features/search-fields/search-fields.feature:28",
+      "test_cases": [
+        "Applicant searches for text that matches no profile"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches with whitespace only and sees the same as a blank search - features/search-fields/search-fields.feature:47",
+      "test_cases": [
+        "Applicant searches with whitespace only and sees the same as a blank search"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant cannot type more than 255 characters in the search box - features/search-fields/search-fields.feature:53",
+      "test_cases": [
+        "Applicant cannot type more than 255 characters in the search box"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches with the maximum 255 characters - features/search-fields/search-fields.feature:59",
+      "test_cases": [
+        "Applicant searches with the maximum 255 characters"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant searches for text containing a script or SQL pattern and the request is blocked - features/search-fields/search-fields.feature:65",
+      "test_cases": [
+        "Applicant searches for text containing a script or SQL pattern and the request is blocked"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses how the words are matched - features/search-fields/search-fields.feature:76",
+      "test_cases": [
+        "Applicant chooses how the words are matched"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses where the text must appear - features/search-fields/search-fields.feature:90",
+      "test_cases": [
+        "Applicant chooses where the text must appear"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant filters by the version status - features/search-fields/search-fields.feature:105",
+      "test_cases": [
+        "Applicant filters by the version status"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant restricts results to published versions and gets fewer or equal results - features/search-fields/search-fields.feature:117",
+      "test_cases": [
+        "Applicant restricts results to published versions and gets fewer or equal results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant clears every version status - features/search-fields/search-fields.feature:125",
+      "test_cases": [
+        "Applicant clears every version status"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sorts the results - features/search-fields/search-fields.feature:131",
+      "test_cases": [
+        "Applicant sorts the results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sorts A-Z and Z-A and the order reverses - features/search-fields/search-fields.feature:145",
+      "test_cases": [
+        "Applicant sorts A-Z and Z-A and the order reverses"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant changes the number of profiles per page - features/search-fields/search-fields.feature:153",
+      "test_cases": [
+        "Applicant changes the number of profiles per page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves to the next page of results - features/search-fields/search-fields.feature:167",
+      "test_cases": [
+        "Applicant moves to the next page of results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant lists profiles beginning with a letter - features/search-fields/search-fields.feature:174",
+      "test_cases": [
+        "Applicant lists profiles beginning with a letter"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses a letter with no profiles - features/search-fields/search-fields.feature:187",
+      "test_cases": [
+        "Applicant chooses a letter with no profiles"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant returns to all letters - features/search-fields/search-fields.feature:193",
+      "test_cases": [
+        "Applicant returns to all letters"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant combines a letter with search text - features/search-fields/search-fields.feature:200",
+      "test_cases": [
+        "Applicant combines a letter with search text"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant filters by affected species - features/search-fields/search-fields.feature:208",
+      "test_cases": [
+        "Applicant filters by affected species"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant combines text, status, mode, sort and page size - features/search-fields/search-fields.feature:217",
+      "test_cases": [
+        "Applicant combines text, status, mode, sort and page size"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-180",
+      "title": "Applicant searches with every field left at its default",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches with every field left at its default - features/search-fields/search-fields.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-181",
+      "title": "Applicant searches for part or all of a profile title",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches for part or all of a profile title - features/search-fields/search-fields.feature:12"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"african horse sickness\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"AFRICAN HORSE SICKNESS\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Horse\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Sickness\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Afric\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"ickness\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"African Horse Sickness\" whatever its letter case"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"African Horse Sickness\" whatever its letter case"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"African Horse Sickness\" whatever its letter case"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"Horse\" whatever its letter case"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"Sickness\" whatever its letter case"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"Afric\" whatever its letter case"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"ickness\" whatever its letter case"
+        }
+      ]
+    },
+    {
+      "ref": "TC-182",
+      "title": "Applicant searches for text that matches no profile",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches for text that matches no profile - features/search-fields/search-fields.feature:28"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Enter \"zzzzqqqq\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"123\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"2024\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"!@#$%\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"O'Brien\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"%\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"*\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"<b>x</b>\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"semi;colon\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"African Sickness\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-183",
+      "title": "Applicant searches with whitespace only and sees the same as a blank search",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches with whitespace only and sees the same as a blank search - features/search-fields/search-fields.feature:47"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Enter \"   \" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Compare the count with a search with no text and all versions ticked",
+          "expected": "The counts are equal"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-184",
+      "title": "Applicant cannot type more than 255 characters in the search box",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant cannot type more than 255 characters in the search box - features/search-fields/search-fields.feature:53"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Type 300 characters into the search box",
+          "expected": "Typing stops accepting characters at the limit"
+        },
+        {
+          "action": "Check the search box",
+          "expected": "It holds exactly 255 characters"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-185",
+      "title": "Applicant searches with the maximum 255 characters",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches with the maximum 255 characters - features/search-fields/search-fields.feature:59"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Enter 255 characters and click Search profiles",
+          "expected": "The search completes without an error"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-186",
+      "title": "Applicant searches for text containing a script or SQL pattern and the request is blocked",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant searches for text containing a script or SQL pattern and the request is blocked - features/search-fields/search-fields.feature:65"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Enter \"<script>alert(1)</script>\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"' OR 1=1 --\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "A \"403 Forbidden\" page is displayed instead of results"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "A \"403 Forbidden\" page is displayed instead of results"
+        }
+      ]
+    },
+    {
+      "ref": "TC-187",
+      "title": "Applicant chooses how the words are matched",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses how the words are matched - features/search-fields/search-fields.feature:76"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Tick \"this exact word or phrase\", enter \"African Sickness\" and click Search profiles",
+          "expected": "The results are reloaded"
+        },
+        {
+          "action": "Tick \"all these words\", enter \"African Sickness\" and click Search profiles",
+          "expected": "The results are reloaded"
+        },
+        {
+          "action": "Tick \"all these words\", enter \"Sickness African\" and click Search profiles",
+          "expected": "The results are reloaded"
+        },
+        {
+          "action": "Tick \"all these words\", enter \"horse sickness\" and click Search profiles",
+          "expected": "The results are reloaded"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-188",
+      "title": "Applicant chooses where the text must appear",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses where the text must appear - features/search-fields/search-fields.feature:90"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Click More filters",
+          "expected": "The Search for options and the Appears in list are displayed"
+        },
+        {
+          "action": "Enter \"Horse\" appearing in \"Profile titles\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Horse\" appearing in \"All\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Horse\" appearing in \"Profile answers\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Horse\" appearing in \"References\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Enter \"Horse\" appearing in \"Further information\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Check the Appears in list",
+          "expected": "\"Profile titles\" is selected"
+        },
+        {
+          "action": "Check the Appears in list",
+          "expected": "\"All\" is selected"
+        },
+        {
+          "action": "Check the Appears in list",
+          "expected": "\"Profile answers\" is selected"
+        },
+        {
+          "action": "Check the Appears in list",
+          "expected": "\"References\" is selected"
+        },
+        {
+          "action": "Check the Appears in list",
+          "expected": "\"Further information\" is selected"
+        }
+      ]
+    },
+    {
+      "ref": "TC-189",
+      "title": "Applicant filters by the version status",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant filters by the version status - features/search-fields/search-fields.feature:105"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Tick only the Display published option and untick the other two",
+          "expected": "The results reload for that version type"
+        },
+        {
+          "action": "Tick only the Display draft option and untick the other two",
+          "expected": "The results reload for that version type"
+        },
+        {
+          "action": "Tick only the Display scenarios option and untick the other two",
+          "expected": "The results reload for that version type"
+        },
+        {
+          "action": "Check the three Display options",
+          "expected": "Only the published option is ticked"
+        },
+        {
+          "action": "Check the three Display options",
+          "expected": "Only the draft option is ticked"
+        },
+        {
+          "action": "Check the three Display options",
+          "expected": "Only the scenarios option is ticked"
+        }
+      ]
+    },
+    {
+      "ref": "TC-190",
+      "title": "Applicant restricts results to published versions and gets fewer or equal results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant restricts results to published versions and gets fewer or equal results - features/search-fields/search-fields.feature:117"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Tick all three Display options",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Note the count of disease profiles found",
+          "expected": "The count is noted"
+        },
+        {
+          "action": "Tick only the Display published option and untick the other two",
+          "expected": "The results reload for that version type"
+        },
+        {
+          "action": "Compare the new count with the noted count",
+          "expected": "The new count is less than or equal to the noted count"
+        }
+      ]
+    },
+    {
+      "ref": "TC-191",
+      "title": "Applicant clears every version status",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant clears every version status - features/search-fields/search-fields.feature:125"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Untick all three Display options",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Check the results",
+          "expected": "The count is 0 and \"No disease profiles match your search criteria. Please try different search terms or filter options.\" is displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-192",
+      "title": "Applicant sorts the results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sorts the results - features/search-fields/search-fields.feature:131"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Choose \"A-Z\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Choose \"Z-A\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Choose \"Most recently updated\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Choose \"Least recently updated\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Check the Sort by: list",
+          "expected": "\"A-Z\" is selected"
+        },
+        {
+          "action": "Check the Sort by: list",
+          "expected": "\"Z-A\" is selected"
+        },
+        {
+          "action": "Check the Sort by: list",
+          "expected": "\"Most recently updated\" is selected"
+        },
+        {
+          "action": "Check the Sort by: list",
+          "expected": "\"Least recently updated\" is selected"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        },
+        {
+          "action": "Check the results",
+          "expected": "A count greater than 0 and at least one profile card are displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-193",
+      "title": "Applicant sorts A-Z and Z-A and the order reverses",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sorts A-Z and Z-A and the order reverses - features/search-fields/search-fields.feature:145"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Choose \"A-Z\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Check the order of the listed titles",
+          "expected": "The titles are in ascending alphabetical order"
+        },
+        {
+          "action": "Choose \"Z-A\" in the Sort by list",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Check the order of the listed titles",
+          "expected": "The titles are in descending alphabetical order"
+        }
+      ]
+    },
+    {
+      "ref": "TC-194",
+      "title": "Applicant changes the number of profiles per page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant changes the number of profiles per page - features/search-fields/search-fields.feature:153"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Choose 10 in the Items per page list",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Choose 15 in the Items per page list",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Choose 20 in the Items per page list",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Choose 30 in the Items per page list",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Choose All in the Items per page list",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Count the profile cards",
+          "expected": "No more than 10 profiles are listed"
+        },
+        {
+          "action": "Count the profile cards",
+          "expected": "No more than 15 profiles are listed"
+        },
+        {
+          "action": "Count the profile cards",
+          "expected": "No more than 20 profiles are listed"
+        },
+        {
+          "action": "Count the profile cards",
+          "expected": "No more than 30 profiles are listed"
+        },
+        {
+          "action": "Count the profile cards",
+          "expected": "Every profile found is listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-195",
+      "title": "Applicant moves to the next page of results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves to the next page of results - features/search-fields/search-fields.feature:167"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Note the title of the first profile",
+          "expected": "The title is noted"
+        },
+        {
+          "action": "Click Next in the Search results pages navigation",
+          "expected": "The next page of results is displayed"
+        },
+        {
+          "action": "Compare the first title with the noted one",
+          "expected": "They are different"
+        }
+      ]
+    },
+    {
+      "ref": "TC-196",
+      "title": "Applicant lists profiles beginning with a letter",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant lists profiles beginning with a letter - features/search-fields/search-fields.feature:174"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click A in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click B in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click C in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click S in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Check every profile title",
+          "expected": "Each title begins with A"
+        },
+        {
+          "action": "Check every profile title",
+          "expected": "Each title begins with B"
+        },
+        {
+          "action": "Check every profile title",
+          "expected": "Each title begins with C"
+        },
+        {
+          "action": "Check every profile title",
+          "expected": "Each title begins with S"
+        }
+      ]
+    },
+    {
+      "ref": "TC-197",
+      "title": "Applicant chooses a letter with no profiles",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses a letter with no profiles - features/search-fields/search-fields.feature:187"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click X in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Check the results",
+          "expected": "No profiles are listed, or every title begins with X"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-198",
+      "title": "Applicant returns to all letters",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant returns to all letters - features/search-fields/search-fields.feature:193"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click B in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Click All in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Compare the count with a search with no text and all versions ticked",
+          "expected": "The counts are equal"
+        }
+      ]
+    },
+    {
+      "ref": "TC-199",
+      "title": "Applicant combines a letter with search text",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant combines a letter with search text - features/search-fields/search-fields.feature:200"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click A in the view profiles beginning with list",
+          "expected": "The results reload for that letter"
+        },
+        {
+          "action": "Enter \"Horse\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Check every profile title",
+          "expected": "Each title begins with A"
+        },
+        {
+          "action": "Check every profile title in the results",
+          "expected": "Each title contains \"Horse\" whatever its letter case"
+        }
+      ]
+    },
+    {
+      "ref": "TC-200",
+      "title": "Applicant filters by affected species",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant filters by affected species - features/search-fields/search-fields.feature:208"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Tick the first species in the tree",
+          "expected": "The species is ticked"
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Check the Currently selected text",
+          "expected": "It names the ticked species"
+        },
+        {
+          "action": "The result count is not greater than that of a blank search",
+          "expected": "The result is displayed on the page"
+        }
+      ]
+    },
+    {
+      "ref": "TC-201",
+      "title": "Applicant combines text, status, mode, sort and page size",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant combines text, status, mode, sort and page size - features/search-fields/search-fields.feature:217"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Search for \"a\"",
+          "expected": "Results are displayed"
+        },
+        {
+          "action": "Display only published versions",
+          "expected": "The results reload"
+        },
+        {
+          "action": "Sort by Z-A",
+          "expected": "The results reload in that order"
+        },
+        {
+          "action": "Show 15 items per page",
+          "expected": "The results reload with that page size"
+        },
+        {
+          "action": "Count the profile cards",
+          "expected": "No more than 15 profiles are listed"
+        },
+        {
+          "action": "Check the order of the listed titles",
+          "expected": "The titles are in descending alphabetical order"
+        }
+      ]
+    }
+  ]
+}

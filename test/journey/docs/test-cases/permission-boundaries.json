@@ -1,0 +1,217 @@
+{
+  "story_summary": "Manual cases for the permission-boundaries journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant without the editor role cannot open an editor page by address - features/permission-boundaries/permission-boundaries.feature:6",
+      "test_cases": [
+        "Applicant without the editor role cannot open an editor page by address"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant without the editor role can return home from the permission denied page - features/permission-boundaries/permission-boundaries.feature:27",
+      "test_cases": [
+        "Applicant without the editor role can return home from the permission denied page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant without the editor role is not offered editor links on the home page - features/permission-boundaries/permission-boundaries.feature:33",
+      "test_cases": [
+        "Applicant without the editor role is not offered editor links on the home page"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-174",
+      "title": "Applicant without the editor role cannot open an editor page by address",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant without the editor role cannot open an editor page by address - features/permission-boundaries/permission-boundaries.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Maintain global users page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Maintain external users page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Maintain reference data page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Reference data audit trail page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Maintain prioritisation variables page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Maintain cross-cutting issue scores page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Maintain species data page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Compare profile versions page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Create profile page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Review timings page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Edit questions and guidance page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Edit disease ranking filters page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Open the Report editor disease ranking filters page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The message \"You do not have permission to view this page\" and a Go to the D2R2 home page link are displayed, and none of the page's controls are shown"
+        }
+      ]
+    },
+    {
+      "ref": "TC-175",
+      "title": "Applicant without the editor role can return home from the permission denied page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant without the editor role can return home from the permission denied page - features/permission-boundaries/permission-boundaries.feature:27"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Maintain global users page by typing its address in the browser",
+          "expected": "The \"You do not have permission to view this page\" message is displayed"
+        },
+        {
+          "action": "Click the Go to the D2R2 home page link",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Check the home page content",
+          "expected": "The popular links are visible"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-176",
+      "title": "Applicant without the editor role is not offered editor links on the home page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant without the editor role is not offered editor links on the home page - features/permission-boundaries/permission-boundaries.feature:33"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the D2R2 Home page",
+          "expected": "The Home page is displayed with the D2R2 menu"
+        },
+        {
+          "action": "Check the Home page and the main menu",
+          "expected": "None of these links are displayed: Compare profile versions, Create disease ranking filter, Create profile, Review timings, Maintain species data, Maintain reference data, Maintain global users, Maintain external users, Maintain prioritisation variables, Maintain cross-cutting issue scores, Edit questions and guidance"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    }
+  ]
+}

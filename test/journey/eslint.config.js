@@ -43,7 +43,9 @@ export default [
     rules: {
       ...(playwright.configs['flat/recommended'].rules ?? {}),
       'playwright/no-skipped-test': 'error',
-      'playwright/no-focused-test': 'error'
+      'playwright/no-focused-test': 'error',
+      // playwright-bdd step functions run inside a generated test, so expect() is in a test block
+      'playwright/no-standalone-expect': 'off'
     }
   }
 ]

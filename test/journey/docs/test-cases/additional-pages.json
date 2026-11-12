@@ -97,12 +97,8 @@
           "expected": "The Search disease profiles page is displayed with the search box and filters"
         },
         {
-          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles field",
-          "expected": "\"African Horse Sickness\" is shown in the field"
-        },
-        {
-          "action": "Click the Search profiles button",
-          "expected": "The search results list is displayed"
+          "action": "Enter \"African Horse Sickness\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
         },
         {
           "action": "Tick Display draft versions and click Search profiles",
@@ -167,7 +163,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -200,7 +196,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -237,7 +233,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {

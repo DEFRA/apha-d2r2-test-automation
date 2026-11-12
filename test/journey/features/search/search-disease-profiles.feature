@@ -31,7 +31,7 @@ Feature: Search disease profiles
     Given the applicant is on the search page
     Then the search page shows the disease profile filters
 
-  @wip @role:sso @TC-038
+ @role:sso @TC-038 @needs:editor
   Scenario: Applicant searches for a disease profile and opens the manage page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -39,7 +39,7 @@ Feature: Search disease profiles
     When the applicant opens the manage page for the first result
     Then the manage profile page is shown
 
-  @wip @role:sso @TC-039
+ @role:sso @TC-039 @needs:editor
   Scenario: Applicant opens the maintain contributors page from a profile manage page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -49,7 +49,7 @@ Feature: Search disease profiles
     When the applicant opens the maintain contributors page from the manage page
     Then the maintain contributors page is shown
 
-  @wip @role:sso @TC-040
+ @role:sso @TC-040 @needs:editor
   Scenario: Applicant opens the profile properties page from a profile manage page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -59,7 +59,7 @@ Feature: Search disease profiles
     When the applicant opens the profile properties page from the manage page
     Then the profile properties page is shown
 
-  @wip @role:sso @TC-041
+ @role:sso @TC-041 @needs:editor
   Scenario: Applicant opens the contributions report from a profile manage page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -69,7 +69,7 @@ Feature: Search disease profiles
     When the applicant opens the contributions report from the manage page
     Then the contributions report is shown
 
-  @wip @role:sso @TC-042
+ @role:sso @TC-042 @needs:editor
   Scenario: Applicant opens the edit profile title page from the search results
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -77,7 +77,7 @@ Feature: Search disease profiles
     When the applicant opens the edit profile title page from the search results
     Then the edit profile title page is shown
 
-  @wip @role:sso @TC-073
+ @role:sso @TC-073 @needs:editor
   Scenario: Applicant tries to save a profile title without entering any text
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -94,7 +94,7 @@ Feature: Search disease profiles
     When the applicant opens the browse profile page from the search results
     Then the browse profile page is shown
 
-  @wip @role:sso @TC-069
+ @role:sso @TC-069 @needs:editor
   Scenario: Applicant opens the review comments page from the browse profile page
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -103,7 +103,7 @@ Feature: Search disease profiles
     And the applicant opens the review comments page from the browse profile page
     Then the review comments page is shown
 
-  @wip @role:sso @TC-070
+ @role:sso @TC-070 @needs:editor
   Scenario: Applicant tries to add a review comment without the required details
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -115,7 +115,7 @@ Feature: Search disease profiles
     When the applicant saves an empty review comment
     Then the review comment validation message is shown
 
-  @wip @role:sso @TC-071
+ @role:sso @TC-071 @needs:editor
   Scenario: Applicant adds a valid review comment to a profile section
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -125,7 +125,7 @@ Feature: Search disease profiles
     And the applicant adds a review comment with subject "TC-071 subject", reference "TC-071 reference", and comment "TC-071 test comment"
     Then the review comment is saved in the review comments list
 
-  @wip @role:sso @TC-072
+ @role:sso @TC-072 @needs:editor
   Scenario: Applicant tries to add a contributor without the required details
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -137,7 +137,7 @@ Feature: Search disease profiles
     When the applicant saves the contributor without required details
     Then the contributor validation messages are shown
 
-  @wip @role:sso @TC-065
+ @role:sso @TC-065 @needs:editor
   Scenario: Applicant clones a profile from the search results
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"
@@ -145,7 +145,7 @@ Feature: Search disease profiles
     When the applicant clones a new profile from the search results
     Then the profile properties page is shown
 
-  @wip @role:sso @TC-066
+ @role:sso @TC-066 @needs:editor
   Scenario: Applicant clones a scenario from the search results
     Given the applicant is on the search page
     When the applicant searches for "African Horse Sickness"

@@ -1,63 +1,58 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
-,Test Case,Applicant reaches the profile properties screen from a live search result,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant reaches the profile properties screen from a live search result,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
-,,,Step 6,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 7,Check the page that is displayed,The manage profile page is displayed,,,
-,,,Step 8,Click the Edit properties link on the Manage profile page,The profile properties page is displayed,,,
-,,,Step 9,Check the page that is displayed,The profile properties page is displayed,,,
-,Test Case,Applicant reaches the edit title screen from a live search result,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
+,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 6,Check the page that is displayed,The manage profile page is displayed,,,
+,,,Step 7,Click the Edit properties link on the Manage profile page,The profile properties page is displayed,,,
+,,,Step 8,Check the page that is displayed,The profile properties page is displayed,,,
+,Test Case,Applicant reaches the edit title screen from a live search result,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
-,,,Step 6,Click the Edit Title link,The Edit profile title page is displayed,,,
-,,,Step 7,Check the page that is displayed,The edit profile title page is displayed,,,
-,Test Case,Applicant continues from a live search result to the contributors maintenance screen,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
+,,,Step 5,Click the Edit Title link,The Edit profile title page is displayed,,,
+,,,Step 6,Check the page that is displayed,The edit profile title page is displayed,,,
+,Test Case,Applicant continues from a live search result to the contributors maintenance screen,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
-,,,Step 6,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 7,Check the page that is displayed,The manage profile page is displayed,,,
-,,,Step 8,Click the Maintain contributors and reviewers link on the Manage profile page,The maintain contributors page is displayed,,,
-,,,Step 9,Check the page that is displayed,The maintain contributors page is displayed,,,
-,Test Case,Applicant reaches the profile properties screen from the search results and confirms the route,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
+,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 6,Check the page that is displayed,The manage profile page is displayed,,,
+,,,Step 7,Click the Maintain contributors and reviewers link on the Manage profile page,The maintain contributors page is displayed,,,
+,,,Step 8,Check the page that is displayed,The maintain contributors page is displayed,,,
+,Test Case,Applicant reaches the profile properties screen from the search results and confirms the route,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
-,,,Step 6,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 7,Check the page that is displayed,The manage profile page is displayed,,,
-,,,Step 8,Click the Edit properties link on the Manage profile page,The profile properties page is displayed,,,
-,,,Step 9,Check the page that is displayed,The profile properties page is displayed,,,
-,Test Case,Applicant opens the manage profile page directly and confirms the lifecycle route remains available,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
+,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 6,Check the page that is displayed,The manage profile page is displayed,,,
+,,,Step 7,Click the Edit properties link on the Manage profile page,The profile properties page is displayed,,,
+,,,Step 8,Check the page that is displayed,The profile properties page is displayed,,,
+,Test Case,Applicant opens the manage profile page directly and confirms the lifecycle route remains available,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the manage profile page,The manage profile page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The manage profile page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the manage profile page directly and confirms the lifecycle route remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the manage profile page directly and confirms the lifecycle route remains stable after navigation,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the manage profile page,The manage profile page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The manage profile page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant reaches the edit title screen from the manage page and confirms the title form loads,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant reaches the edit title screen from the manage page and confirms the title form loads,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the Search disease profiles page,The Search disease profiles page is displayed with the search box and filters,,,
-,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles field","""African Horse Sickness"" is shown in the field",,,
-,,,Step 4,Click the Search profiles button,The search results list is displayed,,,
-,,,Step 5,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
-,,,Step 6,Click the Manage link on the first search result,The Manage profile page is displayed,,,
-,,,Step 7,Check the page that is displayed,The manage profile page is displayed,,,
-,,,Step 8,Click the Edit Title link,The Edit profile title page is displayed,,,
-,,,Step 9,Check the page that is displayed,The edit profile title page is displayed,,,
-,Test Case,Applicant opens the profile properties page directly and confirms the route remains stable,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,,,Step 3,"Enter ""African Horse Sickness"" in the Search for disease profiles box and click Search profiles",The results are reloaded for that text,,,
+,,,Step 4,Check the search results list,"A result named ""African Horse Sickness (AHS)"" is listed",,,
+,,,Step 5,Click the Manage link on the first search result,The Manage profile page is displayed,,,
+,,,Step 6,Check the page that is displayed,The manage profile page is displayed,,,
+,,,Step 7,Click the Edit Title link,The Edit profile title page is displayed,,,
+,,,Step 8,Check the page that is displayed,The edit profile title page is displayed,,,
+,Test Case,Applicant opens the profile properties page directly and confirms the route remains stable,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the profile properties page,The profile properties page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The profile properties page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the edit profile title page directly and confirms the route remains stable,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the edit profile title page directly and confirms the route remains stable,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Open the edit profile title page,The edit profile title page is displayed with its heading and controls,,,
 ,,,Step 3,Check the page that is displayed,The edit profile title page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

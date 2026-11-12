@@ -1,0 +1,213 @@
+{
+  "story_summary": "Manual cases for the report-tables journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant sorts the report table by a column - features/report-tables/report-tables.feature:6",
+      "test_cases": [
+        "Applicant sorts the report table by a column"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the version history of a report - features/report-tables/report-tables.feature:22",
+      "test_cases": [
+        "Applicant opens the version history of a report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant changes the number of reports shown per page - features/report-tables/report-tables.feature:33",
+      "test_cases": [
+        "Applicant changes the number of reports shown per page"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-177",
+      "title": "Applicant sorts the report table by a column",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sorts the report table by a column - features/report-tables/report-tables.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the Help Using D2R2 page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the Help Using D2R2 page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the Help Using D2R2 page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Click the Title column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Click the Version column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Click the Public? column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Click the Effective dates column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Click the Title column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Click the Version column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Click the Effective dates column heading",
+          "expected": "The table is reloaded sorted by that column"
+        },
+        {
+          "action": "Check the Title column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        },
+        {
+          "action": "Check the Version column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        },
+        {
+          "action": "Check the Public? column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        },
+        {
+          "action": "Check the Effective dates column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        },
+        {
+          "action": "Check the Title column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        },
+        {
+          "action": "Check the Version column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        },
+        {
+          "action": "Check the Effective dates column heading",
+          "expected": "The heading shows an ascending or descending sort state"
+        }
+      ]
+    },
+    {
+      "ref": "TC-178",
+      "title": "Applicant opens the version history of a report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the version history of a report - features/report-tables/report-tables.feature:22"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the Help Using D2R2 page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Click History on the first report row",
+          "expected": "The History for <report title> page is displayed"
+        },
+        {
+          "action": "Click History on the first report row",
+          "expected": "The History for <report title> page is displayed"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The page heading starts with \"History for\" and lists the versions of the report"
+        },
+        {
+          "action": "Check the page that is displayed",
+          "expected": "The page heading starts with \"History for\" and lists the versions of the report"
+        }
+      ]
+    },
+    {
+      "ref": "TC-179",
+      "title": "Applicant changes the number of reports shown per page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant changes the number of reports shown per page - features/report-tables/report-tables.feature:33"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the General reports page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Open the Help Using D2R2 page",
+          "expected": "A table of reports with Title, Version and Effective dates columns, an Items per page list and a History link per report is displayed"
+        },
+        {
+          "action": "Select the last option in the Items per page list",
+          "expected": "The table reloads with that page size"
+        },
+        {
+          "action": "Select the last option in the Items per page list",
+          "expected": "The table reloads with that page size"
+        },
+        {
+          "action": "Check the Items per page list",
+          "expected": "The chosen option is still selected"
+        },
+        {
+          "action": "Check the Items per page list",
+          "expected": "The chosen option is still selected"
+        }
+      ]
+    }
+  ]
+}

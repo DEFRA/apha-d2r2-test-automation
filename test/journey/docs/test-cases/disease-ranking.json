@@ -44,7 +44,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -77,7 +77,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -110,7 +110,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {
@@ -147,7 +147,7 @@
       "state": "Design",
       "steps": [
         {
-          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "action": "Log in to D2R2 with an account that has the ProfileEditor role",
           "expected": "The D2R2 Home page is displayed"
         },
         {

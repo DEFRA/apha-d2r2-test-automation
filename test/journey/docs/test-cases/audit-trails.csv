@@ -1,30 +1,30 @@
-﻿ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
-,Test Case,Applicant opens the species data audit trail page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+ID,Work Item Type,Title,Test Step,Step Action,Step Expected,Area Path,Assigned To,State
+,Test Case,Applicant opens the species data audit trail page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click the View Audit Trail button for the species data screen,The species data audit trail page is displayed,,,
 ,,,Step 3,Check the page that is displayed,The species data audit trail page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the reference table audit trail page,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the reference table audit trail page,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click the View Audit Trail button for the reference table screen,The reference table audit trail page is displayed,,,
 ,,,Step 3,Check the page that is displayed,The reference table audit trail page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the species data audit trail page directly and confirms the page remains visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the species data audit trail page directly and confirms the page remains visible,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click the View Audit Trail button for the species data screen,The species data audit trail page is displayed,,,
 ,,,Step 3,Check the page that is displayed,The species data audit trail page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the reference table audit trail page directly and confirms the page remains visible,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the reference table audit trail page directly and confirms the page remains visible,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click the View Audit Trail button for the reference table screen,The reference table audit trail page is displayed,,,
 ,,,Step 3,Check the page that is displayed,The reference table audit trail page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the species data audit trail page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the species data audit trail page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click the View Audit Trail button for the species data screen,The species data audit trail page is displayed,,,
 ,,,Step 3,Check the page that is displayed,The species data audit trail page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,
 ,,,Step 5,Check the page heading,The page heading is visible,,,
-,Test Case,Applicant opens the reference table audit trail page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 as an SSO user using the current Windows session,The D2R2 Home page is displayed,Path x,,Design
+,Test Case,Applicant opens the reference table audit trail page directly and confirms the page remains stable after navigation,Step 1,Log in to D2R2 with an account that has the ProfileEditor role,The D2R2 Home page is displayed,Path x,,Design
 ,,,Step 2,Click the View Audit Trail button for the reference table screen,The reference table audit trail page is displayed,,,
 ,,,Step 3,Check the page that is displayed,The reference table audit trail page is displayed,,,
 ,,,Step 4,Check the page for error messages,"No ""An error has occurred"" heading or error message is displayed",,,

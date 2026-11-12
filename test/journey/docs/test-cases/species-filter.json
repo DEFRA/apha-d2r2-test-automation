@@ -1,0 +1,546 @@
+{
+  "story_summary": "Manual cases for the species-filter journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant filters the search by one species - features/species-filter/species-filter.feature:6",
+      "test_cases": [
+        "Applicant filters the search by one species"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant filters the search by three species and sees the union of their results - features/species-filter/species-filter.feature:23",
+      "test_cases": [
+        "Applicant filters the search by three species and sees the union of their results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant picks a species inside a group already ticked and only the species stays ticked - features/species-filter/species-filter.feature:35",
+      "test_cases": [
+        "Applicant picks a species inside a group already ticked and only the species stays ticked"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant clears the only chosen species and the filter returns to any species - features/species-filter/species-filter.feature:45",
+      "test_cases": [
+        "Applicant clears the only chosen species and the filter returns to any species"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant closes and opens all branches of the species tree - features/species-filter/species-filter.feature:53",
+      "test_cases": [
+        "Applicant closes and opens all branches of the species tree"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant combines a species with search text and gets no more than the species alone - features/species-filter/species-filter.feature:62",
+      "test_cases": [
+        "Applicant combines a species with search text and gets no more than the species alone"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant hides the species filter again - features/species-filter/species-filter.feature:73",
+      "test_cases": [
+        "Applicant hides the species filter again"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses a species on the view species data page and opens its data - features/species-filter/species-filter.feature:80",
+      "test_cases": [
+        "Applicant chooses a species on the view species data page and opens its data"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant chooses a second species and only the second is kept - features/species-filter/species-filter.feature:88",
+      "test_cases": [
+        "Applicant chooses a second species and only the second is kept"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant removes the chosen species on the view species data page - features/species-filter/species-filter.feature:95",
+      "test_cases": [
+        "Applicant removes the chosen species on the view species data page"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-202",
+      "title": "Applicant filters the search by one species",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant filters the search by one species - features/species-filter/species-filter.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Tick Frogs and toads in the affected species tree",
+          "expected": "Frogs and toads is ticked"
+        },
+        {
+          "action": "Tick Newts in the affected species tree",
+          "expected": "Newts is ticked"
+        },
+        {
+          "action": "Tick Birds in the affected species tree",
+          "expected": "Birds is ticked"
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Frogs and toads\""
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Newts\""
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Birds\""
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Frogs and toads\""
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Newts\""
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Birds\""
+        },
+        {
+          "action": "Count the ticked species",
+          "expected": "1 species is ticked"
+        },
+        {
+          "action": "Count the ticked species",
+          "expected": "1 species is ticked"
+        },
+        {
+          "action": "Count the ticked species",
+          "expected": "1 species is ticked"
+        },
+        {
+          "action": "The result count is not greater than that of a blank search",
+          "expected": "The result is displayed on the page"
+        },
+        {
+          "action": "The result count is not greater than that of a blank search",
+          "expected": "The result is displayed on the page"
+        },
+        {
+          "action": "The result count is not greater than that of a blank search",
+          "expected": "The result is displayed on the page"
+        }
+      ]
+    },
+    {
+      "ref": "TC-203",
+      "title": "Applicant filters the search by three species and sees the union of their results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant filters the search by three species and sees the union of their results - features/species-filter/species-filter.feature:23"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Tick Frogs and toads in the affected species tree",
+          "expected": "Frogs and toads is ticked"
+        },
+        {
+          "action": "Tick Birds - native and introduced - captive in the affected species tree",
+          "expected": "Birds - native and introduced - captive is ticked"
+        },
+        {
+          "action": "Tick Carp in the affected species tree",
+          "expected": "Carp is ticked"
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Frogs and toads, Birds - native and introduced - captive, Carp\""
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Count the ticked species",
+          "expected": "3 species are ticked"
+        },
+        {
+          "action": "Search for each of the three species on its own and compare counts",
+          "expected": "The combined count is at least the largest single count, at most their sum, and equals the count for the three species together"
+        }
+      ]
+    },
+    {
+      "ref": "TC-204",
+      "title": "Applicant picks a species inside a group already ticked and only the species stays ticked",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant picks a species inside a group already ticked and only the species stays ticked - features/species-filter/species-filter.feature:35"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Tick Amphibians in the affected species tree",
+          "expected": "Amphibians is ticked"
+        },
+        {
+          "action": "Tick Newts in the affected species tree",
+          "expected": "Newts is ticked"
+        },
+        {
+          "action": "Check Amphibians in the tree",
+          "expected": "Amphibians is not ticked"
+        },
+        {
+          "action": "Check Newts in the tree",
+          "expected": "Newts is ticked"
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Newts\""
+        }
+      ]
+    },
+    {
+      "ref": "TC-205",
+      "title": "Applicant clears the only chosen species and the filter returns to any species",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant clears the only chosen species and the filter returns to any species - features/species-filter/species-filter.feature:45"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Tick Newts in the affected species tree",
+          "expected": "Newts is ticked"
+        },
+        {
+          "action": "Untick Newts",
+          "expected": "Newts is not ticked"
+        },
+        {
+          "action": "Check the Currently selected text under the tree",
+          "expected": "It reads \"Currently selected: Any species\""
+        }
+      ]
+    },
+    {
+      "ref": "TC-206",
+      "title": "Applicant closes and opens all branches of the species tree",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant closes and opens all branches of the species tree - features/species-filter/species-filter.feature:53"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Click Close all above the tree",
+          "expected": "All branches close or open"
+        },
+        {
+          "action": "Check the toggle above the tree",
+          "expected": "It reads Open all"
+        },
+        {
+          "action": "Click Open all above the tree",
+          "expected": "All branches close or open"
+        },
+        {
+          "action": "Check the toggle above the tree",
+          "expected": "It reads Close all"
+        }
+      ]
+    },
+    {
+      "ref": "TC-207",
+      "title": "Applicant combines a species with search text and gets no more than the species alone",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant combines a species with search text and gets no more than the species alone - features/species-filter/species-filter.feature:62"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Tick Birds in the affected species tree",
+          "expected": "Birds is ticked"
+        },
+        {
+          "action": "Click Search profiles",
+          "expected": "The results list and the count of disease profiles found are displayed"
+        },
+        {
+          "action": "Note the count of disease profiles found",
+          "expected": "The count is noted"
+        },
+        {
+          "action": "Enter \"Virus\" in the Search for disease profiles box and click Search profiles",
+          "expected": "The results are reloaded for that text"
+        },
+        {
+          "action": "Compare the new count with the noted count",
+          "expected": "The new count is less than or equal to the noted count"
+        },
+        {
+          "action": "Count the ticked species",
+          "expected": "1 species is ticked"
+        }
+      ]
+    },
+    {
+      "ref": "TC-208",
+      "title": "Applicant hides the species filter again",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant hides the species filter again - features/species-filter/species-filter.feature:73"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the Search Disease Profiles page with published, draft and scenario versions all ticked and the letter All",
+          "expected": "The Search Disease Profiles page is displayed with all three display options ticked"
+        },
+        {
+          "action": "Click Show filter by affected species",
+          "expected": "The affected species tree is displayed"
+        },
+        {
+          "action": "Click Hide filter by affected species",
+          "expected": "The tree is hidden"
+        },
+        {
+          "action": "Check the page",
+          "expected": "The species tree is not displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-209",
+      "title": "Applicant chooses a species on the view species data page and opens its data",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses a species on the view species data page and opens its data - features/species-filter/species-filter.feature:80"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Amphibians in the species list",
+          "expected": "Amphibians is selected"
+        },
+        {
+          "action": "Check the selection text",
+          "expected": "It reads \"Selected: Amphibians\""
+        },
+        {
+          "action": "Click View data",
+          "expected": "The species data page opens"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "It reads \"View species data - Amphibians\""
+        }
+      ]
+    },
+    {
+      "ref": "TC-210",
+      "title": "Applicant chooses a second species and only the second is kept",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant chooses a second species and only the second is kept - features/species-filter/species-filter.feature:88"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Amphibians in the species list",
+          "expected": "Amphibians is selected"
+        },
+        {
+          "action": "Select Newts in the species list",
+          "expected": "Newts is selected"
+        },
+        {
+          "action": "Check the selection text",
+          "expected": "It reads \"Selected: Newts\""
+        }
+      ]
+    },
+    {
+      "ref": "TC-211",
+      "title": "Applicant removes the chosen species on the view species data page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant removes the chosen species on the view species data page - features/species-filter/species-filter.feature:95"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Amphibians in the species list",
+          "expected": "Amphibians is selected"
+        },
+        {
+          "action": "Click Remove selection",
+          "expected": "The selection is cleared"
+        },
+        {
+          "action": "Check the selection text",
+          "expected": "It no longer names Amphibians"
+        }
+      ]
+    }
+  ]
+}

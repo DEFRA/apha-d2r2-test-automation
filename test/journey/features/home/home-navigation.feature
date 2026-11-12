@@ -37,25 +37,25 @@ Feature: Home navigation
     When the applicant chooses Help Using D2R2
     Then the help page is shown
 
-  @wip @role:sso @TC-021
+ @role:sso @TC-021 @needs:editor
   Scenario: Applicant moves from the home page to the global users page
     Given the applicant is on the home page
     When the applicant chooses Global Users
     Then the global users page is shown
 
-  @wip @role:sso @TC-022
+ @role:sso @TC-022 @needs:editor
   Scenario: Applicant moves from the home page to the external users page
     Given the applicant is on the home page
     When the applicant chooses External Users
     Then the external users page is shown
 
-  @wip @role:sso @TC-023
+ @role:sso @TC-023 @needs:editor
   Scenario: Applicant moves from the home page to the maintain reference data page
     Given the applicant is on the home page
     When the applicant chooses Maintain Reference Data
     Then the home navigation maintain reference data page is shown
 
-  @wip @role:sso @TC-024
+ @role:sso @TC-024 @needs:editor
   Scenario: Applicant moves from the home page to the maintain prioritisation variables page
     Given the applicant is on the home page
     When the applicant chooses Maintain Prioritisation Variables
@@ -71,25 +71,25 @@ Feature: Home navigation
     Given the applicant is on the home page
     Then the home page does not show the questions and guidance reports link
 
-  @wip @role:sso @TC-031
+ @role:sso @TC-031 @needs:editor
   Scenario: Applicant moves from the home page to the maintain cross-cutting issue scores page
     Given the applicant is on the home page
     When the applicant chooses Maintain Cross-Cutting Issue Scores
     Then the maintain cross-cutting issue scores page is shown from home navigation
 
-  @wip @role:sso @TC-009
+ @role:sso @TC-009 @needs:editor
   Scenario: Applicant moves from the home page to the compare profile versions page
     Given the applicant is on the home page
     When the applicant chooses Compare Profile Versions
     Then the compare profile versions page is shown
 
-  @wip @role:sso @TC-010
+ @role:sso @TC-010 @needs:editor
   Scenario: Applicant moves from the home page to the create disease ranking filter page
     Given the applicant is on the home page
     When the applicant chooses Create Disease Ranking Filter
     Then the create disease ranking filter page is shown
 
-  @wip @role:sso @TC-145
+ @role:sso @TC-145 @needs:editor
   Scenario: Applicant opens the create profile page directly and confirms the form remains stable after navigation
     Given the applicant is on the create profile page
     Then the create profile page is shown

@@ -1,0 +1,826 @@
+{
+  "story_summary": "Manual cases for the profile-browse journey, derived from the automated scenarios and the application source.",
+  "assumptions": [
+    "Tests run on the UAT environment as an SSO user with the current Windows session",
+    "Area path is a placeholder unless ADO_AREA_PATH was set"
+  ],
+  "open_questions": [],
+  "coverage": [
+    {
+      "ac": "DERIVED: Applicant sees the current version and the actions on a search result - features/profile-browse/profile-browse.feature:6",
+      "test_cases": [
+        "Applicant sees the current version and the actions on a search result"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant shows and hides the previous versions of a profile - features/profile-browse/profile-browse.feature:11",
+      "test_cases": [
+        "Applicant shows and hides the previous versions of a profile"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens the reports for a profile from the search results - features/profile-browse/profile-browse.feature:19",
+      "test_cases": [
+        "Applicant opens the reports for a profile from the search results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant browses a profile from the search results - features/profile-browse/profile-browse.feature:25",
+      "test_cases": [
+        "Applicant browses a profile from the search results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves between pages of search results - features/profile-browse/profile-browse.feature:31",
+      "test_cases": [
+        "Applicant moves between pages of search results"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sees the three reports and the access note on the profile reports page - features/profile-browse/profile-browse.feature:39",
+      "test_cases": [
+        "Applicant sees the three reports and the access note on the profile reports page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant downloads a profile report - features/profile-browse/profile-browse.feature:46",
+      "test_cases": [
+        "Applicant downloads a profile report"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant goes from the profile reports to the profile itself - features/profile-browse/profile-browse.feature:59",
+      "test_cases": [
+        "Applicant goes from the profile reports to the profile itself"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant sees the version, the tabs and the sections on a browse page - features/profile-browse/profile-browse.feature:66",
+      "test_cases": [
+        "Applicant sees the version, the tabs and the sections on a browse page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens and closes one section - features/profile-browse/profile-browse.feature:72",
+      "test_cases": [
+        "Applicant opens and closes one section"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens every section at once - features/profile-browse/profile-browse.feature:81",
+      "test_cases": [
+        "Applicant opens every section at once"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant jumps to another section from the contents - features/profile-browse/profile-browse.feature:88",
+      "test_cases": [
+        "Applicant jumps to another section from the contents"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant switches tab on a browse page - features/profile-browse/profile-browse.feature:95",
+      "test_cases": [
+        "Applicant switches tab on a browse page"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves to the next section with the Next page link - features/profile-browse/profile-browse.feature:108",
+      "test_cases": [
+        "Applicant moves to the next section with the Next page link"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant reads the chapters of the species data - features/profile-browse/profile-browse.feature:115",
+      "test_cases": [
+        "Applicant reads the chapters of the species data"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant moves through the species data chapters - features/profile-browse/profile-browse.feature:122",
+      "test_cases": [
+        "Applicant moves through the species data chapters"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens and closes a species data question - features/profile-browse/profile-browse.feature:132",
+      "test_cases": [
+        "Applicant opens and closes a species data question"
+      ]
+    },
+    {
+      "ac": "DERIVED: Applicant opens an address that does not exist - features/profile-browse/profile-browse.feature:142",
+      "test_cases": [
+        "Applicant opens an address that does not exist"
+      ]
+    }
+  ],
+  "test_cases": [
+    {
+      "ref": "TC-225",
+      "title": "Applicant sees the current version and the actions on a search result",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees the current version and the actions on a search result - features/profile-browse/profile-browse.feature:6"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Read the first profile card",
+          "expected": "It shows the current published version, the profile status, and View reports and Browse profile links"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        },
+        {
+          "action": "Check the page heading",
+          "expected": "The page heading is visible"
+        }
+      ]
+    },
+    {
+      "ref": "TC-226",
+      "title": "Applicant shows and hides the previous versions of a profile",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant shows and hides the previous versions of a profile - features/profile-browse/profile-browse.feature:11"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Show previous versions on the first profile",
+          "expected": "The earlier versions are listed"
+        },
+        {
+          "action": "Check the list of versions",
+          "expected": "Each version shows its dates with View reports and Browse profile links"
+        },
+        {
+          "action": "Click Hide previous versions on the first profile",
+          "expected": "The earlier versions are hidden"
+        },
+        {
+          "action": "Check the first profile",
+          "expected": "No earlier versions are shown and the button reads Show previous versions"
+        }
+      ]
+    },
+    {
+      "ref": "TC-227",
+      "title": "Applicant opens the reports for a profile from the search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens the reports for a profile from the search results - features/profile-browse/profile-browse.feature:19"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click View reports on the first profile",
+          "expected": "The Profile reports page opens"
+        },
+        {
+          "action": "Check the heading",
+          "expected": "It reads \"Profile reports for African Horse Sickness (AHS)\" with the version"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-228",
+      "title": "Applicant browses a profile from the search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant browses a profile from the search results - features/profile-browse/profile-browse.feature:25"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Check the heading",
+          "expected": "It reads \"African Horse Sickness (AHS)\""
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-229",
+      "title": "Applicant moves between pages of search results",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves between pages of search results - features/profile-browse/profile-browse.feature:31"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Next page under the results",
+          "expected": "The results page changes"
+        },
+        {
+          "action": "Check the page numbers under the results",
+          "expected": "Page 2 is marked as the current page"
+        },
+        {
+          "action": "Click Previous page under the results",
+          "expected": "The results page changes"
+        },
+        {
+          "action": "Check the page numbers under the results",
+          "expected": "Page 1 is marked as the current page"
+        }
+      ]
+    },
+    {
+      "ref": "TC-230",
+      "title": "Applicant sees the three reports and the access note on the profile reports page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees the three reports and the access note on the profile reports page - features/profile-browse/profile-browse.feature:39"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click View reports on the first profile",
+          "expected": "The Profile reports page opens"
+        },
+        {
+          "action": "Check the table of reports",
+          "expected": "Summary prioritisation report, Summary profile and Question and answer sheet are listed"
+        },
+        {
+          "action": "Read the text above the table",
+          "expected": "It explains how to request permission for scenarios and drafts, with a link to D2R2@defra.gov.uk"
+        }
+      ]
+    },
+    {
+      "ref": "TC-231",
+      "title": "Applicant downloads a profile report",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant downloads a profile report - features/profile-browse/profile-browse.feature:46"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click View reports on the first profile",
+          "expected": "The Profile reports page opens"
+        },
+        {
+          "action": "Click View reports on the first profile",
+          "expected": "The Profile reports page opens"
+        },
+        {
+          "action": "Click View reports on the first profile",
+          "expected": "The Profile reports page opens"
+        },
+        {
+          "action": "Click Summary prioritisation report",
+          "expected": "A PDF file is downloaded"
+        },
+        {
+          "action": "Click Summary profile",
+          "expected": "A PDF file is downloaded"
+        },
+        {
+          "action": "Click Question and answer sheet",
+          "expected": "A PDF file is downloaded"
+        },
+        {
+          "action": "Check the downloaded file name",
+          "expected": "It is African Horse Sickness (AHS)_Summary prioritisation report.pdf"
+        },
+        {
+          "action": "Check the downloaded file name",
+          "expected": "It is African Horse Sickness (AHS)_Summary profile.pdf"
+        },
+        {
+          "action": "Check the downloaded file name",
+          "expected": "It is African Horse Sickness (AHS)_Question and answer sheet.pdf"
+        }
+      ]
+    },
+    {
+      "ref": "TC-232",
+      "title": "Applicant goes from the profile reports to the profile itself",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant goes from the profile reports to the profile itself - features/profile-browse/profile-browse.feature:59"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click View reports on the first profile",
+          "expected": "The Profile reports page opens"
+        },
+        {
+          "action": "Click Browse disease profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Check the heading",
+          "expected": "It reads \"African Horse Sickness (AHS)\""
+        }
+      ]
+    },
+    {
+      "ref": "TC-233",
+      "title": "Applicant sees the version, the tabs and the sections on a browse page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant sees the version, the tabs and the sections on a browse page - features/profile-browse/profile-browse.feature:66"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Read the browse page",
+          "expected": "The version and status, the Summary, References and Further information tabs and Show all sections are displayed"
+        },
+        {
+          "action": "Check the page for error messages",
+          "expected": "No \"An error has occurred\" heading or error message is displayed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-234",
+      "title": "Applicant opens and closes one section",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens and closes one section - features/profile-browse/profile-browse.feature:72"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click 1.1 Summary description to show it",
+          "expected": "The section is open"
+        },
+        {
+          "action": "Check 1.1 Summary description",
+          "expected": "It is open"
+        },
+        {
+          "action": "Click 1.1 Summary description to hide it",
+          "expected": "The section is closed"
+        },
+        {
+          "action": "Check 1.1 Summary description",
+          "expected": "It is closed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-235",
+      "title": "Applicant opens every section at once",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens every section at once - features/profile-browse/profile-browse.feature:81"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click Show all sections",
+          "expected": "Every section opens"
+        },
+        {
+          "action": "Check each section",
+          "expected": "All are open"
+        }
+      ]
+    },
+    {
+      "ref": "TC-236",
+      "title": "Applicant jumps to another section from the contents",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant jumps to another section from the contents - features/profile-browse/profile-browse.feature:88"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click the contents link for section 2.",
+          "expected": "That section opens"
+        },
+        {
+          "action": "Check the page",
+          "expected": "Question 2.1 is listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-237",
+      "title": "Applicant switches tab on a browse page",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant switches tab on a browse page - features/profile-browse/profile-browse.feature:95"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click the References tab",
+          "expected": "The References content opens"
+        },
+        {
+          "action": "Click the Further information tab",
+          "expected": "The Further information content opens"
+        },
+        {
+          "action": "Click the Summary tab",
+          "expected": "The Summary content opens"
+        },
+        {
+          "action": "Check the tabs",
+          "expected": "References is marked as current"
+        },
+        {
+          "action": "Check the tabs",
+          "expected": "Further information is marked as current"
+        },
+        {
+          "action": "Check the tabs",
+          "expected": "Summary is marked as current"
+        }
+      ]
+    },
+    {
+      "ref": "TC-238",
+      "title": "Applicant moves to the next section with the Next page link",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves to the next section with the Next page link - features/profile-browse/profile-browse.feature:108"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open Search Disease Profiles with all version types ticked and search for \"African Horse Sickness\"",
+          "expected": "The matching profiles are listed"
+        },
+        {
+          "action": "Click Browse profile on the first profile",
+          "expected": "The profile opens"
+        },
+        {
+          "action": "Click the Next page link at the foot of the page",
+          "expected": "The next section opens"
+        },
+        {
+          "action": "Check the page",
+          "expected": "Question 2.1 is listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-239",
+      "title": "Applicant reads the chapters of the species data",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant reads the chapters of the species data - features/profile-browse/profile-browse.feature:115"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Amphibians in the species list",
+          "expected": "Amphibians is selected"
+        },
+        {
+          "action": "Click View data",
+          "expected": "The species data page opens"
+        },
+        {
+          "action": "Check the chapter links",
+          "expected": "1. Animal identification, 2. Movements, 3. Animal locations and number, 4. Bio-security, 5. Surveillance and 6. International trade are listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-240",
+      "title": "Applicant moves through the species data chapters",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant moves through the species data chapters - features/profile-browse/profile-browse.feature:122"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Amphibians in the species list",
+          "expected": "Amphibians is selected"
+        },
+        {
+          "action": "Click View data",
+          "expected": "The species data page opens"
+        },
+        {
+          "action": "Click 2. Movements",
+          "expected": "The chapter opens"
+        },
+        {
+          "action": "Check the page",
+          "expected": "Question 2.1 is listed"
+        },
+        {
+          "action": "Click the Next page link at the foot of the page",
+          "expected": "The next section opens"
+        },
+        {
+          "action": "Check the page",
+          "expected": "Question 3.1 is listed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-241",
+      "title": "Applicant opens and closes a species data question",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens and closes a species data question - features/profile-browse/profile-browse.feature:132"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open the view species data page",
+          "expected": "The view species data page is displayed with its heading and controls"
+        },
+        {
+          "action": "Select Amphibians in the species list",
+          "expected": "Amphibians is selected"
+        },
+        {
+          "action": "Click View data",
+          "expected": "The species data page opens"
+        },
+        {
+          "action": "Click the first question to show it",
+          "expected": "The question is open"
+        },
+        {
+          "action": "Check the first question",
+          "expected": "It is open"
+        },
+        {
+          "action": "Click the first question to hide it",
+          "expected": "The question is closed"
+        },
+        {
+          "action": "Check the first question",
+          "expected": "It is closed"
+        }
+      ]
+    },
+    {
+      "ref": "TC-242",
+      "title": "Applicant opens an address that does not exist",
+      "layer": "ui",
+      "acs": [
+        "DERIVED: Applicant opens an address that does not exist - features/profile-browse/profile-browse.feature:142"
+      ],
+      "area_path": "Path x",
+      "assigned_to": "",
+      "state": "Design",
+      "steps": [
+        {
+          "action": "Log in to D2R2 as an SSO user using the current Windows session",
+          "expected": "The D2R2 Home page is displayed"
+        },
+        {
+          "action": "Open /NoSuchPage in the browser",
+          "expected": "The request is made"
+        },
+        {
+          "action": "Open /SurveillanceProfiles/EditProfileQuestions/not-a-guid in the browser",
+          "expected": "The request is made"
+        },
+        {
+          "action": "Open /EditSpecies/00000000-0000-0000-0000-000000000000 in the browser",
+          "expected": "The request is made"
+        },
+        {
+          "action": "Check the response",
+          "expected": "The status is 404 (not found)"
+        },
+        {
+          "action": "Check the response",
+          "expected": "The status is 404 (not found)"
+        },
+        {
+          "action": "Check the response",
+          "expected": "The status is 404 (not found)"
+        }
+      ]
+    }
+  ]
+}
