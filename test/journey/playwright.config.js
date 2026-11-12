@@ -27,7 +27,7 @@ export default defineConfig({
   globalTeardown: './support/a11y-report.js', // builds reports/a11y/a11y-report.html
   outputDir: 'test-results',
   reporter: ci
-    ? [['github'], ['line'], ['junit', { outputFile: process.env.PLAYWRIGHT_JUNIT_OUTPUT_FILE ?? 'reports/junit/results.xml' }]]
+    ? [['github'], ['line'], ['junit', { outputFile: process.env.PLAYWRIGHT_JUNIT_OUTPUT_FILE ?? 'reports/junit/results.xml' }], ['html', { outputFolder: 'reports/playwright', open: 'never' }]]
     : [['list'], ['html', { outputFolder: 'reports/playwright', open: 'never' }]],
   use: {
     baseURL: appBaseUrl,

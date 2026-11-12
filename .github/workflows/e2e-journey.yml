@@ -12,6 +12,10 @@ on:
         type: choice
         options: [regression, smoke]
         default: regression
+      environment:
+        description: Target environment (GitHub environment name)
+        type: string
+        default: test
 
 permissions:
   contents: read
@@ -30,6 +34,7 @@ jobs:
   e2e:
     name: E2E (${{ matrix.profile }})
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment || vars.ENVIRONMENT || 'test' }}
     timeout-minutes: 60
     defaults:
       run:
@@ -75,6 +80,9 @@ jobs:
       - name: Run tests
         env:
           CI: 'true'
+          ENVIRONMENT: ${{ inputs.environment || vars.ENVIRONMENT || 'test' }}
+          USER_NAME: ${{ vars.USER_NAME }}
+          USER_PASSWORD: ${{ secrets.USER_PASSWORD }}
           UI_PROFILE: ${{ matrix.profile }}
           UI_BASE_URL: ${{ vars.UI_BASE_URL }}
           API_BASE_URL: ${{ vars.API_BASE_URL }}
@@ -92,6 +100,14 @@ jobs:
           name: junit-results-${{ matrix.profile }}
           path: test/journey/${{ env.JUNIT_FILE }}
           if-no-files-found: error
+          retention-days: 30
+      - name: Upload Playwright HTML report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: playwright-report-${{ matrix.profile }}
+          path: test/journey/${{ env.PW_REPORT_DIR }}
+          if-no-files-found: warn
           retention-days: 30
       - name: Upload accessibility report
         if: ${{ !cancelled() }}
