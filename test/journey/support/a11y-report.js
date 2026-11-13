@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { normaliseRoute } from './page-key.js'
+import { writeWcagReportsFromWorkers } from './a11y-wcag-report.js'
 
 const DIR = path.resolve(process.env.A11Y_DIR ?? 'reports/a11y')
 const IMPACTS = ['critical', 'serious', 'moderate', 'minor']
@@ -20,7 +21,7 @@ function pageSection(p) {
   const table = p.violations.length
     ? `<table><caption>Violations</caption><thead><tr><th scope="col">Rule</th><th scope="col">Impact</th><th scope="col">WCAG</th><th scope="col">Elements</th></tr></thead><tbody>${rows}</tbody></table>`
     : '<p>No violations found by automated checks.</p>'
-  return `<section><h2>${esc(p.route)}${p.variant === 'default' ? '' : ` (${esc(p.variant)})`}</h2><p>${esc(p.h1)} · role ${esc(p.role)} · ${p.violations.length} violated rule(s) · ${p.passes} passed · ${p.incomplete} need review</p>${table}</section>`
+  return `<section><h2>${esc(p.route)}${p.variant === 'default' ? '' : ` (${esc(p.variant)})`}</h2><p>${esc(p.h1)} · role ${esc(p.role)} · ${p.violations.length} violated rule(s) · ${p.checked ?? 0} checks run</p>${table}</section>`
 }
 
 /** Build a11y-report.html and a11y-summary.json from the recorded scan results. */
@@ -65,9 +66,20 @@ export function buildReport({ inventoryPath = 'data/page-inventory.json' } = {})
   return summary
 }
 
-/** Playwright globalTeardown: build the report after the run. */
+/**
+ * Playwright globalTeardown: runs once in the main process after every worker has finished.
+ * Builds this pack's report and, from the state each worker persisted, the four wcag-js-v2
+ * reports - the only place they are written, so parallel runs still produce one set.
+ */
 export default async function globalTeardown() {
   buildReport()
+
+  if (process.env.A11Y_WCAG_REPORT === 'false') return
+  try {
+    await writeWcagReportsFromWorkers()
+  } catch (error) {
+    console.warn(`wcag-js-v2: reports not written: ${error instanceof Error ? error.message : String(error)}`)
+  }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) buildReport()

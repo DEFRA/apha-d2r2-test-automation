@@ -15,14 +15,18 @@ const testDir = defineBddConfig({
 
 const ci = !!process.env.CI
 const appBaseUrl = (process.env.UI_BASE_URL ?? '').replace(/\/$/, '').replace(/\/(?:Home|Search)\.aspx$/, '')
+// Chromium is launched per worker with a debugging port (support/a11y-browser.js) so
+// Lighthouse can attach to it. Raise parallelism with PW_WORKERS; the port range starts at
+// A11Y_CDP_PORT (default 9222) and increments per worker.
+const workers = Number.parseInt(process.env.PW_WORKERS ?? '', 10) || 1
 
 export default defineConfig({
   testDir,
   forbidOnly: ci,
   grepInvert: [/@obsolete/, process.env.RUN_KNOWN_DEFECTS ? null : /@known-defect/, process.env.RUN_WIP ? null : /@wip/, process.env.EDITOR_ACCOUNT ? null : /@needs:editor/].filter(Boolean), // @obsolete: page no longer exists in CDC.Web; @known-defect: fails until the logged defect is fixed (RUN_KNOWN_DEFECTS=1); @wip: unfinished; @needs:editor: requires the ProfileEditor role (EDITOR_ACCOUNT=1)
   retries: ci ? 1 : 0,
-  workers: 1,
-  fullyParallel: false,
+  workers,
+  fullyParallel: workers > 1,
   globalSetup: './support/a11y-setup.js', // clears old scan results
   globalTeardown: './support/a11y-report.js', // builds reports/a11y/a11y-report.html
   outputDir: 'test-results',
@@ -37,6 +41,7 @@ export default defineConfig({
     // This app is session/auth sensitive and works only in the normal browser profile.
     // Do not add --incognito/--inPrivate here; regular browser context is required.
     launchOptions: {
+      // The debugging port is added per worker in support/a11y-browser.js.
       args: []
     }
   },

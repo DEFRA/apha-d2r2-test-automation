@@ -1,13 +1,15 @@
 import { expect } from '@playwright/test'
 import { scanPage } from '../support/a11y.js'
+import { settleA11y } from '../support/a11y-navigation.js'
 import { escapeRegExp, prefixPattern, textPattern, visibleText } from '../support/text.js'
 
 /**
  * The one way a step confirms it has landed on a page. It asserts the h1 (page identity,
- * never the URL) and runs the deduplicated axe scan.
+ * never the URL).
  *
- * Passing `role` or `variant` changes the scan key, so a page that differs by role or state
- * is genuinely scanned again instead of being skipped as a duplicate.
+ * Accessibility scans run automatically when a navigation completes (support/a11y-navigation.js),
+ * so no step has to ask for one. Passing `role` or `variant` still scans here, because a page
+ * that differs only by state or role keeps the same URL and the hook cannot tell them apart.
  *
  * @param {import('@playwright/test').Page} page
  * @param {{ heading: string, variant?: 'default'|'error'|'confirmation'|'empty'|'modal', role?: string }} options
@@ -21,7 +23,7 @@ export async function expectPageLoaded(page, { heading, variant = 'default', rol
 
     if (hasHeading > 0) {
       await expect(headingLocator).toBeVisible()
-      await scanPage(page, { variant, role })
+      await scanStateVariant(page, variant, role)
       return
     }
 
@@ -30,7 +32,7 @@ export async function expectPageLoaded(page, { heading, variant = 'default', rol
 
     if (pageTitle && titlePattern.test(pageTitle)) {
       await expect(page).toHaveTitle(titlePattern)
-      await scanPage(page, { variant, role })
+      await scanStateVariant(page, variant, role)
       return
     }
 
@@ -39,7 +41,7 @@ export async function expectPageLoaded(page, { heading, variant = 'default', rol
 
     if (hasContentText > 0) {
       await expect(contentLocator).toBeVisible()
-      await scanPage(page, { variant, role })
+      await scanStateVariant(page, variant, role)
       return
     }
 
@@ -47,13 +49,30 @@ export async function expectPageLoaded(page, { heading, variant = 'default', rol
     const bodyTextMatch = await page.locator('body').textContent().catch(() => '')
     if (bodyTextMatch && new RegExp(escapeRegExp(visibleHeading), 'i').test(bodyTextMatch)) {
       await expect(page.locator('body')).toContainText(new RegExp(escapeRegExp(visibleHeading), 'i'))
-      await scanPage(page, { variant, role })
+      await scanStateVariant(page, variant, role)
       return
     }
   }
 
   const visibleHeadings = headings.map(visibleText)
   await expect(page.locator('body')).toContainText(new RegExp(visibleHeadings.map(escapeRegExp).join('|'), 'i'))
+  await scanStateVariant(page, variant, role)
+}
+
+/**
+ * The navigation hook scans the page automatically; waiting here keeps the audit on the page
+ * the test just reached instead of letting the next navigation pre-empt it. A state or role
+ * that keeps the same URL is scanned explicitly, because the hook cannot tell it apart from
+ * the default view of the route.
+ * @param {import('@playwright/test').Page} page
+ * @param {string} variant
+ * @param {string} role
+ */
+async function scanStateVariant(page, variant, role) {
+  if (variant === 'default' && role === 'anonymous') {
+    await settleA11y(page)
+    return
+  }
   await scanPage(page, { variant, role })
 }
 
