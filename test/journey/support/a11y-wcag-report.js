@@ -9,18 +9,8 @@ import {
   wcagResult
 } from 'wcag-js-v2'
 
-/**
- * The library's own reports, built from the scans `analyse()` recorded.
- *
- * Scan state lives in the worker process, and Playwright's global setup/teardown run in the
- * main process. So each worker persists its state when it finishes (`persistWcagState`), and
- * the global teardown merges every worker's file, hydrates the library state once and writes
- * the four reports. That makes the reports a single set covering the whole run, produced only
- * after all tests have executed, however many workers ran.
- *
- * Same layout as the standalone wcag-test project: the four `*_latest` files in `reports/`.
- */
-export const WCAG_REPORT_DIR = path.resolve(process.env.A11Y_WCAG_REPORT_DIR ?? 'reports')
+
+export const WCAG_REPORT_DIR = path.resolve(process.env.A11Y_WCAG_REPORT_DIR ?? 'reports/a11y')
 
 const STATE_DIR = path.join(WCAG_REPORT_DIR, '.state')
 
