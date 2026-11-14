@@ -26,6 +26,7 @@ function pageSection(p) {
 
 /** Build a11y-report.html and a11y-summary.json from the recorded scan results. */
 export function buildReport({ inventoryPath = 'data/page-inventory.json' } = {}) {
+  if (process.env.A11Y_REPORT === 'false') return null
   const pages = readAll('results').sort((a, b) => a.route.localeCompare(b.route) || a.variant.localeCompare(b.variant))
   const skipped = readAll('skipped')
   const inventory = fs.existsSync(inventoryPath) ? JSON.parse(fs.readFileSync(inventoryPath, 'utf8')) : []
@@ -72,7 +73,7 @@ export function buildReport({ inventoryPath = 'data/page-inventory.json' } = {})
  * reports - the only place they are written, so parallel runs still produce one set.
  */
 export default async function globalTeardown() {
-  buildReport()
+  if (process.env.A11Y_REPORT === 'true') buildReport()
 
   if (process.env.A11Y_WCAG_REPORT === 'false') return
   try {

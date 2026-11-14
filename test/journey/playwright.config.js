@@ -19,7 +19,6 @@ const appBaseUrl = (process.env.UI_BASE_URL ?? '').replace(/\/$/, '').replace(/\
 // Lighthouse can attach to it. Raise parallelism with PW_WORKERS; the port range starts at
 // A11Y_CDP_PORT (default 9222) and increments per worker.
 const workers = Number.parseInt(process.env.PW_WORKERS ?? '', 10) || 1
-const a11yReportEnabled = process.env.A11Y_REPORT !== 'false'
 
 export default defineConfig({
   testDir,
@@ -28,8 +27,8 @@ export default defineConfig({
   retries: ci ? 1 : 0,
   workers,
   fullyParallel: workers > 1,
-  globalSetup: a11yReportEnabled ? './support/a11y-setup.js' : undefined, // clears old scan results
-  globalTeardown: a11yReportEnabled ? './support/a11y-report.js' : undefined, // builds reports/a11y/a11y-report.html and the wcag package reports in that same folder
+  globalSetup: './support/a11y-setup.js', // clears old scan results
+  globalTeardown: './support/a11y-report.js', // builds the enabled reports under reports/a11y/
   outputDir: 'test-results',
   reporter: ci
     ? [['github'], ['line'], ['junit', { outputFile: process.env.PLAYWRIGHT_JUNIT_OUTPUT_FILE ?? 'reports/junit/results.xml' }], ['html', { outputFolder: 'reports/playwright', open: 'never' }]]

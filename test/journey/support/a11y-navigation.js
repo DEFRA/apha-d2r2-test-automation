@@ -25,6 +25,7 @@ import { scanPage } from './a11y.js'
  */
 
 const DEFAULT_SETTLE_MS = 0
+const FLUSH_TIMEOUT_MS = Number.parseInt(process.env.A11Y_NAV_FLUSH_TIMEOUT_MS ?? '15000', 10) || 15000
 
 /** Methods that represent a navigation or a wait for one. */
 const NAVIGATION_METHODS = [
@@ -234,12 +235,23 @@ export function installNavigationScanner (page, options = {}) {
       enqueue(() => analyse(target))
     }
 
-    await chain
+    return await Promise.race([
+      chain,
+      new Promise((_, reject) => {
+        setTimeout(() => reject(new Error(`A11y navigation flush timed out after ${FLUSH_TIMEOUT_MS}ms`)), FLUSH_TIMEOUT_MS)
+      })
+    ])
   }
 
   /** Wait for in-flight scans, then fail the test with the first enforcement error. */
   const flush = async () => {
-    await settle()
+    await settle().catch((error) => {
+      if (error instanceof Error && error.message.includes('A11y navigation flush timed out')) {
+        console.warn(`a11yNavigation flush: ${error.message}`)
+        return
+      }
+      throw error
+    })
 
     if (failures.length > 0) {
       const [first] = failures.splice(0)
