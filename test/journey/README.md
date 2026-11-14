@@ -72,7 +72,7 @@ after a navigation: the auto fixture in `support/fixtures.js` installs the hook 
   cannot pre-empt it. No step calls `scanPage()` for a navigation.
 - Scans are reported, not enforced, by default. Set `A11Y_ENFORCE=true` to fail a test on a
   violation (`failOn` in `support/a11y.js`).
-- `A11Y_NAV_SCAN=false` disables automatic scanning; `A11Y_DIR` moves the output directory.
+- `A11Y_SCAN=false` disables all accessibility scanning and reports; `A11Y_DIR` moves the output directory.
 - Results go to `reports/a11y/` (JSON per page, skipped routes, `a11y-report.html` and
   `a11y-summary.json`); rebuild the report alone with `npm run a11y:report`.
 - Lighthouse runs on every scanned page, beside the axe scan. Chromium is started with
@@ -93,7 +93,7 @@ after a navigation: the auto fixture in `support/fixtures.js` installs the hook 
   produced by the worker-scoped `a11yReports` fixture (worker teardown) because the scan
   results live in the worker processes, so workers persist them to `reports/.state` and the
   global teardown merges and writes the reports once, after all tests, whatever `PW_WORKERS`
-  is. `A11Y_WCAG_REPORT=false` turns them off and `A11Y_WCAG_REPORT_DIR` moves them. The JSON
+  is. `A11Y_SCAN=false` turns them off and `A11Y_WCAG_REPORT_DIR` moves them. The JSON
   report carries both tools and the performance report carries the Lighthouse scores for
   every scanned page.
 - A state that keeps the same URL — an error summary, an empty or modal variant, or a page that

@@ -73,9 +73,9 @@ export function buildReport({ inventoryPath = 'data/page-inventory.json' } = {})
  * reports - the only place they are written, so parallel runs still produce one set.
  */
 export default async function globalTeardown() {
+  if (process.env.A11Y_SCAN === 'false') return
   if (process.env.A11Y_REPORT === 'true') buildReport()
 
-  if (process.env.A11Y_WCAG_REPORT === 'false') return
   try {
     await writeWcagReportsFromWorkers()
   } catch (error) {

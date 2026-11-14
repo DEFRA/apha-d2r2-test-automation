@@ -20,7 +20,7 @@ import { scanPage } from './a11y.js'
  * template already scanned earlier in the run, across workers.
  *
  * Environment:
- *   A11Y_NAV_SCAN=false        disable navigation-driven scanning entirely
+ *   A11Y_SCAN=false            disable navigation-driven scanning entirely
  *   A11Y_NAV_SETTLE_MS=0       extra wait after load for client-rendered pages to settle
  */
 
@@ -37,7 +37,7 @@ const NAVIGATION_METHODS = [
   'waitForNavigation'
 ]
 
-const isEnabled = () => process.env.A11Y_NAV_SCAN !== 'false'
+const isEnabled = () => process.env.A11Y_SCAN !== 'false'
 
 const settleMs = () => {
   const configured = process.env.A11Y_NAV_SETTLE_MS

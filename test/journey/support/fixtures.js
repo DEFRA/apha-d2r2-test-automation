@@ -42,7 +42,7 @@ export const test = bddTest.extend({
    * (support/a11y-report.js), after every test has finished.
    */
   a11yReports: [async ({}, use, workerInfo) => {
-    const enabled = process.env.A11Y_WCAG_REPORT !== 'false'
+    const enabled = process.env.A11Y_SCAN !== 'false'
     if (!enabled) {
       await use()
       return
